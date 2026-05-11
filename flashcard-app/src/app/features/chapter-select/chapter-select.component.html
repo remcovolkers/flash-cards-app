@@ -1,0 +1,47 @@
+<div class="page">
+  <header class="app-header">
+    <h1>📚 Portaal Flashcards</h1>
+    <p class="subtitle">Kies een hoofdstuk om te starten</p>
+  </header>
+
+  <div class="quick-actions">
+    <button class="action-btn saved-btn" (click)="goToSaved()">
+      <span class="icon">🔖</span>
+      <span class="label">Opgeslagen</span>
+      <span class="badge" *ngIf="savedCount > 0">{{ savedCount }}</span>
+    </button>
+    <button class="action-btn excluded-btn" (click)="goToExcluded()">
+      <span class="icon">🚫</span>
+      <span class="label">Overgeslagen</span>
+    </button>
+  </div>
+
+  <div *ngIf="loading" class="loading">
+    <div class="spinner"></div>
+    <p>Laden...</p>
+  </div>
+
+  <ul *ngIf="!loading" class="chapter-list">
+    <li
+      *ngFor="let chapter of chapters"
+      class="chapter-item"
+      (click)="studyChapter(chapter.name)"
+    >
+      <div class="chapter-info">
+        <span class="chapter-name">{{ chapter.name }}</span>
+        <span class="chapter-count">{{ chapter.cardCount }} kaarten</span>
+      </div>
+      <span class="arrow">›</span>
+    </li>
+  </ul>
+
+  <div class="swipe-legend">
+    <div class="legend-title">Swipe-bediening tijdens studeren</div>
+    <div class="legend-grid">
+      <div class="legend-item"><span class="dir">→</span> Toon achterkant</div>
+      <div class="legend-item"><span class="dir">←</span> Volgende kaart</div>
+      <div class="legend-item"><span class="dir">↑</span> Opslaan voor later</div>
+      <div class="legend-item"><span class="dir">↓</span> Overslaan</div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,34 @@
+<div class="list-page">
+  <header class="list-header">
+    <button class="back-btn" (click)="goBack()">‹</button>
+    <h1>🚫 Overgeslagen kaarten</h1>
+  </header>
+
+  <div *ngIf="loading" class="center-content">
+    <div class="spinner"></div>
+    <p>Laden...</p>
+  </div>
+
+  <div *ngIf="!loading && excludedCards.length === 0" class="empty-state">
+    <div class="empty-icon">✅</div>
+    <p>Geen overgeslagen kaarten.</p>
+    <button class="primary-btn" (click)="goBack()">Terug</button>
+  </div>
+
+  <div *ngIf="!loading && excludedCards.length > 0">
+    <div class="list-toolbar">
+      <span class="count">{{ excludedCards.length }} kaarten</span>
+      <button class="danger-btn" (click)="clearAll()">Alles herstellen</button>
+    </div>
+    <ul class="card-list">
+      <li *ngFor="let card of excludedCards" class="card-item">
+        <div class="card-header">
+          <div class="card-question">{{ card.voorkant }}</div>
+          <button class="restore-btn" (click)="restore(card.id)" aria-label="Herstellen">
+            ↩
+          </button>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>

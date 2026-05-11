@@ -1,0 +1,35 @@
+<div class="list-page">
+  <header class="list-header">
+    <button class="back-btn" (click)="goBack()">‹</button>
+    <h1>🔖 Opgeslagen kaarten</h1>
+  </header>
+
+  <div *ngIf="cards.length === 0" class="empty-state">
+    <div class="empty-icon">🔖</div>
+    <p>Je hebt nog geen kaarten opgeslagen.</p>
+    <p class="muted">Swipe omhoog tijdens het studeren om een kaart op te slaan.</p>
+    <button class="primary-btn" (click)="goBack()">Ga studeren</button>
+  </div>
+
+  <ul *ngIf="cards.length > 0" class="card-list">
+    <li *ngFor="let card of cards" class="card-item" (click)="toggleCard(card.id)">
+      <div class="card-header">
+        <div class="card-question">{{ card.voorkant }}</div>
+        <div class="card-actions">
+          <button
+            class="delete-btn"
+            (click)="removeCard(card.id); $event.stopPropagation()"
+            aria-label="Verwijder"
+          >✕</button>
+        </div>
+      </div>
+      <div class="card-answer" *ngIf="expandedId === card.id">
+        <div class="answer-text">{{ card.achterkant }}</div>
+        <div class="memory-tip" *ngIf="card.geheugensteun">
+          <span class="tip-label">💡</span>
+          {{ card.geheugensteun }}
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>

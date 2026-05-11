@@ -1,0 +1,981 @@
+{
+  "metadata": {
+    "title": "Portaal – Taaldidactiek Flashcards (Deel 1 van 4)",
+    "bronnen": [
+      "Samenvatting Portaal H1, H2, H4, H8",
+      "Neurocognitieve analyse Pabo Kennisbasis Taal"
+    ],
+    "totaal_kaarten": 120,
+    "domeinen": [
+      "Functies en systeem van taal",
+      "Visies op taalonderwijs",
+      "Didactiek van taalonderwijs",
+      "Taalverwerving (eerste en tweede taal)",
+      "Woordenschat",
+      "Jeugdliteratuur"
+    ],
+    "instructie": "Gebruik Active Recall: lees de voorkant, formuleer het antwoord hardop of op papier VOOR je de achterkant omdraait. Gebruik het Leitner-systeem: fout = terug naar Stapel 1, goed = door naar Stapel 2+."
+  },
+  "flashcards": [
+    {
+      "id": "F001",
+      "domein": "Functies van taal",
+      "type": "definitie",
+      "voorkant": "Wat zijn de drie hoofdfuncties van taal?",
+      "achterkant": "1. Communicatiemiddel (contact onderhouden met anderen)\n2. Conceptualiserende functie (greep krijgen op de werkelijkheid door taal)\n3. Expressiemiddel (jezelf uitdrukken / zelfexpressie)",
+      "geheugensteun": "CCE: Communicatie – Conceptualiseren – Expressie"
+    },
+    {
+      "id": "F002",
+      "domein": "Functies van taal",
+      "type": "toepassing",
+      "voorkant": "Een leerling vraagt aan de leraar: 'Welke synoniemen zijn er voor het woord 'leuk'?' Welke functie van taal oefent de leerling hiermee?",
+      "achterkant": "De conceptualiserende functie – door taal krijgt de leerling greep op de werkelijkheid en ordent hij begrippen.",
+      "geheugensteun": null
+    },
+    {
+      "id": "F003",
+      "domein": "Functies van taal",
+      "type": "definitie",
+      "voorkant": "Wat zijn de vier aspecten van een communicatieve boodschap?",
+      "achterkant": "1. Zakelijk aspect – de letterlijke, feitelijke inhoud\n2. Appellerend aspect – het doel dat de zender wil bereiken\n3. Relationeel aspect – de verhouding tussen zender en ontvanger\n4. Expressief aspect – wat de boodschap onthult over de zender zelf",
+      "geheugensteun": "ZARE: Zakelijk – Appellerend – Relationeel – Expressief"
+    },
+    {
+      "id": "F004",
+      "domein": "Functies van taal",
+      "type": "toepassing",
+      "voorkant": "Een leraar zegt chagrijnig: 'Raap dat potlood eens op.' Welk aspect maakt duidelijk dat de leraar dit niet zomaar constateert maar een opdracht geeft?",
+      "achterkant": "Het appellerende aspect – de leraar wil dat de leerling iets doet (het potlood oprapen).",
+      "geheugensteun": null
+    },
+    {
+      "id": "F005",
+      "domein": "Functies van taal",
+      "type": "cloze",
+      "voorkant": "In communicatie is er altijd sprake van een zender, een boodschap en een ontvanger. De reactie van de ontvanger op de boodschap noemt men [...].",
+      "achterkant": "Feedback",
+      "geheugensteun": null
+    },
+    {
+      "id": "F006",
+      "domein": "Systeem van taal",
+      "type": "definitie",
+      "voorkant": "Wat zijn de drie kernkenmerken van taal zoals omschreven in Portaal?",
+      "achterkant": "1. Taal heeft een functie (communiceren, conceptualiseren, expressie)\n2. Taal heeft een betekenis (semantisch aspect; verwijst naar een werkelijkheid)\n3. Taal heeft een systeem (klanken → tekens → woorden → zinnen)",
+      "geheugensteun": null
+    },
+    {
+      "id": "F007",
+      "domein": "Systeem van taal",
+      "type": "ordening",
+      "voorkant": "Noem de vier niveaus van het taalsysteem van klein naar groot.",
+      "achterkant": "1. Fonologie (spraakklanken: fonemen)\n2. Morfologie (vormleer: morfemen, woorden)\n3. Syntaxis (zinsbouw)\n4. Teksten (opbouw en taalgebruik)",
+      "geheugensteun": "FMST: Fonologie – Morfologie – Syntaxis – Teksten"
+    },
+    {
+      "id": "F008",
+      "domein": "Systeem van taal",
+      "type": "definitie",
+      "voorkant": "Wat is de kleinste eenheid bij gesproken taal en wat is de kleinste eenheid bij geschreven taal?",
+      "achterkant": "Gesproken taal: foneem (spraakklank)\nGeschreven taal: grafeem (letter)",
+      "geheugensteun": null
+    },
+    {
+      "id": "F009",
+      "domein": "Fonologie",
+      "type": "definitie",
+      "voorkant": "Wat zijn de drie categorieën klanken in de Nederlandse fonologie?",
+      "achterkant": "1. Klinkers (vocalen)\n2. Tweeklanken (diftongen) – twee klinkers die samen één klank vormen, bijv. 'ei'\n3. Medeklinkers (consonanten)",
+      "geheugensteun": null
+    },
+    {
+      "id": "F010",
+      "domein": "Fonologie",
+      "type": "definitie",
+      "voorkant": "Wat zijn bilabialen en geef twee voorbeelden?",
+      "achterkant": "Bilabialen zijn medeklinkers die gevormd worden met beide lippen. Voorbeelden: p, b, m, w.",
+      "geheugensteun": "Bi = twee, labiaal = lip"
+    },
+    {
+      "id": "F011",
+      "domein": "Fonologie",
+      "type": "definitie",
+      "voorkant": "Wat zijn labiodentalen en geef voorbeelden?",
+      "achterkant": "Labiodentalen worden gevormd met de onderlip en de boventanden. Voorbeelden: f, v.",
+      "geheugensteun": "Labio = lip, dentaal = tand"
+    },
+    {
+      "id": "F012",
+      "domein": "Fonologie",
+      "type": "definitie",
+      "voorkant": "Wat zijn dentalen en geef voorbeelden?",
+      "achterkant": "Dentalen worden gevormd met de tongpunt en het bovenste tandvlees. Voorbeelden: t, d, s, z, l, r, n.",
+      "geheugensteun": "Dentaal = tand"
+    },
+    {
+      "id": "F013",
+      "domein": "Fonologie",
+      "type": "definitie",
+      "voorkant": "Wat zijn palatalen en geef voorbeelden?",
+      "achterkant": "Palatalen worden gevormd met het tongblad en het harde gehemelte. Voorbeelden: tj, kj, sj, zj, j, nj.",
+      "geheugensteun": "Palataal = gehemelte (palatum)"
+    },
+    {
+      "id": "F014",
+      "domein": "Fonologie",
+      "type": "definitie",
+      "voorkant": "Wat zijn velaren en geef voorbeelden?",
+      "achterkant": "Velaren worden gevormd met het tongblad en de grens van het harde en zachte gehemelte. Voorbeelden: k, ch, g, ng.",
+      "geheugensteun": "Velum = het zachte verhemelte achterin de mond"
+    },
+    {
+      "id": "F015",
+      "domein": "Fonologie",
+      "type": "toepassing",
+      "voorkant": "Een leerling maakt de klanken p, b en m. Op welke manier vormt hij deze klanken en hoe noemt men deze categorie medeklinkers?",
+      "achterkant": "Hij vormt ze met beide lippen. Dit zijn bilabialen.",
+      "geheugensteun": null
+    },
+    {
+      "id": "F016",
+      "domein": "Fonologie",
+      "type": "definitie",
+      "voorkant": "Wat is assimilatie in de fonologie?",
+      "achterkant": "Assimilatie betekent dat spraakklanken invloed op elkaar uitoefenen. Voorbeeld: de 'v' in 'uitvinden' wordt uitgesproken als een 'f' doordat hij direct volgt op de stemloze 't'.",
+      "geheugensteun": null
+    },
+    {
+      "id": "F017",
+      "domein": "Morfologie",
+      "type": "definitie",
+      "voorkant": "Wat is een morfeem?",
+      "achterkant": "Een morfeem is de kleinste betekenisdragende eenheid van taal. Woorden zijn opgebouwd uit morfemen.",
+      "geheugensteun": null
+    },
+    {
+      "id": "F018",
+      "domein": "Morfologie",
+      "type": "contrast",
+      "voorkant": "Wat is het verschil tussen een vrij morfeem en een gebonden morfeem? Geef een voorbeeld van elk.",
+      "achterkant": "Vrij morfeem: kan zelfstandig als woord voorkomen. Voorbeeld: 'tuin'.\nGebonden morfeem: kan NIET zelfstandig voorkomen. Voorbeeld: '-tje' (verkleinwoord-uitgang).",
+      "geheugensteun": null
+    },
+    {
+      "id": "F019",
+      "domein": "Morfologie",
+      "type": "definitie",
+      "voorkant": "Wat is een prefix en wat is een suffix? Geef een voorbeeld van elk.",
+      "achterkant": "Prefix: een voorvoegsel dat vóór het woord staat. Voorbeeld: 'be-' in 'berijden'.\nSuffix: een achtervoegsel achter het woord. Voorbeeld: '-er' in 'schrijver'.",
+      "geheugensteun": "Pre = voor, suf = achter"
+    },
+    {
+      "id": "F020",
+      "domein": "Morfologie",
+      "type": "definitie",
+      "voorkant": "Wat verstaat men onder 'uitgangen' in de morfologie?",
+      "achterkant": "Uitgangen zijn verbogen of vervoegde vormen: vervoeging van werkwoorden (bijv. werk-t) en verbuiging van naamwoorden (bijv. mooi-e, leuk-st).",
+      "geheugensteun": null
+    },
+    {
+      "id": "F021",
+      "domein": "Syntaxis",
+      "type": "definitie",
+      "voorkant": "Wat is redekundige ontleding?",
+      "achterkant": "Redekundige ontleding is de analyse van een zin waarbij de zinsdelen worden benoemd naar hun grammaticale functie (bijv. onderwerp, gezegde, lijdend voorwerp).",
+      "geheugensteun": null
+    },
+    {
+      "id": "F022",
+      "domein": "Syntaxis",
+      "type": "opsomming",
+      "voorkant": "Noem zes zinsdelen die bij redekundige ontleding kunnen worden onderscheiden.",
+      "achterkant": "1. Onderwerp\n2. Gezegde\n3. Lijdend voorwerp\n4. Meewerkend voorwerp\n5. Voorzetselvoorwerp\n6. Bijwoordelijke bepaling\n(ook: oorzakelijk voorwerp, bepaling van gesteldheid)",
+      "geheugensteun": null
+    },
+    {
+      "id": "F023",
+      "domein": "Semantiek",
+      "type": "definitie",
+      "voorkant": "Wat is polysemie? Geef een voorbeeld.",
+      "achterkant": "Polysemie = hetzelfde woord heeft in verschillende contexten een andere betekenisnuance, maar verwijst nog wel naar dezelfde algemene betekenis.\nVoorbeeld: 'geld' (munten in je portemonnee / financiële middelen / verschijningsvorm van valuta).",
+      "geheugensteun": "Poly = veel, seme = betekenis"
+    },
+    {
+      "id": "F024",
+      "domein": "Semantiek",
+      "type": "contrast",
+      "voorkant": "Wat is het verschil tussen homoniemen en synoniemen?",
+      "achterkant": "Homoniemen: woorden met dezelfde klank én schrijfwijze maar een volledig ANDERE, niet-verwante betekenis. Voorbeeld: 'bank' (meubel vs. financiële instelling).\nSynoniemen: woorden met een VERSCHILLENDE klankvorm maar DEZELFDE betekenis. Voorbeeld: 'fiets' en 'rijwiel'.",
+      "geheugensteun": null
+    },
+    {
+      "id": "F025",
+      "domein": "Semantiek",
+      "type": "toepassing",
+      "voorkant": "Het woord 'bank' verwijst zowel naar een meubel als naar een financiële instelling. Zijn dit voorbeelden van homoniemen of polysemie?",
+      "achterkant": "Homoniemen – de twee betekenissen van 'bank' hebben géén verwante, gemeenschappelijke kern; het zijn toevallig gelijke klanken met een ongerelateerde betekenis.",
+      "geheugensteun": "Polysemie = nuanceverschil BINNEN verwante betekenissen. Homoniemen = totaal onverwante betekenissen."
+    },
+    {
+      "id": "F026",
+      "domein": "Semantiek",
+      "type": "definitie",
+      "voorkant": "Wat zijn connotaties van een woord?",
+      "achterkant": "Connotaties zijn de bijbetekenissen van een woord. Ze zijn afhankelijk van cultuur, persoonlijke interesses en kennis van de wereld, en geven gezamenlijk inhoud aan het begrip.",
+      "geheugensteun": null
+    },
+    {
+      "id": "F027",
+      "domein": "Semantiek",
+      "type": "contrast",
+      "voorkant": "Wat is het verschil tussen denotatie en connotatie?",
+      "achterkant": "Denotatie = de letterlijke woordenboekbetekenis van een woord (objectief).\nConnotatie = de emotionele bijbetekenis of associatie die een woord heeft (subjectief, cultureel bepaald).",
+      "geheugensteun": null
+    },
+    {
+      "id": "F028",
+      "domein": "Semantiek",
+      "type": "definitie",
+      "voorkant": "Wat zijn lexicale woorden?",
+      "achterkant": "Lexicale woorden zijn woorden met een eigen, zelfstandige betekenis die niet afhankelijk is van de context. Ze zijn opzoekbaar in een woordenboek. Voorbeeld: 'stoel', 'auto'.",
+      "geheugensteun": "Lexicaal = van het lexicon (woordenschat)"
+    },
+    {
+      "id": "F029",
+      "domein": "Semantiek",
+      "type": "definitie",
+      "voorkant": "Wat is een antecedent?",
+      "achterkant": "Een antecedent is datgene waarnaar een woord of uitdrukking verwijst. Afhankelijke betekenis is alleen begrijpelijk als het antecedent bekend is uit de context of eerder in het gesprek is genoemd.",
+      "geheugensteun": null
+    },
+    {
+      "id": "F030",
+      "domein": "Componenten van taalkennis",
+      "type": "opsomming",
+      "voorkant": "Noem de zeven componenten van taalkennis zoals beschreven in Portaal.",
+      "achterkant": "1. Fonologische component (klanken)\n2. Semantische component (betekenis van woorden en zinnen)\n3. Morfologische component (opbouw van woorden)\n4. Grammaticale/syntactische component (vorm van zinnen)\n5. Tekstuele component (structuur van teksten)\n6. Pragmatische component (functies van taal / taalgebruik)\n7. Orthografie (schriftelijke weergave / spelling)",
+      "geheugensteun": "FSMGTPO"
+    },
+    {
+      "id": "F031",
+      "domein": "Visies op taalonderwijs",
+      "type": "definitie",
+      "voorkant": "Wat zijn de kenmerken van het traditionele taalonderwijs?",
+      "achterkant": "Nadruk op schriftelijke vaardigheden en vormaspecten. Grammatica en spelling staan centraal. De leraar is kennisoverdrager. Vaardigheden worden geïsoleerd aangeleerd.\nVoordeel: overzichtelijk.\nNadeel: oneven aandacht; mondelinge vaardigheden onderbelicht.",
+      "geheugensteun": null
+    },
+    {
+      "id": "F032",
+      "domein": "Visies op taalonderwijs",
+      "type": "definitie",
+      "voorkant": "Wat is het uitgangspunt van het thematisch-cursorisch taalonderwijs?",
+      "achterkant": "Kinderen leren taal door het te gebruiken. Er zijn twee soorten activiteiten:\n- Thematisch (bijv. poster maken; leerling is zelf actief, leraar begeleidt)\n- Cursorisch (bijv. technisch lezen; leraar stuurt het leerproces)\nVoordeel: zinvolle activiteiten. Nadeel: balans vinden kost tijd.",
+      "geheugensteun": null
+    },
+    {
+      "id": "F033",
+      "domein": "Visies op taalonderwijs",
+      "type": "definitie",
+      "voorkant": "Wat houdt de visie 'taal bij alle vakken' in?",
+      "achterkant": "Taal is meer dan een leerdoel op zich; het is een middel om te leren. De leraar stimuleert interactie en denkprocessen bij alle vakken (bijv. natuur, geschiedenis).\nVoordeel: leesstrategieën worden ook bij andere vakken ingezet.\nNadeel: de systematiek van taal leren kan onder druk komen.",
+      "geheugensteun": null
+    },
+    {
+      "id": "F034",
+      "domein": "Visies op taalonderwijs",
+      "type": "definitie",
+      "voorkant": "Wat is het communicatief taalonderwijs?",
+      "achterkant": "Niet grammaticale correctheid staat centraal, maar het succesvol overbrengen van de boodschap (communicatie). Leraren creëren reële communicatieve situaties.\nVoordeel: motiverend door herkenbare situaties.\nNadeel: situaties kunnen gekunsteld worden.",
+      "geheugensteun": null
+    },
+    {
+      "id": "F035",
+      "domein": "Visies op taalonderwijs",
+      "type": "definitie",
+      "voorkant": "Wat is strategisch taalonderwijs?",
+      "achterkant": "Leerlingen leren metacognitieve stappenplannen en strategieën om greep te krijgen op taal.\nVoordeel: leerlingen krijgen een middel om greep op taal te krijgen.\nNadeel: te rigide gebruik van stappenplannen kan demotiverend zijn.",
+      "geheugensteun": null
+    },
+    {
+      "id": "F036",
+      "domein": "Visies op taalonderwijs",
+      "type": "definitie",
+      "voorkant": "Wat is taakgericht taalonderwijs en wat is de rol van de 'kloof'?",
+      "achterkant": "Onderwijs vertrekt vanuit taken die leerlingen inhoudelijk interessant vinden. In de taak is een 'kloof' ingebouwd: een taalkundig probleem dat leerlingen moeten overbruggen om het taakdoel te bereiken. Dit stimuleert verwerving van academisch taalgebruik.\nVoordeel: motiverend. Nadeel: kan gekunsteld worden.",
+      "geheugensteun": null
+    },
+    {
+      "id": "F037",
+      "domein": "Visies op taalonderwijs",
+      "type": "toepassing",
+      "voorkant": "Een leraar laat leerlingen een maquette van een dorp bouwen en beschrijven voor een bezoekende wethouder. Ze moeten hierbij specifieke zakelijke taal gebruiken die ze nog niet volledig beheersen. Welke visie op taalonderwijs past hier het best bij?",
+      "achterkant": "Taakgericht taalonderwijs – de 'kloof' (de vereiste zakelijke taal) moet worden overbrugd om de taak (presentatie aan de wethouder) te volbrengen.",
+      "geheugensteun": null
+    },
+    {
+      "id": "F038",
+      "domein": "Visies op taalonderwijs",
+      "type": "definitie",
+      "voorkant": "Noem drie van de tien uitgangspunten van het interactief taalonderwijs.",
+      "achterkant": "Keuze uit:\n1. Taalontwikkeling is een emancipatorisch proces\n2. Taalontwikkeling is een sociaal proces\n3. Aandacht voor coöperatief leren\n4. Taalontwikkeling is een actief proces\n5. Metacognitie is belangrijk\n6. Wederkerend onderwijs\n7. Flexibel onderwijsrepertoire\n8. Adaptieve instructie\n9. Effectieve schoolorganisatie\n10. Afstemming school, buurt, gezin",
+      "geheugensteun": null
+    },
+    {
+      "id": "F039",
+      "domein": "Visies op taalonderwijs",
+      "type": "definitie",
+      "voorkant": "Welke drie pijlers heeft de krachtige leeromgeving in het interactief taalonderwijs?",
+      "achterkant": "1. Authentiek (betekenisvol) leren\n2. Sociaal leren (coöperatief, in interactie met anderen)\n3. Strategisch leren (metacognitie, reflectie)",
+      "geheugensteun": null
+    },
+    {
+      "id": "F040",
+      "domein": "Didactiek taalonderwijs",
+      "type": "contrast",
+      "voorkant": "Wat is het verschil tussen een instructieve leersituatie en een constructieve leersituatie?",
+      "achterkant": "Instructieve leersituatie: directe instructie door de leraar gevolgd door oefeningen. De leraar draagt kennis over.\nConstructieve leersituatie: de leraar gaat in op leervragen van leerlingen via 'ankers' (rijke probleemcontexten) en 'routines' (terugkerende herkenbare leersituaties).",
+      "geheugensteun": null
+    },
+    {
+      "id": "F041",
+      "domein": "Didactiek taalonderwijs",
+      "type": "definitie",
+      "voorkant": "Wat is een 'anker' in de context van constructieve leersituaties?",
+      "achterkant": "Een anker is een rijke, probleemgeoriënteerde context die fungeert als gemeenschappelijke kennisbron en aanzet tot nieuwe probleemverkenning. Voorbeelden: een uitstapje, een film, een verhaal, een thema.",
+      "geheugensteun": null
+    },
+    {
+      "id": "F042",
+      "domein": "Didactiek taalonderwijs",
+      "type": "definitie",
+      "voorkant": "Wat is een 'routine' in de context van constructieve leersituaties?",
+      "achterkant": "Een routine is een terugkerende, vaststaande en herkenbare leersituatie die aanzet tot communicatie en zo leidt tot betekenisvolle taalactiviteiten. Voorbeelden: steeds hetzelfde boek voorlezen, een woordveld maken bij een nieuw thema.",
+      "geheugensteun": null
+    },
+    {
+      "id": "F043",
+      "domein": "Inhoud taalonderwijs",
+      "type": "contrast",
+      "voorkant": "Wat is het verschil tussen culturele vaardigheden en natuurlijke vaardigheden in het taalonderwijs?",
+      "achterkant": "Culturele vaardigheden (schrijven en lezen): moeten systematisch en expliciet worden aangeleerd.\nNatuurlijke vaardigheden (spreken en luisteren): leert elk kind onbewust en vanzelf door opgroeien in een talige omgeving.",
+      "geheugensteun": null
+    },
+    {
+      "id": "F044",
+      "domein": "Evaluatie taalonderwijs",
+      "type": "definitie",
+      "voorkant": "Wat zijn de vier evaluatieniveaus in het taalonderwijs en voor welke betrokkenen zijn ze bedoeld?",
+      "achterkant": "Macro: inspectieverslag, PIRLS → politiek, beleidsmakers\nMeso: leerlingenvolgsysteem, Cito-toetsen → directie, intern begeleider, taalcoördinator\nMicro: methodeafhankelijke en -onafhankelijke toetsen, portfolio → groepsleraar\nNano: individueel onderzoek, protocol dyslexie → groepsleraar, remedial teacher",
+      "geheugensteun": null
+    },
+    {
+      "id": "F045",
+      "domein": "Taalverwerving – eerste taal",
+      "type": "definitie",
+      "voorkant": "Wat stelt het behaviorisme over taalverwerving?",
+      "achterkant": "Taalverwerving verloopt via imitatie, bekrachtiging (positieve feedback) en conditionering (beloning van goed gedrag). De omgeving stuurt het leerproces volledig.",
+      "geheugensteun": "Skinner = behaviorisme = stimulus-respons"
+    },
+    {
+      "id": "F046",
+      "domein": "Taalverwerving – eerste taal",
+      "type": "definitie",
+      "voorkant": "Wat stelt het nativisme over taalverwerving?",
+      "achterkant": "Kinderen bezitten een aangeboren taalverwervingsmechanisme (Language Acquisition Device). Ze stellen zelf actief grammaticale regels op op basis van gehoorde taal. Taalverwerving is dus meer dan imitatie – het is soortspecifiek voor mensen.",
+      "geheugensteun": "Chomsky = nativisme = aangeboren taalvermogen"
+    },
+    {
+      "id": "F047",
+      "domein": "Taalverwerving – eerste taal",
+      "type": "toepassing",
+      "voorkant": "Een kind van 3 jaar zegt 'hij loopte' in plaats van 'hij liep'. Welk taalverwervingsverschijnsel illustreert dit?",
+      "achterkant": "Overgeneralisatie – het kind past de reguliere regel voor de verleden tijd (-te/-de) ook toe op sterke werkwoorden die een eigen onregelmatige vorm hebben. Dit bewijst dat het kind zelf regels construeert (nativisme).",
+      "geheugensteun": null
+    },
+    {
+      "id": "F048",
+      "domein": "Taalverwerving – eerste taal",
+      "type": "definitie",
+      "voorkant": "Wat stelt de interactionele benadering van taalverwerving?",
+      "achterkant": "Kinderen hebben een aangeboren taalleervermogen, maar dit kan alleen tot bloei komen in combinatie met voldoende en kwalitatief goed taalaanbod, gerichte interactie en feedback vanuit de omgeving. Aanleg en omgeving werken samen.",
+      "geheugensteun": null
+    },
+    {
+      "id": "F049",
+      "domein": "Taalverwerving – eerste taal",
+      "type": "definitie",
+      "voorkant": "Wat houdt de 'kritische periode' bij taalverwerving in?",
+      "achterkant": "De kritische periode loopt van de geboorte tot ongeveer 7 jaar. In deze periode is het brein sterk gericht op het verwerven van taal. Na deze periode verloopt taalverwerving moeizamer.",
+      "geheugensteun": null
+    },
+    {
+      "id": "F050",
+      "domein": "Taalverwerving – fasen",
+      "type": "ordening",
+      "voorkant": "Noem de vier fasen van de taalverwerving in chronologische volgorde.",
+      "achterkant": "1. Prelinguale fase (vóór de eerste woorden)\n2. Vroeglinguale fase (eerste woorden; symboolbewustzijn)\n3. Differentiatiefase (regels verwerven, meer woordsoorten, fouten maken)\n4. Voltooiingsfase (verfijning grammatica; school speelt grote rol)",
+      "geheugensteun": "PVDV: Pre – Vroeg – Differentiatie – Voltooiing"
+    },
+    {
+      "id": "F051",
+      "domein": "Taalverwerving – fasen",
+      "type": "definitie",
+      "voorkant": "Wat gebeurt er in de prelinguale fase? Noem de vier subfasen.",
+      "achterkant": "1. Huilen (0-6 weken) – eerste communicatie\n2. Vocaliseren (6-20 weken) – eenvoudige klanken zoals 'u' en 'a'\n3. Vocaal spel (4-6 maanden)\n4. Brabbelen (vanaf 7 maanden) – klankcombinaties met klinker-medeklinkerpatroon die verdubbeld worden, bijv. 'baba', 'dada'",
+      "geheugensteun": null
+    },
+    {
+      "id": "F052",
+      "domein": "Taalverwerving – fasen",
+      "type": "toepassing",
+      "voorkant": "In welke fase van de taalverwerving begint een kind met het vormen van klankcombinaties zoals 'baba' of 'mama'?",
+      "achterkant": "De prelinguale fase – specifiek de brabbelfase (vanaf 7 maanden). Het kind herhaalt klinker-medeklinkerpatronen.",
+      "geheugensteun": null
+    },
+    {
+      "id": "F053",
+      "domein": "Taalverwerving – fasen",
+      "type": "definitie",
+      "voorkant": "Wat is symboolbewustzijn en in welke fase ontwikkelt het zich?",
+      "achterkant": "Symboolbewustzijn is het besef dat een woord (klank) staat voor een ding of persoon in de werkelijkheid. Het ontwikkelt zich in de vroeglinguale fase, wanneer het kind zijn eerste woorden uitspreekt.",
+      "geheugensteun": null
+    },
+    {
+      "id": "F054",
+      "domein": "Taalverwerving – fasen",
+      "type": "definitie",
+      "voorkant": "Wat kenmerkt de differentiatiefase in de taalverwerving?",
+      "achterkant": "In de differentiatiefase worden de grammaticale componenten steeds verder verworven. Kinderen maken 'noodzakelijke fouten' die horen bij het internaliseren van het regelsysteem. De zinnen worden langer (van één- naar meerwoordszinnen).",
+      "geheugensteun": null
+    },
+    {
+      "id": "F055",
+      "domein": "Taalverwerving – componenten",
+      "type": "definitie",
+      "voorkant": "Wat is het verschil tussen passieve (receptieve) en actieve (productieve) woordenschat?",
+      "achterkant": "Passieve/receptieve woordenschat: woorden die een kind begrijpt maar niet zelf gebruikt.\nActieve/productieve woordenschat: woorden die een kind zelf spreekt of schrijft.\nDe passieve woordenschat is altijd groter dan de actieve.",
+      "geheugensteun": null
+    },
+    {
+      "id": "F056",
+      "domein": "Taalverwerving – componenten",
+      "type": "definitie",
+      "voorkant": "Wat zijn neologismen in de context van kindertaalverwerving?",
+      "achterkant": "Neologismen zijn zelfbedachte nieuwe woorden die kinderen gebruiken wanneer ze het bestaande woord voor iets nog niet kennen. Kinderen bedenken zelf een klank of combinatie om iets duidelijk te maken.",
+      "geheugensteun": null
+    },
+    {
+      "id": "F057",
+      "domein": "Taalverwerving – componenten",
+      "type": "ordening",
+      "voorkant": "In welke volgorde verlopen de syntactische fasen bij de verwerving van de zinsbouw?",
+      "achterkant": "1. Eenwoordszin (1 tot 1,5 jaar)\n2. Tweewoordszin (tot 2,5 jaar)\n3. Meerwoordszin (tot 3 jaar)\nNa de tweewoordszin wordt grammatica steeds complexer.",
+      "geheugensteun": null
+    },
+    {
+      "id": "F058",
+      "domein": "Taalverwerving – tweede taal",
+      "type": "definitie",
+      "voorkant": "Wat stelt de interferentietheorie over tweede-taalverwerving?",
+      "achterkant": "Fouten bij het leren van een tweede taal ontstaan doordat de leerling onbewust grammaticale regels uit de moedertaal toepast op de nieuwe taal. Voorbeeld: het weglaten van lidwoorden als de moedertaal geen lidwoorden kent.",
+      "geheugensteun": null
+    },
+    {
+      "id": "F059",
+      "domein": "Taalverwerving – tweede taal",
+      "type": "definitie",
+      "voorkant": "Wat stelt de universalistische theorie over tweede-taalverwerving?",
+      "achterkant": "NT2-leerders gebruiken hetzelfde aangeboren taalleervermogen en verwerven Nederlands globaal op dezelfde manier als kinderen voor wie Nederlands de moedertaal is. De verwervingsvolgorde is universeel.",
+      "geheugensteun": null
+    },
+    {
+      "id": "F060",
+      "domein": "Taalverwerving – tweede taal",
+      "type": "contrast",
+      "voorkant": "Wat is het verschil tussen de interferentietheorie en de universalistische theorie bij tweede-taalverwerving?",
+      "achterkant": "Interferentietheorie: fouten komen door transfer van moedertaalregels naar de nieuwe taal.\nUniversalistische theorie: NT2-verwerving volgt dezelfde universele patronen als eerstetaalverwerving; de moedertaal speelt een ondergeschikte rol.",
+      "geheugensteun": null
+    },
+    {
+      "id": "F061",
+      "domein": "Taalverwerving – tweede taal",
+      "type": "definitie",
+      "voorkant": "Wat is tweetalige opvoeding?",
+      "achterkant": "Bij tweetalige opvoeding lopen het aanbod en de verwerving van beide talen parallel. Het kind krijgt in beide talen voldoende aanbod om ze beide volledig te ontwikkelen.",
+      "geheugensteun": null
+    },
+    {
+      "id": "F062",
+      "domein": "Taalverwerving – tweede taal",
+      "type": "feit",
+      "voorkant": "Wat is de woordenschatkloof tussen moedertaalsprekers en anderstalige leerlingen aan het einde van de basisschool?",
+      "achterkant": "Aan het einde van de basisschool kennen moedertaalsprekers gemiddeld 17.000 woorden, terwijl anderstalige leerlingen gemiddeld slechts 9.800 woorden kennen.",
+      "geheugensteun": null
+    },
+    {
+      "id": "F063",
+      "domein": "Taalverwerving – tweede taal",
+      "type": "definitie",
+      "voorkant": "Wat zijn interferentiefouten bij de syntactische component van NT2-leerders?",
+      "achterkant": "Interferentiefouten zijn fouten in de zinsbouw die ontstaan doordat de leerling regels van zijn moedertaal toepast in het Nederlands. Voorbeeld: een andere woordvolgorde gebruiken dan in het Nederlands standaard is.",
+      "geheugensteun": null
+    },
+    {
+      "id": "F064",
+      "domein": "Taalverwerving – lezen en schrijven",
+      "type": "definitie",
+      "voorkant": "Wat is het verschil tussen mondeling taalaanbod en schriftelijk taalaanbod (voorlezen) voor jonge kinderen?",
+      "achterkant": "Bij voorlezen: woorden worden gekoppeld aan tweedimensionale afbeeldingen, en de taal van de schrijver is often rijker/anders dan de dagelijkse spreektaal. Kinderen leren zo woorden die ze via mondeling contact nooit zouden horen.",
+      "geheugensteun": null
+    },
+    {
+      "id": "F065",
+      "domein": "Taalverwerving – lezen en schrijven",
+      "type": "definitie",
+      "voorkant": "Wat betekent 'concentrisch leren' in het taalonderwijs?",
+      "achterkant": "Concentrisch leren betekent dat je taal niet in een vaste lineaire volgorde leert, maar steeds dieper op dezelfde stof ingaat: dezelfde strategieën bij moeilijkere teksten, of complexere strategieën bij vergelijkbare teksten.",
+      "geheugensteun": null
+    },
+    {
+      "id": "F066",
+      "domein": "Woordenschat – begrippen",
+      "type": "definitie",
+      "voorkant": "Wat is het mentale lexicon?",
+      "achterkant": "Het mentale lexicon is het interne geheugennetwerk waarin woorden zijn opgeslagen. Woorden worden niet als losse elementen bewaard, maar in netwerken van woorden die op de een of andere manier bij elkaar horen (semantisch, morfologisch, syntactisch).",
+      "geheugensteun": null
+    },
+    {
+      "id": "F067",
+      "domein": "Woordenschat – begrippen",
+      "type": "definitie",
+      "voorkant": "In welke twee richtingen kan de woordenschat zich uitbreiden?",
+      "achterkant": "1. Verbreden: steeds meer nieuwe woorden bijleren (bijv. schaatsen → voetballen → golfen).\n2. Verdiepen: steeds meer betekenisverbindingen bij bestaande woorden (bijv. 'bridgen' → bieden, sans, dummie).",
+      "geheugensteun": null
+    },
+    {
+      "id": "F068",
+      "domein": "Woordenschat – begrippen",
+      "type": "contrast",
+      "voorkant": "Wat is het verschil tussen inhoudswoorden en functiewoorden?",
+      "achterkant": "Inhoudswoorden: woorden met een eigen, opzoekbare betekenis in het woordenboek; de bouwstenen van een zin. Voorbeeld: 'lopen', 'huis'.\nFunctiewoorden: woorden die uitsluitend een grammaticale functie hebben en relaties leggen tussen woorden. Voorbeeld: 'de', 'op', 'omdat'.",
+      "geheugensteun": null
+    },
+    {
+      "id": "F069",
+      "domein": "Woordenschat – begrippen",
+      "type": "contrast",
+      "voorkant": "Wat is het verschil tussen dagelijkse woorden en schooltaalwoorden?",
+      "achterkant": "Dagelijkse woorden (omgangstaal): woorden die in alledaagse communicatie worden gebruikt.\nSchooltaalwoorden: enerzijds vakspecifieke woorden, anderzijds woorden die voornamelijk op school worden gebruikt om te leren. Schooltaalwoorden zijn vaak abstracter en contextarmer.",
+      "geheugensteun": null
+    },
+    {
+      "id": "F070",
+      "domein": "Woordenschat – begrippen",
+      "type": "definitie",
+      "voorkant": "Wat is het Mattheuseffect in de woordenschatontwikkeling?",
+      "achterkant": "Kinderen met een grote woordenschat lezen meer, en door meer te lezen leren ze nóg meer nieuwe woorden. De kloof tussen rijke en arme woordenschat wordt zo steeds groter: 'wie heeft, die krijgt.'",
+      "geheugensteun": "Naar Mattheüs 25:29: 'Wie heeft, zal nog meer gegeven worden.'"
+    },
+    {
+      "id": "F071",
+      "domein": "Woordenschat – begrippen",
+      "type": "definitie",
+      "voorkant": "Wat is creatieve woordkennis?",
+      "achterkant": "Creatieve woordkennis is het vermogen om woorden op een speciale, niet-letterlijke manier toe te passen, zoals in humor, dubbelzinnigheden of ironie.",
+      "geheugensteun": null
+    },
+    {
+      "id": "F072",
+      "domein": "Woordenschat – begrippen",
+      "type": "contrast",
+      "voorkant": "Wat is het verschil tussen concrete woorden en abstracte woorden?",
+      "achterkant": "Concrete woorden: de betekenis is te koppelen aan een visueel beeld. Voorbeeld: 'stoel', 'lopen'.\nAbstracte woorden: de betekenis moet omschreven worden en is niet direct visueel voor te stellen. Voorbeeld: 'verdriet', 'abstraheren'.",
+      "geheugensteun": null
+    },
+    {
+      "id": "F073",
+      "domein": "Woordenschat – begrippen",
+      "type": "definitie",
+      "voorkant": "Wat is idioom in taalkundig opzicht?",
+      "achterkant": "Idioom zijn vaste combinaties van woorden (meer-woord-woorden) waarvan de betekenis meer is dan de som van de losse elementen. Ze zijn niet letterlijk te interpreteren. Voorbeeld: 'de hond in de pot vinden', 'af en toe', 'een hekel hebben aan'.",
+      "geheugensteun": null
+    },
+    {
+      "id": "F074",
+      "domein": "Woordenschat – didactiek",
+      "type": "ordening",
+      "voorkant": "Noem de vier fasen van de Viertakt van Verhallen in de juiste volgorde.",
+      "achterkant": "1. Voorbewerken – rijke leeromgeving inrichten, voorkennis activeren\n2. Semantiseren (aanbieden) – betekenis geven via de 'drie uitjes'\n3. Consolideren – woorden herhalen in nieuwe contexten\n4. Controleren – toetsen of de woorden zijn verworven",
+      "geheugensteun": "VSCK: Voorbewerken – Semantiseren – Consolideren – Controleren"
+    },
+    {
+      "id": "F075",
+      "domein": "Woordenschat – didactiek",
+      "type": "definitie",
+      "voorkant": "Wat zijn de 'drie uitjes' bij de semantiseringsfase van woordenschatonderwijs?",
+      "achterkant": "1. Uitbeelden – woorden visueel of fysiek zichtbaar maken (plaatjes, voorwerpen, gebaren)\n2. Uitleggen – het woord talig uitleggen in contextzinnen\n3. Uitbreiden – het woord plaatsen in een woordcluster/woordweb om het semantisch netwerk te versterken",
+      "geheugensteun": "De drie UIT-jes: Uitbeelden – Uitleggen – Uitbreiden"
+    },
+    {
+      "id": "F076",
+      "domein": "Woordenschat – didactiek",
+      "type": "toepassing",
+      "voorkant": "Een leraar toont een kompas bij het woord 'navigeren' (uitbeelden), geeft een definitie (uitleggen) en plaatst het in een woordweb bij 'reizen' (uitbreiden). In welke fase van de Viertakt van Verhallen bevindt de leraar zich?",
+      "achterkant": "Fase 2: Semantiseren",
+      "geheugensteun": null
+    },
+    {
+      "id": "F077",
+      "domein": "Woordenschat – didactiek",
+      "type": "definitie",
+      "voorkant": "Wat is het doel van de consolidatiefase bij woordenschatonderwijs?",
+      "achterkant": "Woorden worden herhaaldelijk in steeds nieuwe contexten aangeboden zodat de betekenis beklijft. Eerst wordt de passieve kennis geoefend, dan de actieve beheersing. Dit bevordert de overgang van receptieve naar productieve woordenschat.",
+      "geheugensteun": null
+    },
+    {
+      "id": "F078",
+      "domein": "Woordenschat – didactiek",
+      "type": "contrast",
+      "voorkant": "Wat is het verschil tussen een methodeafhankelijke en een methodeonafhankelijke woordenschattoets?",
+      "achterkant": "Methodeafhankelijke toets: meet wat leerlingen van de specifieke lessen hebben onthouden.\nMethodeonafhankelijke toets: vergelijkt de woordenschatontwikkeling van een leerling met die van andere kinderen (normeringstoets).",
+      "geheugensteun": null
+    },
+    {
+      "id": "F079",
+      "domein": "Woordenschat – didactiek",
+      "type": "definitie",
+      "voorkant": "Wat is intentioneel woordenschatonderwijs en wat is incidenteel woordleren?",
+      "achterkant": "Intentioneel: woorden worden doelbewust en gestructureerd aangeleerd door de leerkracht (woordenschatlessen).\nIncidenteel: woorden worden onbewust en onbedoeld opgepikt in een rijke taalomgeving (bijv. door veel te lezen).",
+      "geheugensteun": null
+    },
+    {
+      "id": "F080",
+      "domein": "Jeugdliteratuur – begrippen",
+      "type": "definitie",
+      "voorkant": "Wat is het vertelperspectief (vertelinstantie) en geef twee voorbeelden?",
+      "achterkant": "Het vertelperspectief is het gezichtspunt vanuit welk het verhaal wordt verteld.\nVoorbeelden: ik-perspectief (de verteller is een personage), hij-perspectief (externe verteller).",
+      "geheugensteun": null
+    },
+    {
+      "id": "F081",
+      "domein": "Jeugdliteratuur – begrippen",
+      "type": "definitie",
+      "voorkant": "Wat is het auctoriale perspectief?",
+      "achterkant": "Het auctoriale perspectief is de alwetende verteller: deze weet alles over alle personages, ook hun gedachten en gevoelens.",
+      "geheugensteun": "Auctor = auteur/schepper = weet alles"
+    },
+    {
+      "id": "F082",
+      "domein": "Jeugdliteratuur – begrippen",
+      "type": "definitie",
+      "voorkant": "Wat is het verschil tussen 'anticiperen' en 'flashback' in de narratieve structuur?",
+      "achterkant": "Anticiperen: vooruitlopen in de tijd (prolepsis) – een hint of vooruitwijzing naar wat nog gaat gebeuren.\nFlashback: terugblikken in de tijd (analepsis) – een terugkeer naar eerder gebeurde gebeurtenissen.",
+      "geheugensteun": null
+    },
+    {
+      "id": "F083",
+      "domein": "Jeugdliteratuur – begrippen",
+      "type": "definitie",
+      "voorkant": "Wat is het verschil tussen vertelde tijd en verteltijd?",
+      "achterkant": "Vertelde tijd: het tijdsverloop dat in het verhaal wordt beschreven (bijv. een jaar).\nVerteltijd: de feitelijke lees- of voorleestijd (bijv. 20 minuten).\nVoor kleuters geldt: hoe jonger, hoe liever vertelde tijd ≈ verteltijd.",
+      "geheugensteun": null
+    },
+    {
+      "id": "F084",
+      "domein": "Jeugdliteratuur – begrippen",
+      "type": "contrast",
+      "voorkant": "Wat is het verschil tussen een onderwerp, een thema en een motief in een literair werk?",
+      "achterkant": "Onderwerp: concreet en specifiek (bijv. 'een vluchtelingenjongen').\nThema: de abstracte grondgedachte in een werk (bijv. 'eenzaamheid en hoop').\nMotief: een terugkerend element dat voortkomt uit het thema en het handelingsverloop bepaalt.",
+      "geheugensteun": null
+    },
+    {
+      "id": "F085",
+      "domein": "Jeugdliteratuur – begrippen",
+      "type": "definitie",
+      "voorkant": "Wat zijn non-fictie of referentiële boeken?",
+      "achterkant": "Non-fictie of referentiële boeken zijn informatieve boeken die verwijzen naar de werkelijkheid. Ze behoren feitelijk juist te zijn. Voorbeelden: informatieve boeken over geschiedenis, biologie, uitvindingen.",
+      "geheugensteun": null
+    },
+    {
+      "id": "F086",
+      "domein": "Jeugdliteratuur – niveaus",
+      "type": "definitie",
+      "voorkant": "Wat houdt het AVI-systeem in en waar is het op gebaseerd?",
+      "achterkant": "Het AVI-systeem (Analyse van Individualiseringsvormen) deelt boeken in naar leestechnisch niveau. Het is gebaseerd op de gemiddelde woord- en zinslengte van teksten. Het nieuwe systeem kent 12 niveaus (AVI-start t/m AVI-plus).",
+      "geheugensteun": null
+    },
+    {
+      "id": "F087",
+      "domein": "Jeugdliteratuur – niveaus",
+      "type": "cloze",
+      "voorkant": "In het nieuwe AVI-systeem staat de 'M' voor [...] en de 'E' voor [...] van een groep.",
+      "achterkant": "M = gemiddeld leesniveau (midden) van een groep.\nE = gemiddeld eindniveau van een groep.",
+      "geheugensteun": null
+    },
+    {
+      "id": "F088",
+      "domein": "Jeugdliteratuur – niveaus",
+      "type": "definitie",
+      "voorkant": "Wat meet de CILT en hoe verschilt dat van AVI?",
+      "achterkant": "CILT = Cito Index voor de Leestechniek. De CILT bepaalt de moeilijkheidsgraad van teksten voor de nieuwe AVI-toetsing. AVI meet het leesniveau van het kind (via toets); CILT meet de moeilijkheidsgraad van de tekst zelf.",
+      "geheugensteun": null
+    },
+    {
+      "id": "F089",
+      "domein": "Jeugdliteratuur – niveaus",
+      "type": "definitie",
+      "voorkant": "Wat staan de letters L, A en T voor op het vignet van de Leeslat?",
+      "achterkant": "L = Leeservaringsschaal\nA = AVI (leestechnisch niveau)\nT = Thema",
+      "geheugensteun": null
+    },
+    {
+      "id": "F090",
+      "domein": "Jeugdliteratuur – niveaus",
+      "type": "definitie",
+      "voorkant": "Wat zijn de drie boekenniveaus A, B en C in de jeugdliteratuur gebaseerd op?",
+      "achterkant": "Op de technische moeilijkheidsgraad van de teksten én op de emotionele inhoud van het verhaal.\nA: tot ± 9 jaar (voorleesboeken + eerste zelfleesboeken)\nB: 9-12 jaar\nC: voortgezet onderwijs / 11-13+ jaar (levensvragen, adolescentenromans)",
+      "geheugensteun": null
+    },
+    {
+      "id": "F091",
+      "domein": "Jeugdliteratuur – indelingen",
+      "type": "ordening",
+      "voorkant": "Noem de vijf stadia in de leesontwikkeling van Charlotte Bühler (1926) met bijbehorende leeftijden.",
+      "achterkant": "1. Piet de Smeerpoets-fase: dagelijkse omgeving (2-4 jaar)\n2. Sprookjesleeftijd: fantastische verhalen (4-10 jaar)\n3. Robinson-leeftijd: realistische verhalen (8-12 jaar)\n4. Helden-leeftijd (12-15 jaar)\n5. Lyrische roman-leeftijd (vanaf 15 jaar)",
+      "geheugensteun": "PSR-HL: Smeerpoets – Sprookjes – Robinson – Helden – Lyrisch"
+    },
+    {
+      "id": "F092",
+      "domein": "Jeugdliteratuur – indelingen",
+      "type": "ordening",
+      "voorkant": "Noem de vier fasen in de leesontwikkeling van Jeanne Chall.",
+      "achterkant": "1. Pseudo-lezen (tot 6 jaar)\n2. Aanvankelijk lezen (tot 7 jaar)\n3. Automatiseren en vloeiend lezen (tot 8 jaar)\n4. Lezen om nieuwe ideeën, ervaringen en gevoelens op te doen",
+      "geheugensteun": null
+    },
+    {
+      "id": "F093",
+      "domein": "Jeugdliteratuur – indelingen",
+      "type": "ordening",
+      "voorkant": "Noem de vijf fasen in de leesontwikkeling van Van Coillie.",
+      "achterkant": "1. Zuigelingenfase (0-1 jaar)\n2. Peuterfase (1-3 jaar)\n3. Kleuterfase (3-6 jaar)\n4. Schoolkindfase (6-12 jaar)\n5. Adolescentie (12-18 jaar)",
+      "geheugensteun": null
+    },
+    {
+      "id": "F094",
+      "domein": "Jeugdliteratuur – prijzen",
+      "type": "definitie",
+      "voorkant": "Wat is het verschil tussen de Kinderjury en de Griffel-/Penseeljury?",
+      "achterkant": "Kinderjury: kinderen stemmen op hun favoriete boek (6-9 jaar en 10-12 jaar). Populairste boek wint.\nGriffel-/Penseeljury: deskundigen (bibliotheca­rissen, recensenten) beoordelen op literaire criteria: taalgebruik, originaliteit, structuur, compositie, doelgroepgeschiktheid.\nGriffels = voor tekst, Penselen = voor illustraties.",
+      "geheugensteun": null
+    },
+    {
+      "id": "F095",
+      "domein": "Jeugdliteratuur – prijzen",
+      "type": "definitie",
+      "voorkant": "Wat is de Jonge Jury en voor wie is die bedoeld?",
+      "achterkant": "De Jonge Jury is voor jeugdboeken bestemd voor lezers van 13 jaar en ouder (13+). De Kinderjury is voor kinderboeken (jongere leeftijdsgroepen).",
+      "geheugensteun": null
+    },
+    {
+      "id": "F096",
+      "domein": "Jeugdliteratuur – sprookjes",
+      "type": "contrast",
+      "voorkant": "Wat is het verschil tussen de genetische theorie en de polygenetische theorie over de oorsprong van sprookjes?",
+      "achterkant": "Genetische theorie: alle varianten van een sprookje zijn afkomstig uit één oerbron.\nPolygenetische theorie: op diverse plaatsen en tijden ontstonden onafhankelijk van elkaar vergelijkbare verhalen met eenzelfde thema.",
+      "geheugensteun": null
+    },
+    {
+      "id": "F097",
+      "domein": "Jeugdliteratuur – voorlezen en vertellen",
+      "type": "definitie",
+      "voorkant": "Noem drie criteria waar een leerkracht rekening mee houdt bij de voorbereiding van een voorleessessie.",
+      "achterkant": "1. Het boek moet passen bij de leeftijdsgroep\n2. Het kan aansluiten bij de actualiteit\n3. Het moet geschikt zijn om voor te lezen\n4. Het moet aansluiten bij de belangstelling van de groep",
+      "geheugensteun": null
+    },
+    {
+      "id": "F098",
+      "domein": "Jeugdliteratuur – voorlezen en vertellen",
+      "type": "contrast",
+      "voorkant": "Noem twee wezenlijke verschillen tussen voorlezen en vertellen.",
+      "achterkant": "1. Taal: De voorlezer gebruikt de taal van de auteur; de verteller zijn eigen, persoonlijk gekleurde taal.\n2. Improvisatie: De verteller kan improviseren en aanhaken bij de situatie; de voorlezer moet de tekst kennen en zich eraan houden.\n(ook: bij voorlezen staat een boek als 'scherm' tussen lezer en publiek; bij vertellen is direct oogcontact eenvoudiger)",
+      "geheugensteun": null
+    },
+    {
+      "id": "F099",
+      "domein": "Jeugdliteratuur – literaire competentie",
+      "type": "definitie",
+      "voorkant": "Wat houdt literaire competentie in voor een leerling aan het einde van groep 8?",
+      "achterkant": "1. Hij/zij kan zijn weg vinden in het brede boekenaanbod (diverse genres, opklimmende moeilijkheidsgraad).\n2. Hij/zij heeft kennis van kenmerken van literaire teksten en kan waardering beargumenteerd formuleren.\n3. Hij/zij kan kritisch lezen: beoordelen of de beschreven wereld afwijkt of overeenkomt met de werkelijkheid.",
+      "geheugensteun": null
+    },
+    {
+      "id": "F100",
+      "domein": "Jeugdliteratuur – informatieve boeken",
+      "type": "definitie",
+      "voorkant": "Aan welke drie kwaliteitseisen moet een informatief boek voor oudere kinderen voldoen?",
+      "achterkant": "1. Toegankelijk – goede indeling, inhoudsopgave, representatieve titel\n2. Begrijpelijk – korte zinnen, weinig abstracte woorden, duidelijke structuur\n3. Betrouwbaar – feitelijk juist, te controleren aan andere bronnen, actueel",
+      "geheugensteun": "TBB: Toegankelijk – Begrijpelijk – Betrouwbaar"
+    },
+    {
+      "id": "F101",
+      "domein": "Woordenschat – vormaspecten",
+      "type": "opsomming",
+      "voorkant": "Noem vijf morfologische categorieën waaronder woorden kunnen worden ingedeeld naar vorm.",
+      "achterkant": "1. Enkelvoudige woorden (vrije morfemen, bijv. 'brood')\n2. Samenstellingen (bijv. 'broodrooster')\n3. Afleidingen (woord + affix, bijv. 'prachtig', 'onjuist')\n4. Uitgangen werkwoorden (vervoeging, bijv. 'werkt')\n5. Uitgangen naamwoorden (verbuiging, bijv. 'mooie', 'leukst')",
+      "geheugensteun": null
+    },
+    {
+      "id": "F102",
+      "domein": "Woordenschat – vormaspecten",
+      "type": "definitie",
+      "voorkant": "Wat zijn 'meer-woord-woorden' en hoe noemen we ze taalkundig?",
+      "achterkant": "Meer-woord-woorden zijn vaste woordcombinaties (bijv. 'verliefd zijn op') waarvan de betekenis meer is dan de som van de losse woorden. Taalkundig worden ze idioom of idiomatische uitdrukkingen genoemd.",
+      "geheugensteun": null
+    },
+    {
+      "id": "F103",
+      "domein": "Taalverwerving – componenten",
+      "type": "definitie",
+      "voorkant": "Wat is labelen in de vroege taalontwikkeling?",
+      "achterkant": "Labelen (vanaf ± 1 jaar) is het koppelen van een bepaalde klankvolgorde aan iets uit de omgeving. Het is een van de vroegste vormen van woordverwerving en onderdeel van de lexicale/semantische component.",
+      "geheugensteun": null
+    },
+    {
+      "id": "F104",
+      "domein": "Taalverwerving – componenten",
+      "type": "definitie",
+      "voorkant": "Wat is categoriseren in de taalontwikkeling?",
+      "achterkant": "Categoriseren is het groeperen van voorwerpen en bijbehorende woorden. Na het labelen leert een kind dat woorden niet slechts één object aanduiden maar een categorie van gelijksoortige objecten.",
+      "geheugensteun": null
+    },
+    {
+      "id": "F105",
+      "domein": "Taalverwerving – stimulering",
+      "type": "definitie",
+      "voorkant": "Welke vier vormen van stimulering door volwassenen bevorderen de taalverwerving van het kind?",
+      "achterkant": "1. Begrijpelijke taal spreken\n2. Het kind aansporen tot spreken\n3. Feedback geven (handelen, spreken, goed voorbeeld geven)\n4. Soms corrigeren\nVanuit de interactionele benadering: goed taalaanbod + interactie + feedback.",
+      "geheugensteun": null
+    },
+    {
+      "id": "F106",
+      "domein": "Visies op taalonderwijs",
+      "type": "chronologie",
+      "voorkant": "In welke chronologische volgorde zijn de zeven visies op taalonderwijs ontstaan?",
+      "achterkant": "1. Traditioneel taalonderwijs (oudst)\n2. Thematisch-cursorisch (~'70)\n3. Taal bij alle vakken (begin '80)\n4. Communicatief taalonderwijs (begin '80)\n5. Strategisch taalonderwijs (midden '80)\n6. Taakgericht taalonderwijs (~'90)\n7. Interactief taalonderwijs (meest recent)",
+      "geheugensteun": null
+    },
+    {
+      "id": "F107",
+      "domein": "Inhoud taalonderwijs",
+      "type": "definitie",
+      "voorkant": "Wat is taalbeschouwing?",
+      "achterkant": "Taalbeschouwing is het nadenken (reflecteren) over taal zelf. Door reflectie gaan kinderen beter spreken, luisteren, lezen en schrijven. Het omvat ook reflectie op de functie van taal (communicatief, conceptualiserend, expressief).",
+      "geheugensteun": null
+    },
+    {
+      "id": "F108",
+      "domein": "Inhoud taalonderwijs",
+      "type": "toepassing",
+      "voorkant": "Een leerling vraagt zich af: 'Hoe kan ik mijn tekst spannender maken?' Welke taalfunctie reflecteert de leerling hiermee?",
+      "achterkant": "De expressieve functie – de leerling denkt na over hoe hij zichzelf beter kan uitdrukken en zijn tekst aantrekkelijker kan maken.",
+      "geheugensteun": null
+    },
+    {
+      "id": "F109",
+      "domein": "Jeugdliteratuur – prentenboeken",
+      "type": "definitie",
+      "voorkant": "Wat is de rol van het beeld in een prentenboek?",
+      "achterkant": "Het beeld bepaalt voor een groot deel de loop van het verhaal en is een belangrijke aanvulling op de tekst. Beeld en tekst werken samen om het verhaal te vertellen.",
+      "geheugensteun": null
+    },
+    {
+      "id": "F110",
+      "domein": "Jeugdliteratuur – begrippen",
+      "type": "definitie",
+      "voorkant": "Wat is het verschil tussen een klassiek kinderboek en een historisch kinderboek?",
+      "achterkant": "Klassiek boek: een boek van blijvende kwaliteit en waarde dat de tand des tijds heeft doorstaan. Hoeft geen historische inhoud te hebben.\nHistorisch boek: een boek waarin de geschiedenis een centrale rol speelt als vertrekpunt (historisch feit of figuur), maar het gaat primair om het verhaal, niet om informatie.",
+      "geheugensteun": null
+    },
+    {
+      "id": "F111",
+      "domein": "Woordenschat – didactiek",
+      "type": "definitie",
+      "voorkant": "Welke drie vormen van 'leren van woorden' onderscheidt Portaal in het woordenschatonderwijs?",
+      "achterkant": "1. Leren van woorden (betekenis en gebruik aanleren)\n2. Leren over woorden (woordkennis: vorm, tegenstellingen, letterlijk vs. figuurlijk)\n3. Leren leren van woorden (strategieën: woordenboek, context, plaatjes, vragen aan de leraar)",
+      "geheugensteun": null
+    },
+    {
+      "id": "F112",
+      "domein": "Woordenschat – didactiek",
+      "type": "definitie",
+      "voorkant": "Wat zijn de twee opvattingen over woordenschatonderwijs die in Portaal worden besproken?",
+      "achterkant": "1. Woorden hoeven niet expliciet aangeleerd te worden – kinderen leren woorden vanzelf via lezen en omgeving.\n2. Expliciet en intentioneel woordenschatonderwijs is noodzakelijk – indirecte verwerving levert te weinig op, zeker voor taalzwakke leerlingen.",
+      "geheugensteun": null
+    },
+    {
+      "id": "F113",
+      "domein": "Taalverwerving – tweede taal",
+      "type": "definitie",
+      "voorkant": "Welke component verwerven anderstalige leerlingen sneller: de syntactische of de morfologische component?",
+      "achterkant": "Anderstalige leerlingen verwerven de syntactische component (zinsbouw) vrij snel, maar het verwerven van de morfologische component (vervoegingen, verbuigingen) duurt beduidend langer.",
+      "geheugensteun": null
+    },
+    {
+      "id": "F114",
+      "domein": "Jeugdliteratuur – boekpromotie",
+      "type": "definitie",
+      "voorkant": "Wat is boekpromotie en noem drie manieren waarop een leerkracht boeken kan promoten?",
+      "achterkant": "Boekpromotie = boeken actief onder de aandacht brengen van leerlingen.\nManieren: voorlezen (fragment of heel boek), erover vertellen, boeken tonen, schrijver uitnodigen, klassenbibliotheken aanleggen, thematische exposities inrichten.",
+      "geheugensteun": null
+    },
+    {
+      "id": "F115",
+      "domein": "Jeugdliteratuur – boekpromotie",
+      "type": "definitie",
+      "voorkant": "Waarvoor zijn de Nationale Voorleesdagen bedoeld?",
+      "achterkant": "De Nationale Voorleesdagen zijn bedoeld voor de jongste kinderen die nog niet kunnen lezen. Tien prentenboeken staan centraal met thema's die jonge kinderen aanspreken. Eén wordt gekozen tot prentenboek van het jaar.",
+      "geheugensteun": null
+    },
+    {
+      "id": "F116",
+      "domein": "Taalverwerving – componenten",
+      "type": "feit",
+      "voorkant": "Hoeveel woorden gebruikt een kind van 4 jaar actief en hoeveel begrijpt het passief?",
+      "achterkant": "Een kind van 4 jaar gebruikt actief ± 2.000 woorden maar begrijpt passief ± 3.000 woorden. De passieve woordenschat is dus altijd groter dan de actieve.",
+      "geheugensteun": null
+    },
+    {
+      "id": "F117",
+      "domein": "Taalverwerving – componenten",
+      "type": "feit",
+      "voorkant": "Wat is de woordenschatachterstand van een NT2-kind van 4,5 jaar ten opzichte van een moedertaalspreker?",
+      "achterkant": "Een NT2-kind van 4,5 jaar begrijpt ± 1.300 woorden en gebruikt ± 1.100 woorden actief. Moedertaalsprekers begrijpen op die leeftijd ± 3.000 woorden. Een grote achterstand die alleen met veel goede woordenschatdidactiek valt in te halen.",
+      "geheugensteun": null
+    },
+    {
+      "id": "F118",
+      "domein": "Inhoud taalonderwijs",
+      "type": "definitie",
+      "voorkant": "Wat zijn referentieniveaus?",
+      "achterkant": "Referentieniveaus beschrijven de drempelniveaus (minimum eisen) die leerlingen moeten bereiken voor taal en rekenen bij de overgang van het ene schooltype naar het andere. Ze zijn vastgelegd in het Referentiekader Taal.",
+      "geheugensteun": null
+    },
+    {
+      "id": "F119",
+      "domein": "Jeugdliteratuur – begrippen",
+      "type": "definitie",
+      "voorkant": "Wat is identificeren in de context van jeugdliteratuur?",
+      "achterkant": "Identificeren is het vermogen van de lezer om zich te vereenzelvigen met een personage in het boek. Dit is een belangrijk kenmerk van succesvolle jeugdliteratuur.",
+      "geheugensteun": null
+    },
+    {
+      "id": "F120",
+      "domein": "Visies op taalonderwijs",
+      "type": "toepassing",
+      "voorkant": "Een leraar met een traditionele visie op taalonderwijs zal eerder kiezen voor [A] leersituaties, terwijl een leraar met een interactieve visie eerst onderzoekt of [B] leersituaties mogelijk zijn. Vul A en B in.",
+      "achterkant": "A = instructieve leersituaties\nB = constructieve leersituaties",
+      "geheugensteun": null
+    }
+  ]
+}

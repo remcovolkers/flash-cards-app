@@ -1,0 +1,131 @@
+<div class="study-page">
+
+  <!-- Header -->
+  <header class="study-header">
+    <button class="back-btn" (click)="goBack()" aria-label="Terug">‹</button>
+    <div class="header-center">
+      <span class="chapter-title">{{ chapterName }}</span>
+      <span class="card-counter" *ngIf="!loading && !done">
+        {{ currentIndex() + 1 }} / {{ cards.length }}
+      </span>
+    </div>
+    <div class="header-spacer"></div>
+  </header>
+
+  <!-- Progress bar -->
+  <div class="progress-bar" *ngIf="!loading && !done">
+    <div class="progress-fill" [style.width.%]="progress"></div>
+  </div>
+
+  <!-- Loading -->
+  <div *ngIf="loading" class="center-content">
+    <div class="spinner"></div>
+    <p>Kaarten laden...</p>
+  </div>
+
+  <!-- Done state -->
+  <div *ngIf="!loading && done" class="done-screen">
+    <div class="done-icon">🎉</div>
+    <h2>Klaar!</h2>
+    <p>Je hebt alle kaarten van dit hoofdstuk doorlopen.</p>
+    <button class="primary-btn" (click)="restart()">Opnieuw</button>
+    <button class="secondary-btn" (click)="goBack()">Terug naar hoofdstukken</button>
+  </div>
+
+  <!-- Flashcard area -->
+  <div
+    *ngIf="!loading && !done && current"
+    class="card-area"
+    (touchstart)="onTouchStart($event)"
+    (touchmove)="onTouchMove($event)"
+    (touchend)="onTouchEnd($event)"
+    (mousedown)="onMouseDown($event)"
+  >
+    <!-- Swipe hints -->
+    <div class="swipe-hints">
+      <div class="hint hint-save" [class.active]="dragClass === 'drag-up'">
+        <span>↑ Opslaan</span>
+      </div>
+      <div class="hint-row">
+        <div class="hint hint-flip" [class.active]="dragClass === 'drag-right'">
+          <span>← Volgende</span>
+        </div>
+        <div class="hint hint-next" [class.active]="dragClass === 'drag-left'">
+          <span>→ Omdraaien</span>
+        </div>
+      </div>
+      <div class="hint hint-exclude" [class.active]="dragClass === 'drag-down'">
+        <span>↓ Overslaan</span>
+      </div>
+    </div>
+
+    <!-- Card -->
+    <div
+      class="card-wrapper"
+      [class.flipped]="isFlipped()"
+      [class.drag-right]="dragClass === 'drag-right'"
+      [class.drag-left]="dragClass === 'drag-left'"
+      [class.drag-up]="dragClass === 'drag-up'"
+      [class.drag-down]="dragClass === 'drag-down'"
+      [style.transform]="cardTransform"
+    >
+      <!-- Feedback overlay -->
+      <div class="feedback-overlay" *ngIf="feedback()">
+        <div class="feedback-badge"
+          [class.save]="feedback() === 'save'"
+          [class.exclude]="feedback() === 'exclude'"
+          [class.next]="feedback() === 'next'"
+          [class.flip]="feedback() === 'flip'">
+          <span *ngIf="feedback() === 'save'">🔖 Opgeslagen!</span>
+          <span *ngIf="feedback() === 'exclude'">🚫 Overgeslagen</span>
+          <span *ngIf="feedback() === 'next'">➡ Volgende</span>
+          <span *ngIf="feedback() === 'flip'">🔄 Omgedraaid</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <!-- Front -->
+        <div class="card-face card-front">
+          <div class="card-meta">
+            <span class="card-type">{{ current.type }}</span>
+            <span class="card-domein">{{ current.subdomein ?? current.domein }}</span>
+          </div>
+          <div class="card-content">
+            <p class="card-text">{{ current.voorkant }}</p>
+          </div>
+          <div class="tap-hint">Swipe → om te omdraaien</div>
+        </div>
+
+        <!-- Back -->
+        <div class="card-face card-back">
+          <div class="card-meta">
+            <span class="card-type card-type--back">Antwoord</span>
+          </div>
+          <div class="card-content">
+            <p class="card-text">{{ current.achterkant }}</p>
+          </div>
+          <div class="memory-tip" *ngIf="current.geheugensteun">
+            <span class="tip-label">💡 Geheugensteun</span>
+            <p>{{ current.geheugensteun }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Action buttons (secondary / accessibility) -->
+    <div class="action-buttons">
+      <button class="action-btn btn-exclude" (click)="excludeCurrentCard()" title="Overslaan (↓)">
+        🚫
+      </button>
+      <button class="action-btn btn-prev" (click)="flipCard()" title="Omdraaien (→)">
+        🔄
+      </button>
+      <button class="action-btn btn-next" (click)="nextCard()" title="Volgende (←)">
+        ➡
+      </button>
+      <button class="action-btn btn-save" (click)="saveForLater()" title="Opslaan (↑)">
+        🔖
+      </button>
+    </div>
+  </div>
+</div>

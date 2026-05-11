@@ -1,0 +1,1538 @@
+{
+  "metadata": {
+    "titel": "Portaal Flashcards - Deel 2 van 4",
+    "bron": "Samenvatting Portaal (NHL Stenden) + Neurocognitieve Analyse",
+    "hoofdstukken": [
+      "H3: Mondelinge Taalvaardigheid",
+      "H5: Geletterdheid - Lezen",
+      "H6: Geletterdheid - Schrijven",
+      "H8: Jeugdliteratuur"
+    ],
+    "totaal_kaarten": 169,
+    "versie": "1.0",
+    "instructie": "Gebruik Active Recall: lees de voorkant, formuleer het antwoord hardop VOOR je de achterkant omdraait. Verwerk via het Leitner-systeem."
+  },
+  "flashcards": [
+    {
+      "id": "MT-001",
+      "domein": "Mondelinge Taalvaardigheid",
+      "subdomein": "Basisconcepten",
+      "type": "definitie",
+      "voorkant": "Welke drie deelvaardigheden omvat mondelinge taalvaardigheid?",
+      "achterkant": "1. Luistervaardigheid (receptief)\n2. Spreekvaardigheid (productief)\n3. Gespreksvaardigheid (interactief)",
+      "geheugensteun": "L-S-G: Luisteren, Spreken, Gesprekken voeren"
+    },
+    {
+      "id": "MT-002",
+      "domein": "Mondelinge Taalvaardigheid",
+      "subdomein": "Basisconcepten",
+      "type": "definitie",
+      "voorkant": "Wat is de definitie van luistervaardigheid?",
+      "achterkant": "De luisteraar is in staat wat hij hoort te begrijpen, te interpreteren en te integreren in de eigen kennis, of om te zetten in eigen handelingen.",
+      "geheugensteun": "Begrijpen → Interpreteren → Integreren/Handelen"
+    },
+    {
+      "id": "MT-003",
+      "domein": "Mondelinge Taalvaardigheid",
+      "subdomein": "Basisconcepten",
+      "type": "definitie",
+      "voorkant": "Uit welke drie elementen bestaat spreekvaardigheid?",
+      "achterkant": "1. De juiste klank produceren\n2. Weten welke klank bij welke betekenis hoort (woordenschat)\n3. Woorden in logische zinnen kunnen plaatsen",
+      "geheugensteun": "Klank → Betekenis → Zinsbouw"
+    },
+    {
+      "id": "MT-004",
+      "domein": "Mondelinge Taalvaardigheid",
+      "subdomein": "Basisconcepten",
+      "type": "toepassing",
+      "voorkant": "Waarom is non-verbale communicatie zo bepalend voor hoe een spreker beoordeeld wordt?",
+      "achterkant": "Omdat elke spreker zich individueel uitdrukt, zijn klankkleur, accent, woordkeus én non-verbale communicatie sterk persoonlijk. Ook de status van de spreker en omgevingsfactoren spelen een rol in de beoordeling.",
+      "geheugensteun": "Individuele uitdrukking = individuele beoordeling"
+    },
+    {
+      "id": "MT-005",
+      "domein": "Mondelinge Taalvaardigheid",
+      "subdomein": "Basisconcepten",
+      "type": "definitie",
+      "voorkant": "Wat is gespreksvaardigheid en welk element is daarin bijzonder belangrijk?",
+      "achterkant": "Gespreksvaardigheid is de wisselwerking tussen spreken en luisteren. Bijzonder belangrijk is de mate waarin de spreker non-verbale communicatie gebruikt en de luisteraar die correct interpreteert.",
+      "geheugensteun": "Wisselwerking + non-verbale communicatie"
+    },
+    {
+      "id": "MT-006",
+      "domein": "Mondelinge Taalvaardigheid",
+      "subdomein": "CAT en DAT",
+      "type": "definitie",
+      "voorkant": "Wat is het verschil tussen DAT en CAT (Cummins)?",
+      "achterkant": "DAT = Dagelijks Algemeen Taalgebruik: contextrijk, thuis geleerd, concreet.\nCAT = Cognitief Academisch Taalgebruik: contextarm, cognitief veeleisend, abstract, op school vereist.",
+      "geheugensteun": "DAT = thuis, rijk. CAT = school, arm aan context"
+    },
+    {
+      "id": "MT-007",
+      "domein": "Mondelinge Taalvaardigheid",
+      "subdomein": "CAT en DAT",
+      "type": "cloze",
+      "voorkant": "Cummins verfijnde zijn CAT/DAT-indeling op basis van twee onderscheidingen:\n1. [...] versus contextarm\n2. Cognitief veeleisend versus [...]",
+      "achterkant": "1. Contextrijk versus contextarm\n2. Cognitief veeleisend versus cognitief niet-veeleisend\n\n(Dit resulteert in een matrix van vier kwadranten.)",
+      "geheugensteun": "Matrix: context (rijk/arm) × cognitieve belasting (veel/weinig)"
+    },
+    {
+      "id": "MT-008",
+      "domein": "Mondelinge Taalvaardigheid",
+      "subdomein": "CAT en DAT",
+      "type": "toepassing",
+      "voorkant": "Een leerling kan prima vertellen over zijn weekend (DAT), maar snapt de aardrijkskundetekst niet (CAT). Welke conclusie trekt de leerkracht hieruit over het taalgebruik in schoolboeken?",
+      "achterkant": "Schoolboeken maken zwaar gebruik van CAT: contextarm en cognitief veeleisend taalgebruik. Dit staat ver af van het dagelijkse taalgebruik van de leerling. De leerkracht moet expliciet CAT aanleren en de kloof overbruggen.",
+      "geheugensteun": "Zaakvakteksten = CAT-dominant"
+    },
+    {
+      "id": "MT-009",
+      "domein": "Mondelinge Taalvaardigheid",
+      "subdomein": "Wettelijk Kader",
+      "type": "feit",
+      "voorkant": "Hoeveel kerndoelen zijn er die betrekking hebben op mondelinge taal, en wat regelen ze?",
+      "achterkant": "Er zijn 3 kerndoelen voor mondelinge taal. Ze regelen het AANBOD (aanbodsverplichting): scholen moeten de omstandigheden scheppen zodat leerlingen een goed niveau kunnen bereiken. Ze zeggen NIET wat het te bereiken niveau moet zijn.",
+      "geheugensteun": "3 kerndoelen = wat je aanbiedt, niet wat je bereikt"
+    },
+    {
+      "id": "MT-010",
+      "domein": "Mondelinge Taalvaardigheid",
+      "subdomein": "Wettelijk Kader",
+      "type": "feit",
+      "voorkant": "Welke 8 leerlijnen mondelinge communicatie heeft het Expertisecentrum Nederlands geformuleerd?",
+      "achterkant": "1. Deelnemen aan gesprekken\n2. Interactief leren\n3. Taalgebruik\n4. Woordenschat\n5. Begrijpend luisteren\n6. Vertellen en presenteren\n7. Reflectie op communicatie\n8. Reflectie op taal",
+      "geheugensteun": "D-I-T-W-B-V-R-R (8 leerlijnen)"
+    },
+    {
+      "id": "MT-011",
+      "domein": "Mondelinge Taalvaardigheid",
+      "subdomein": "Wettelijk Kader",
+      "type": "feit",
+      "voorkant": "Wat is het verschil tussen kerndoelen en referentieniveaus?",
+      "achterkant": "Kerndoelen = aanbodsverplichting (wat scholen moeten aanbieden).\nReferentieniveaus (wet 2010) = prestatieverplichting (welk niveau leerlingen moeten bereiken): 1F is fundamenteel niveau, 1S/2F is streefniveau aan het einde van de basisschool.",
+      "geheugensteun": "Kerndoelen = aanbod. Referentieniveaus = niveau."
+    },
+    {
+      "id": "MT-012",
+      "domein": "Mondelinge Taalvaardigheid",
+      "subdomein": "Visies",
+      "type": "contrast",
+      "voorkant": "Vergelijk traditioneel taalonderwijs en communicatief taalonderwijs op het gebied van mondelinge taalvaardigheid.",
+      "achterkant": "Traditioneel: Weinig aandacht voor spreken/luisteren, veel focus op VORM (articulatie, grammatica). Geen aparte spreek-/luisterdoelen.\n\nCommunicatief: Het TOT STAND KOMEN van communicatie staat centraal. Doel- en publieksgericht spreken, bv. in discussies.",
+      "geheugensteun": "Traditioneel = vorm. Communicatief = boodschap overbrengen."
+    },
+    {
+      "id": "MT-013",
+      "domein": "Mondelinge Taalvaardigheid",
+      "subdomein": "Visies",
+      "type": "definitie",
+      "voorkant": "Wat kenmerkt het thematisch-cursorisch taalonderwijs bij mondelinge taalvaardigheid?",
+      "achterkant": "Mondelinge taalvaardigheid krijgt meer aandacht, maar is MIDDEL om het thema te bespreken. Er worden doorgaans GEEN aparte spreek- en luisterdoelen gesteld.",
+      "geheugensteun": "Thematisch = mondeling als middel, niet als doel"
+    },
+    {
+      "id": "MT-014",
+      "domein": "Mondelinge Taalvaardigheid",
+      "subdomein": "Visies",
+      "type": "definitie",
+      "voorkant": "Wat kenmerkt de interactieve visie op mondelinge taalvaardigheid?",
+      "achterkant": "Naast aandacht voor VORM ook aandacht voor BETEKENIS en GEBRUIK van taal. Het sociale karakter van taal staat centraal. De leraar geeft procesgerichte instructie, er zijn veel coöperatieve werkvormen. Aanbod, feedback en taalproductie zijn kernprincipes.",
+      "geheugensteun": "Interactief = sociaal + betekenisvol + procesgestuurd"
+    },
+    {
+      "id": "MT-015",
+      "domein": "Mondelinge Taalvaardigheid",
+      "subdomein": "Visies",
+      "type": "definitie",
+      "voorkant": "Wat is de kern van het taakgericht taalonderwijs bij mondelinge vaardigheden?",
+      "achterkant": "Er is een communicatieve situatie met motiverende taaltaken. Interactie is een kernwoord. Mondelinge taal wordt als MIDDEL ingezet om een ander doel te bereiken. Er is een 'kloof' die overbrugd moet worden via taal.",
+      "geheugensteun": "Taakgericht = kloof overbruggen via mondelinge taal"
+    },
+    {
+      "id": "MT-016",
+      "domein": "Mondelinge Taalvaardigheid",
+      "subdomein": "Visies",
+      "type": "toepassing",
+      "voorkant": "Bij welke visie op taalonderwijs voeren leerlingen gesprekken als manier om begrippen actief te verwerken en verbanden te leggen, ter ondersteuning van zaakvakken?",
+      "achterkant": "Taal bij alle vakken. Taal wordt gebruikt om zaakvakdoelen te behalen, maar ook om te werken aan taaldoelen (bv. verrijking woordenschat). Gesprekken zijn de manier om begrippen te verwerken.",
+      "geheugensteun": "'Taal bij alle vakken' = gesprekken als denkinstrument voor zaakvakken"
+    },
+    {
+      "id": "MT-017",
+      "domein": "Mondelinge Taalvaardigheid",
+      "subdomein": "Aanpak Leraar - Feedback",
+      "type": "definitie",
+      "voorkant": "Hoe geeft een leraar feedback op de INHOUD versus de VORM bij mondelinge taalvaardigheid?",
+      "achterkant": "Inhoud (wat gezegd is): reactie moet stimuleren tot verder praten en nadenken.\nVorm (hoe het gezegd is): NIET corrigeren, maar MODELLEN (correct taalgebruik voordoen als voorbeeld zonder de leerling te corrigeren).",
+      "geheugensteun": "Inhoud = uitlokken. Vorm = modellen, NIET corrigeren."
+    },
+    {
+      "id": "MT-018",
+      "domein": "Mondelinge Taalvaardigheid",
+      "subdomein": "Vraagtechnieken",
+      "type": "definitie",
+      "voorkant": "Wat zijn controlevragen en reproductievragen?",
+      "achterkant": "Controlevragen: nagaan of de leerling iets begrepen heeft.\nReproductievragen: de leerling een deel van het vertelde zelf laten verwoorden.",
+      "geheugensteun": "Controle = begrepen? Reproductie = herhaal het."
+    },
+    {
+      "id": "MT-019",
+      "domein": "Mondelinge Taalvaardigheid",
+      "subdomein": "Vraagtechnieken",
+      "type": "definitie",
+      "voorkant": "Wat is het verschil tussen een gesloten vraag en een open vraag?",
+      "achterkant": "Gesloten vraag: er is één correct antwoord mogelijk. Bedoeld om te controleren of kennis te reproduceren (ja/nee, reproductievraag met/zonder keuze, definitievraag).\n\nOpen vraag: stimuleert tot productief denken en creativiteit. Meerdere antwoorden zijn mogelijk.",
+      "geheugensteun": "Gesloten = 1 antwoord. Open = productief denken."
+    },
+    {
+      "id": "MT-020",
+      "domein": "Mondelinge Taalvaardigheid",
+      "subdomein": "Vraagtechnieken",
+      "type": "definitie",
+      "voorkant": "Wat is een convergente vraag en wat is een kenmerkend voorbeeld?",
+      "achterkant": "Een open vraag die zodanig voorgestructureerd is dat ze convergeert naar één voorspelbaar antwoord. Doet beroep op aanwezige kennis, vereist analyse en integratie.\nVoorbeeld: 'Zeg eens in één zin waar dit verhaal over gaat' of 'Waarom groeien planten naar het licht?'",
+      "geheugensteun": "Convergent = open maar 1 voorspelbaar antwoord"
+    },
+    {
+      "id": "MT-021",
+      "domein": "Mondelinge Taalvaardigheid",
+      "subdomein": "Vraagtechnieken",
+      "type": "definitie",
+      "voorkant": "Wat is een divergente vraag en wat is een kenmerkend voorbeeld?",
+      "achterkant": "Een open vraag waarbij de leerling creatief moet denken en zelf formuleren. Het antwoord is NIET direct voorspelbaar, meerdere goede antwoorden zijn mogelijk.\nVoorbeeld: 'Hoe kan het kappen van regenwouden worden gestopt?' of 'Wat zou er gebeuren als er geen zwaartekracht was?'",
+      "geheugensteun": "Divergent = creatief, meerdere antwoorden, niet voorspelbaar"
+    },
+    {
+      "id": "MT-022",
+      "domein": "Mondelinge Taalvaardigheid",
+      "subdomein": "Vraagtechnieken",
+      "type": "definitie",
+      "voorkant": "Wat is een evaluerende vraag?",
+      "achterkant": "Een vraag die een beoordeling, keuze of voorkeur vraagt van de leerling.\nVoorbeelden: 'Wat vind jij van deze presentatie?' of 'Waarom ga je zo graag naar een pretpark?'",
+      "geheugensteun": "Evaluerend = mening/oordeel/voorkeur"
+    },
+    {
+      "id": "MT-023",
+      "domein": "Mondelinge Taalvaardigheid",
+      "subdomein": "Vraagtechnieken",
+      "type": "toepassing",
+      "voorkant": "Een leraar vraagt: 'Stel dat jij de burgemeester was, wat zou jij dan doen aan het parkeerprobleem?' Welk type open vraag is dit?",
+      "achterkant": "Een divergente vraag. Er zijn meerdere creatieve antwoorden mogelijk, de leerling moet zelf formuleren en creatief denken. Het antwoord is niet direct voorspelbaar.",
+      "geheugensteun": "Creatief scenario = divergent"
+    },
+    {
+      "id": "MT-024",
+      "domein": "Mondelinge Taalvaardigheid",
+      "subdomein": "Taalfuncties",
+      "type": "definitie",
+      "voorkant": "Welke vier complexe taalfuncties moet een leraar bij leerlingen stimuleren?",
+      "achterkant": "1. Rapporteren (feiten mededelen)\n2. Beschrijven (kenmerken benoemen)\n3. Redeneren (verbanden leggen, beargumenteren)\n4. Projecteren (zich verplaatsen in gevoelens/perspectieven van een ander)",
+      "geheugensteun": "R-B-R-P: Rapporteren, Beschrijven, Redeneren, Projecteren"
+    },
+    {
+      "id": "MT-025",
+      "domein": "Mondelinge Taalvaardigheid",
+      "subdomein": "Taalfuncties",
+      "type": "toepassing",
+      "voorkant": "Welke taalfunctie oefent een leerling wanneer de leraar vraagt: 'Hoe denk jij dat de hoofdpersoon zich nu voelt?'",
+      "achterkant": "Projecteren. De leerling moet zich inleven in de gevoelens of het perspectief van een ander (de hoofdpersoon).",
+      "geheugensteun": "Inleven in een ander = projecteren"
+    },
+    {
+      "id": "MT-026",
+      "domein": "Mondelinge Taalvaardigheid",
+      "subdomein": "Taalfuncties",
+      "type": "toepassing",
+      "voorkant": "Welke taalfunctie oefent een leerling wanneer hij uitlegt: 'Planten groeien naar het licht omdat ze licht nodig hebben voor fotosynthese, waardoor ze energie maken'?",
+      "achterkant": "Redeneren. De leerling legt verbanden en beargumenteert (oorzaak-gevolg relatie).",
+      "geheugensteun": "Verbanden + argumenten = redeneren"
+    },
+    {
+      "id": "MT-027",
+      "domein": "Mondelinge Taalvaardigheid",
+      "subdomein": "Organisatievormen",
+      "type": "kritisch",
+      "voorkant": "Noem twee didactische bezwaren tegen het klassengesprek/kringgesprek als organisatievorm voor mondelinge taalontwikkeling.",
+      "achterkant": "1. De individuele spreektijd (taalproductie) per leerling is te gering — onvoldoende gelegenheid om actief te oefenen.\n2. Het leent zich beter voor groepsgevoel, evaluatie of introductie, NIET voor daadwerkelijke taalontwikkeling.",
+      "geheugensteun": "Kringgesprek = weinig spreektijd per kind = weinig taalontwikkeling"
+    },
+    {
+      "id": "MT-028",
+      "domein": "Mondelinge Taalvaardigheid",
+      "subdomein": "Organisatievormen",
+      "type": "definitie",
+      "voorkant": "Waarvoor leent het klassengesprek/kringgesprek zich WEL?",
+      "achterkant": "- Bevordering van het groepsgevoel\n- Evaluatie van een les\n- Introductie van een nieuw onderwerp",
+      "geheugensteun": "Kring = Groep, Evaluatie, Introductie"
+    },
+    {
+      "id": "MT-029",
+      "domein": "Mondelinge Taalvaardigheid",
+      "subdomein": "Organisatievormen",
+      "type": "definitie",
+      "voorkant": "Wat is een leergesprek en welk type vragen domineert hierin?",
+      "achterkant": "Een leergesprek is een gespreksvorm waarbij de leraar iets uitlegt. Er komen overwegend GESLOTEN vragen aan de orde. Om het rijker te maken, voegt de leraar ook vragen toe die stimuleren tot redeneren, projecteren of evalueren.",
+      "geheugensteun": "Leergesprek = leraar legt uit + gesloten vragen (+ open voor verrijking)"
+    },
+    {
+      "id": "MT-030",
+      "domein": "Mondelinge Taalvaardigheid",
+      "subdomein": "Organisatievormen",
+      "type": "contrast",
+      "voorkant": "Waarom heeft een gesprek in kleine kring de voorkeur boven een groot kringgesprek voor taalontwikkeling?",
+      "achterkant": "In kleine kring krijgen leerlingen MEER KANS om zelf te formuleren en gedachten onder woorden te brengen. De individuele taalproductie is groter. Nadeel: vraagt meer van het klassenmanagement van de leraar.",
+      "geheugensteun": "Klein = meer spreektijd per kind = meer taalontwikkeling"
+    },
+    {
+      "id": "MT-031",
+      "domein": "Mondelinge Taalvaardigheid",
+      "subdomein": "Organisatievormen",
+      "type": "definitie",
+      "voorkant": "Beschrijf de structuur van gesprekken in drietallen.",
+      "achterkant": "Twee leerlingen voeren het gesprek vanuit een bepaalde rol. De derde leerling is neutraal (notulist). Leerlingen weten: het doel, de gesprekssoort, de gespreksvorm en de geldende regels. Er wordt niet alleen geëvalueerd op inhoud maar ook op hoe het gesprek verlopen is (gesprekstechniek).",
+      "geheugensteun": "Drietal: 2 gesprekvoerders + 1 notulist; ook procesevaluatie"
+    },
+    {
+      "id": "MT-032",
+      "domein": "Mondelinge Taalvaardigheid",
+      "subdomein": "Organisatievormen",
+      "type": "definitie",
+      "voorkant": "Wat is een taalronde en waarvoor dient het als alternatief?",
+      "achterkant": "De taalronde is een alternatief voor het kringgesprek met een doordachte opbouw van taalwerkvormen. De stappen zijn (globaal): introductie → vertelronde → lijstjes maken → duogesprekken → schrijven → voorlezen. Alle taaldomeinen komen geïntegreerd aan bod.",
+      "geheugensteun": "Taalronde = gestructureerd alternatief kring; alle domeinen geïntegreerd"
+    },
+    {
+      "id": "MT-033",
+      "domein": "Mondelinge Taalvaardigheid",
+      "subdomein": "Luisteren als doel",
+      "type": "definitie",
+      "voorkant": "Welke drie soorten luisteren worden onderscheiden als intentioneel onderwijs?",
+      "achterkant": "1. Technisch luisteren: het horen van VERSCHILLEN TUSSEN KLANKEN (vooral onderbouw, beginnende geletterdheid)\n2. Begrijpend luisteren: BEGRIJPEN van gesproken taal\n3. Kritisch luisteren: de luisteraar vormt een MENING over wat hij hoort",
+      "geheugensteun": "Klanken onderscheiden → Betekenis begrijpen → Mening vormen"
+    },
+    {
+      "id": "MT-034",
+      "domein": "Mondelinge Taalvaardigheid",
+      "subdomein": "Evalueren",
+      "type": "definitie",
+      "voorkant": "Aan welke drie basiseisen moet een toets voldoen, ook bij mondelinge taalvaardigheid?",
+      "achterkant": "1. Objectiviteit: duidelijke normeringsvoorschriften (ondubbelzinnig wat goed/fout is)\n2. Betrouwbaarheid: de uitslag is onder alle omstandigheden hetzelfde\n3. Validiteit: de toets meet wat er gemeten moet worden",
+      "geheugensteun": "O-B-V: Objectief, Betrouwbaar, Valide"
+    },
+    {
+      "id": "MT-035",
+      "domein": "Mondelinge Taalvaardigheid",
+      "subdomein": "Evalueren",
+      "type": "contrast",
+      "voorkant": "Wat is het verschil tussen toetsen en observeren als meetinstrument voor mondelinge taalontwikkeling?",
+      "achterkant": "Toetsen: leerlingen worden VERGELEKEN met landelijke normen.\nObservaties: de EIGEN taalontwikkeling van het kind wordt in beeld gebracht (niet vergeleken met anderen). Observaties zijn daarmee goed om taalgedrag te bezien in de totale communicatieve functie.",
+      "geheugensteun": "Toets = vergelijking met norm. Observatie = eigen ontwikkeling."
+    },
+    {
+      "id": "LE-001",
+      "domein": "Geletterdheid - Lezen",
+      "subdomein": "Achtergrondkennis",
+      "type": "definitie",
+      "voorkant": "Wat is het verschil tussen receptieve en productieve taalvaardigheden?",
+      "achterkant": "Receptieve vaardigheden (lezen, luisteren): leveren GEEN direct meetbaar product op.\nProductieve vaardigheden (schrijven, spreken): leveren WEL een direct meetbaar product op.",
+      "geheugensteun": "Receptief = ontvangen (geen product). Productief = maken (wel product)."
+    },
+    {
+      "id": "LE-002",
+      "domein": "Geletterdheid - Lezen",
+      "subdomein": "Achtergrondkennis",
+      "type": "definitie",
+      "voorkant": "Welke twee soorten kennis heeft een lezer nodig voor tekstbegrip?",
+      "achterkant": "1. Kennis van de taal (orthografisch, fonologisch, morfologisch, semantisch, syntactisch, tekstueel en pragmatisch)\n2. Kennis van de wereld (voorkennis over het onderwerp)",
+      "geheugensteun": "Talenkennis + Wereldkennis = tekstbegrip"
+    },
+    {
+      "id": "LE-003",
+      "domein": "Geletterdheid - Lezen",
+      "subdomein": "Kennis van de taal",
+      "type": "definitie",
+      "voorkant": "Wat is morfologische kennis en waarom is het nuttig voor lezen?",
+      "achterkant": "Kennis over de OPBOUW van woorden (vervoegingen, verbuigingen, samenstellingen, afleidingen). Met deze kennis kan een lezer een ONBEKEND woord herleiden tot bekende elementen om de betekenis te achterhalen.",
+      "geheugensteun": "Morfologie = woordopbouw kennen = onbekende woorden decoderen"
+    },
+    {
+      "id": "LE-004",
+      "domein": "Geletterdheid - Lezen",
+      "subdomein": "Leesmodellen",
+      "type": "definitie",
+      "voorkant": "Beschrijf het bottom-up model van lezen.",
+      "achterkant": "Lezen verloopt van LAGERE-ORDEPROCESSEN naar HOGERE-ORDEPROCESSEN: visuele discriminatie van letters → teken-klankkoppeling → pas daarna betekenisverlening. Zwakte: verklaart niet waarom bestaande woorden eerder worden herkend dan onzinwoorden.",
+      "geheugensteun": "Bottom-up = letters → klanken → betekenis (van beneden naar boven)"
+    },
+    {
+      "id": "LE-005",
+      "domein": "Geletterdheid - Lezen",
+      "subdomein": "Leesmodellen",
+      "type": "definitie",
+      "voorkant": "Beschrijf het top-down model van lezen.",
+      "achterkant": "Lezen verloopt van HOGERE-ORDEPROCESSEN naar LAGERE-ORDEPROCESSEN: de lezer activeert voorkennis → vormt hypothesen over de tekst → verifieert die globaal visueel. Verklaart waarom een bekend onderwerp sneller gelezen wordt (bv. 'Ik moet mijn lekke band nog [plakken]').",
+      "geheugensteun": "Top-down = voorkennis → hypothese → verificatie"
+    },
+    {
+      "id": "LE-006",
+      "domein": "Geletterdheid - Lezen",
+      "subdomein": "Leesmodellen",
+      "type": "definitie",
+      "voorkant": "Beschrijf het interactieve model van lezen en waarom dit als meest realistisch geldt.",
+      "achterkant": "Lagere-ordeprocessen EN hogere-ordeprocessen beïnvloeden ELKAAR gelijktijdig en wederkerig. Een vlotte woordherkenning vergemakkelijkt begrip; contextuele kennis versnelt woordherkenning. Dit model lijkt de meest realistische weergave van het leesproces.",
+      "geheugensteun": "Interactief = beide processen beïnvloeden elkaar constant"
+    },
+    {
+      "id": "LE-007",
+      "domein": "Geletterdheid - Lezen",
+      "subdomein": "Leesmodellen",
+      "type": "contrast",
+      "voorkant": "Welk leesmodel verklaart NIET waarom we teksten met spelfouten toch vloeiend lezen? Welk model verklaart dit WEL?",
+      "achterkant": "Bottom-up: verklaart het NIET (verwacht letter-voor-letter verwerking).\nTop-down of Interactief: verklaart het WEL (de lezer vult in vanuit voorkennis en context, en verifieert slechts globaal).",
+      "geheugensteun": "Spelfouten lezen = top-down/interactief verklaard, niet bottom-up"
+    },
+    {
+      "id": "LE-008",
+      "domein": "Geletterdheid - Lezen",
+      "subdomein": "Kenmerken goede lezer",
+      "type": "definitie",
+      "voorkant": "Noem zes kenmerken van een goede lezer (strategisch lezen).",
+      "achterkant": "1. Heeft een leesdoel\n2. Maakt gebruik van aanwijzingen rondom de tekst (illustraties, kopjes, auteur)\n3. Roept eerder opgedane kennis op\n4. Kiest een passende leesmanier (nauwkeurig, scannend)\n5. Monitort tijdens het lezen (begrijp ik het nog?)\n6. Bepaalt NA het lezen of het leesdoel bereikt is",
+      "geheugensteun": "Voor/Tijdens/Na lezen: VÓÓR = doel + aanwijzingen + voorkennis; TIJDENS = monitoren; NA = evalueren"
+    },
+    {
+      "id": "LE-009",
+      "domein": "Geletterdheid - Lezen",
+      "subdomein": "Kenmerken goede lezer",
+      "type": "definitie",
+      "voorkant": "Wat is strategisch lezen?",
+      "achterkant": "Het bewust inzetten van kennis VOOR het lezen (leesdoel, leesmanier, voorkennis activeren), TIJDENS het lezen (monitoren, aanpassen) en NA het lezen (evalueren of leesdoel bereikt is). Ook wel metacognitieve vaardigheden bij lezen.",
+      "geheugensteun": "Strategisch lezen = metacognitief lezen: VÓÓR + TIJDENS + NA"
+    },
+    {
+      "id": "LE-010",
+      "domein": "Geletterdheid - Lezen",
+      "subdomein": "Geletterdheidsfasen",
+      "type": "definitie",
+      "voorkant": "Wat is ontluikende geletterdheid?",
+      "achterkant": "De fase VÓÓRDAT kinderen naar school gaan. Kenmerkt zich door: cultureel en situationeel leren, betrokkenheid bij geletterdheidsactiviteiten (voorlezen), ontdekken van functies van geschreven taal, boekoriëntatie en verhaalbegrip.",
+      "geheugensteun": "Ontluikend = vóórschools, cultureel, via betrokkenheid en voorlezen"
+    },
+    {
+      "id": "LE-011",
+      "domein": "Geletterdheid - Lezen",
+      "subdomein": "Geletterdheidsfasen",
+      "type": "definitie",
+      "voorkant": "Noem vijf redenen waarom voorlezen aan kinderen zo belangrijk is.",
+      "achterkant": "1. Kinderen leren dat tekst en illustraties samen een verhaal vertellen en dat geschreven taal permanent is.\n2. Ze leren boekentaal begrijpen.\n3. Ze zijn bezig een lezer te worden ('lezen' voor knuffels).\n4. Ze breiden kennis over de wereld uit.\n5. Ze leren formele aspecten: leesrichting, uitspreken van tekens, klank-letterkoppeling.",
+      "geheugensteun": "Permanent taal, boekentaal, lezer worden, wereldkennis, formele aspecten"
+    },
+    {
+      "id": "LE-012",
+      "domein": "Geletterdheid - Lezen",
+      "subdomein": "Geletterdheidsfasen",
+      "type": "definitie",
+      "voorkant": "Wat zijn de tussendoelen voor BEGINNENDE geletterdheid?",
+      "achterkant": "1. Boekoriëntatie en verhaalbegrip\n2. Relaties tussen gesproken en geschreven taal en functies van geschreven taal\n3. Taalbewustzijn en alfabetisch principe\n4. Functioneel lezen en schrijven\n5. Technisch lezen en schrijven\n6. Begrijpend lezen en schrijven",
+      "geheugensteun": "B-R-T-F-T-B (6 tussendoelen beginnende geletterdheid)"
+    },
+    {
+      "id": "LE-013",
+      "domein": "Geletterdheid - Lezen",
+      "subdomein": "Elementaire Leeshandeling",
+      "type": "definitie",
+      "voorkant": "Noem de vier stappen van de elementaire leeshandeling in de juiste volgorde.",
+      "achterkant": "1. Leesrichting (van links naar rechts)\n2. Visuele discriminatie (letters van elkaar leren onderscheiden)\n3. Teken-klankkoppeling (letters leren lezen/verklanken)\n4. Auditieve synthese (klanken in de juiste volgorde aan elkaar plakken tot een woord)",
+      "geheugensteun": "L-V-T-A: Leesrichting, Visueel onderscheiden, Teken-klank, Auditieve synthese"
+    },
+    {
+      "id": "LE-014",
+      "domein": "Geletterdheid - Lezen",
+      "subdomein": "Elementaire Leeshandeling",
+      "type": "cloze",
+      "voorkant": "De laatste stap in de elementaire leeshandeling, waarbij de geïsoleerde klanken worden samengevoegd tot één woord, heet [...].",
+      "achterkant": "Auditieve synthese",
+      "geheugensteun": "Synthese = samenvoegen. Auditief = via gehoor."
+    },
+    {
+      "id": "LE-015",
+      "domein": "Geletterdheid - Lezen",
+      "subdomein": "Elementaire Leeshandeling",
+      "type": "definitie",
+      "voorkant": "Wat is het verschil tussen de klankzuivere fase en de niet-klankzuivere fase bij technisch lezen?",
+      "achterkant": "Klankzuiver: woorden lezen die je NET ZO uitspreekt als ze geschreven zijn (bv. 'tas').\nNiet-klankzuiver: woorden lezen die je ANDERS uitspreekt dan ze geschreven zijn (bv. 'eend', 'ooievaar').\n\nEerst klankzuiver beheersen, dan niet-klankzuivere woorden.",
+      "geheugensteun": "Klankzuiver = je schrijft/leest wat je hoort. Niet-klankzuiver = verschil uitspraak/spelling."
+    },
+    {
+      "id": "LE-016",
+      "domein": "Geletterdheid - Lezen",
+      "subdomein": "Taalbewustzijn",
+      "type": "definitie",
+      "voorkant": "Wat is 'objectivatie' bij taalbewustzijn en hoe kun je het herkennen bij kinderen?",
+      "achterkant": "Kinderen leren het VERSCHIL tussen de VORM van een woord en de BETEKENIS ervan. Voorbeeld: 'Welk woord is groter: koe of pissebed?' Jonge kinderen zeggen 'koe' (betekenis), oudere kinderen 'pissebed' (vorm/letterlengte). Dit besef heet objectivatie.",
+      "geheugensteun": "Objectivatie = vorm ≠ betekenis begrijpen"
+    },
+    {
+      "id": "LE-017",
+      "domein": "Geletterdheid - Lezen",
+      "subdomein": "Leestaken",
+      "type": "feit",
+      "voorkant": "Welke vier soorten teksten moeten leerlingen in groep 8 kunnen lezen (referentiekader)?",
+      "achterkant": "1. Eenvoudige informatieve teksten (zaakvak, naslagwerken, internet)\n2. Instructieve teksten (routebeschrijvingen, recepten)\n3. Betogende teksten (advertenties, schoolboeken)\n4. Fictie (fictionele, verhalende en literaire teksten)",
+      "geheugensteun": "Informatief, Instructief, Betogend, Fictie (IIBF)"
+    },
+    {
+      "id": "LE-018",
+      "domein": "Geletterdheid - Lezen",
+      "subdomein": "Tekstkenmerken",
+      "type": "definitie",
+      "voorkant": "Op welke drie NIVEAUS kan de structuur van een tekst worden onderzocht?",
+      "achterkant": "1. Macroniveau: globale tekststructuur (het geheel)\n2. Mesoniveau: lokale tekstverbanden, signaalwoorden (alinea's, verbindingswoorden)\n3. Microniveau: woord- en zinsniveau",
+      "geheugensteun": "Macro = groot geheel. Meso = lokale verbanden. Micro = woord/zin."
+    },
+    {
+      "id": "LE-019",
+      "domein": "Geletterdheid - Lezen",
+      "subdomein": "Leesstrategieën",
+      "type": "definitie",
+      "voorkant": "Welke vier leesmanieren onderscheidt men?",
+      "achterkant": "1. Globaal lezen (vluchtig overzicht)\n2. Selectief/zoekend lezen (gericht op specifieke informatie)\n3. Nauwkeurig lezen (woord voor woord, bv. bij toetsvragen)\n4. Kritisch lezen (een oordeel vormen over de tekst)",
+      "geheugensteun": "G-S-N-K: Globaal, Selectief, Nauwkeurig, Kritisch"
+    },
+    {
+      "id": "LE-020",
+      "domein": "Geletterdheid - Lezen",
+      "subdomein": "Leesstrategieën",
+      "type": "definitie",
+      "voorkant": "Wat zijn metacognitieve vaardigheden bij lezen?",
+      "achterkant": "Leesgedrag PLANNEN (voor het lezen), CONTROLEREN en CORRIGEREN (tijdens het lezen) en REFLECTEREN (na het lezen).",
+      "geheugensteun": "Plan → Control → Reflecteer (voor/tijdens/na)"
+    },
+    {
+      "id": "LE-021",
+      "domein": "Geletterdheid - Lezen",
+      "subdomein": "Leesstrategieën",
+      "type": "definitie",
+      "voorkant": "Wat is reciprocal teaching en welke vier strategieën worden daarbij gebruikt?",
+      "achterkant": "Reciprocal teaching = leerlingen onderwijzen elkaar in kleine groepen. Ze wisselen beurtelings de rol van 'docent'. De vier strategieën zijn:\n1. Vragen stellen\n2. Verhelderen\n3. Samenvatten\n4. Voorspellen",
+      "geheugensteun": "Reciprocal = wederzijds leren. V-V-S-V: Vragen, Verhelderen, Samenvatten, Voorspellen."
+    },
+    {
+      "id": "LE-022",
+      "domein": "Geletterdheid - Lezen",
+      "subdomein": "Leesstrategieën",
+      "type": "definitie",
+      "voorkant": "Wat is probleemgestuurd lezen?",
+      "achterkant": "Leerlingen krijgen een taak waarbij ze teksten moeten LEZEN OM DE TAAK TOT EEN GOED EINDE te brengen. Lezen is het middel om een probleem op te lossen.",
+      "geheugensteun": "Probleemgestuurd = lezen om een taak op te lossen"
+    },
+    {
+      "id": "LE-023",
+      "domein": "Geletterdheid - Lezen",
+      "subdomein": "Leesstrategieën",
+      "type": "feit",
+      "voorkant": "Welke vier eenvoudige begrijpend-leesstrategieën noemen Tomesen en Van Kleef (2005) voor groep 3-4?",
+      "achterkant": "1. Voorkennis activeren\n2. Vragen stellen\n3. Voorspellingen doen\n4. Visualiseren",
+      "geheugensteun": "V-V-V-V: Voorkennis, Vragen, Voorspellen, Visualiseren"
+    },
+    {
+      "id": "LE-024",
+      "domein": "Geletterdheid - Lezen",
+      "subdomein": "Samenvatten",
+      "type": "definitie",
+      "voorkant": "Beschrijf de drie fasen van samenvatten die gefaseerd worden aangeleerd.",
+      "achterkant": "1. Zelfrelevante samenvatting: de leerling benadrukt wat voor HEMZELF belangrijk is.\n2. Tekstrelevante samenvatting: de leerling volgt de tekst volledig.\n3. Publieksrelevante samenvatting: een lezer die de tekst NIET heeft gelezen, moet de samenvatting kunnen volgen.",
+      "geheugensteun": "Zelf → Tekst → Publiek (steeds minder subjectief)"
+    },
+    {
+      "id": "LE-025",
+      "domein": "Geletterdheid - Lezen",
+      "subdomein": "Visies op Leesonderwijs",
+      "type": "definitie",
+      "voorkant": "Wat kenmerkt traditioneel leesonderwijs?",
+      "achterkant": "Veel aandacht voor TECHNIEK, minder voor functie. Deelvaardigheden centraal: aparte lessen technisch lezen, begrijpend lezen, vrij lezen. In gr 1-2: leesvoorwaarden. In gr 3: elementaire leeshandeling als doel op zich. Leesstrategieën worden als doel i.p.v. middel gezien.",
+      "geheugensteun": "Traditioneel lezen = techniek centraal, deelvaardigheden gescheiden"
+    },
+    {
+      "id": "LE-026",
+      "domein": "Geletterdheid - Lezen",
+      "subdomein": "Visies op Leesonderwijs",
+      "type": "definitie",
+      "voorkant": "Wat zijn de drie stromingen van 'Lezen en interactief taalonderwijs'?",
+      "achterkant": "1. Betekenisvol leren (lezen en schrijven in samenhang, rol in dagelijks leven)\n2. Sociaal leren (interactie met andere kinderen, van elkaar leren)\n3. Strategisch leren (voor, tijdens en na het lezen vragen stellen; balans open en gerichte instructie)",
+      "geheugensteun": "Interactief lezen = Betekenis + Sociaal + Strategisch"
+    },
+    {
+      "id": "LE-027",
+      "domein": "Geletterdheid - Lezen",
+      "subdomein": "Visies op Leesonderwijs",
+      "type": "definitie",
+      "voorkant": "Wat kenmerkt 'Lezen en taakgericht taalonderwijs'?",
+      "achterkant": "Leerlingen leren taal DOOR taken uit te voeren (kloof tussen bestaande taalvaardigheid en wat nodig is voor de taak). Lezen is MIDDEL om een ander doel te bereiken. Teksten hoeven niet vooraf 'schoongemaakt' te zijn; leerlingen ontcijferen ze met context en wereldkennis.",
+      "geheugensteun": "Taakgericht lezen = kloof overbruggen, lezen als middel"
+    },
+    {
+      "id": "LE-028",
+      "domein": "Geletterdheid - Lezen",
+      "subdomein": "Leesomgeving",
+      "type": "definitie",
+      "voorkant": "Wat is het verschil tussen materiële en immateriële leesomgeving?",
+      "achterkant": "Materiële leesomgeving: fysieke zaken (soorten boeken, plekken om te lezen).\nImmateriële leesomgeving: activiteiten die kinderen in aanraking brengen met boeken en lezen stimuleren.\n\nEen rijke materiële omgeving 'gaat pas leven' wanneer de leraar en kinderen er actief mee aan de slag gaan (immaterieel).",
+      "geheugensteun": "Materieel = spullen. Immaterieel = activiteiten. Beide nodig."
+    },
+    {
+      "id": "LE-029",
+      "domein": "Geletterdheid - Lezen",
+      "subdomein": "AVI en CLIB",
+      "type": "definitie",
+      "voorkant": "Wat meet het AVI-systeem en wat zijn de niveaus?",
+      "achterkant": "AVI = Analyse Van Individualiseringsvormen-systeem (1977). Meet de TECHNISCHE moeilijkheidsgraad van teksten op basis van gemiddelde woord- en zinslengte (CILT). Niveaus: AVI-start → AVI-M (midden) → AVI-E (eind) → AVI-Plus (hoogste, gemiddeld bereikt in gr 8).",
+      "geheugensteun": "AVI = leestechnisch niveau. Start tot Plus."
+    },
+    {
+      "id": "LE-030",
+      "domein": "Geletterdheid - Lezen",
+      "subdomein": "AVI en CLIB",
+      "type": "definitie",
+      "voorkant": "Wat is CLIB en waarvoor wordt het gebruikt?",
+      "achterkant": "CLIB = Cito LeesbaarheidsIndex voor het Basisonderwijs. Een toets om LEESBEGRIP te testen (8 niveaus). Werkt met cloze-toetsen: gaatjesteksten waarin leerlingen ontbrekende woorden moeten invullen.",
+      "geheugensteun": "CLIB = begripsniveau. Cloze-toetsen (gaatjes invullen)."
+    },
+    {
+      "id": "LE-031",
+      "domein": "Geletterdheid - Lezen",
+      "subdomein": "AVI en CLIB",
+      "type": "contrast",
+      "voorkant": "Wat meet AVI en wat meet CLIB? Wat is de cruciale tegenstelling?",
+      "achterkant": "AVI: meet de TECHNISCHE LEESMOEILIJKHEIDSGRAAD van de tekst (woord- en zinslengte via CILT).\nCLIB: meet het LEESBEGRIP van de leerling (via cloze-toetsen).\n\nAVI = techniek. CLIB = begrip.",
+      "geheugensteun": "AVI = technisch. CLIB = begrip. Twee verschillende dingen!"
+    },
+    {
+      "id": "LE-032",
+      "domein": "Geletterdheid - Lezen",
+      "subdomein": "AVI en CLIB",
+      "type": "definitie",
+      "voorkant": "Wat is de Leeslat en wat staat L, A en T voor?",
+      "achterkant": "Een vignet op boeken met drie aanwijzingen:\nL = Leeservaringsschaal (kwalitatieve inhoud: personage, perspectief, tijd, spanning, taalgebruik...)\nA = AVI (technisch leesniveau)\nT = Thema",
+      "geheugensteun": "Leeslat = L(eervaringsschaal) + A(VI) + T(hema)"
+    },
+    {
+      "id": "LE-033",
+      "domein": "Geletterdheid - Lezen",
+      "subdomein": "AVI en CLIB",
+      "type": "definitie",
+      "voorkant": "Wat zijn 'open plekken' in een verhaal?",
+      "achterkant": "Episodes waar NIETS over verteld wordt en waarvan de invulling wordt overgelaten aan de fantasie van de lezer. Dit vereist dat de lezer actief interpreteert en inferences maakt.",
+      "geheugensteun": "Open plekken = lezer vult zelf in"
+    },
+    {
+      "id": "LE-034",
+      "domein": "Geletterdheid - Lezen",
+      "subdomein": "Evaluatie",
+      "type": "definitie",
+      "voorkant": "Welke drie typen zwakke lezers onderscheidt Hacquebord?",
+      "achterkant": "1. Kinderen die goed op hoofdzaken lezen maar MISSEN GEDETAILLEERD BEGRIP (op woord-/zinsniveau)\n2. Kinderen die enorm op details letten en de GROTE LIJN missen (geen verschil hoofd-/bijzaken)\n3. Kinderen die gebaat zijn bij SPECIALISTISCHE HULP",
+      "geheugensteun": "Hacquebord: Globaal begrijper, Detail-fixeerder, Specialistische hulp nodig"
+    },
+    {
+      "id": "LE-035",
+      "domein": "Geletterdheid - Lezen",
+      "subdomein": "Informatieve teksten",
+      "type": "definitie",
+      "voorkant": "Wat is informatieverwerving?",
+      "achterkant": "Het SNEL EN EFFICIËNT opzoeken en verwerken van informatie om er vervolgens iets mee te doen. Kinderen leren: omgaan met informatiebronnen, het alfabet gebruiken, trefwoorden hanteren, naslagwerken en infographics gebruiken, en informatie samenvatten/schematiseren.",
+      "geheugensteun": "Informatieverwerving = snel + efficiënt opzoeken + verwerken + doen"
+    },
+    {
+      "id": "LE-036",
+      "domein": "Geletterdheid - Lezen",
+      "subdomein": "Onderwijsaanbod per groep",
+      "type": "feit",
+      "voorkant": "Wat is de focus bij lezen in groep 1-2?",
+      "achterkant": "Luisteren naar verhalen, gedichten en informatieve teksten. Leren van de functies van teksten. Teksten zijn concreet, contextgebonden, spelen in het hier en nu (prentenboeken, voorleesboeken). Leerlingen verbinden eigen kennis en ervaring met de inhoud.",
+      "geheugensteun": "Gr 1-2: luisteren, functies ontdekken, concreet & contextgebonden"
+    },
+    {
+      "id": "LE-037",
+      "domein": "Geletterdheid - Lezen",
+      "subdomein": "Onderwijsaanbod per groep",
+      "type": "feit",
+      "voorkant": "Wat is de focus bij lezen in groep 3-4?",
+      "achterkant": "Groep 3: de ELEMENTAIRE LEESHANDELING aanleren en automatiseren. Groep 4: kennis maken met schoolboeken van andere vakken, handvatten voor begrip en onthouden. Begin met tekstrelevant samenvatten. Teksten nog concreet en herkenbaar van structuur.",
+      "geheugensteun": "Gr 3: elementaire leeshandeling. Gr 4: zaakvakteksten + samenvatten."
+    },
+    {
+      "id": "LE-038",
+      "domein": "Geletterdheid - Lezen",
+      "subdomein": "Onderwijsaanbod per groep",
+      "type": "feit",
+      "voorkant": "Wat is de focus bij lezen in groep 5-6?",
+      "achterkant": "Functioneel lezen van zakelijke teksten. Onderwerpen worden abstracter. Focus op: tekstsoorten herkennen, leesstrategieën bewuster inzetten, vlotte woordherkenning, kritisch lezen, en nieuwe manieren van schematiseren (Venn-diagram, pijldiagram).",
+      "geheugensteun": "Gr 5-6: abstract, strategisch, kritisch, schematiseren"
+    },
+    {
+      "id": "LE-039",
+      "domein": "Geletterdheid - Lezen",
+      "subdomein": "Onderwijsaanbod per groep",
+      "type": "feit",
+      "voorkant": "Wat is de focus bij lezen in groep 7-8?",
+      "achterkant": "Teksten lezen voor vermaken, informeren, mening vormen, greep op de wereld. Reflectie op teksten en eigen leesproces. Formele betogen. Structuren van teksten doorzien. Studeetechnieken: staaf-/cirkeldiagrammen, publieksrelevant samenvatten. Tekstverbanden doorzien.",
+      "geheugensteun": "Gr 7-8: reflectie, betogen, studerend lezen, publieksrelevant samenvatten"
+    },
+    {
+      "id": "LE-040",
+      "domein": "Geletterdheid - Lezen",
+      "subdomein": "Leesmotivatie",
+      "type": "definitie",
+      "voorkant": "Noem vier concrete manieren om de leesmotivatie van leerlingen te bevorderen.",
+      "achterkant": "1. Strategieën aanleren om na te denken voor, tijdens en na het lezen\n2. Leerlingen laten samenwerken aan leestaken\n3. Oudere en jongere leerlingen laten samenwerken (peer tutoring)\n4. Met kinderen praten over teksten\n5. Prikkelende vragen stellen over teksten (fantasie en inlevingsvermogen stimuleren)",
+      "geheugensteun": "Strategieën + samenwerken + peer tutoring + praten over boeken"
+    },
+    {
+      "id": "LE-041",
+      "domein": "Geletterdheid - Lezen",
+      "subdomein": "Hardop lezen",
+      "type": "kritisch",
+      "voorkant": "Waarom is 'domweg' hardop laten lezen in de klas weinig effectief?",
+      "achterkant": "- Snelle lezers lezen verder in eigen tempo (niet iedereen volgt)\n- Het kind dat voorleest is zo druk met foutloos verklanken dat de INHOUD hem ontgaat\n- Door de nadruk op foutloos verklanken krijgen kinderen een vertekend beeld van wat lezen inhoudt\n- Andere kinderen zijn afgeleid",
+      "geheugensteun": "Hardop lezen = aandacht gaat naar techniek, weg van begrip"
+    },
+    {
+      "id": "SC-001",
+      "domein": "Geletterdheid - Schrijven",
+      "subdomein": "Achtergrondkennis",
+      "type": "definitie",
+      "voorkant": "Welke drie vaardigheden omvat 'schrijven' als term?",
+      "achterkant": "1. Het foutloos SPELLEN\n2. Het schrijven als MOTORISCHE vaardigheid (hanenschrift, letters vormen)\n3. Het schrijven als vaardigheid om te STELLEN (teksten produceren)",
+      "geheugensteun": "Spellen + Motoriek + Stellen = schrijven"
+    },
+    {
+      "id": "SC-002",
+      "domein": "Geletterdheid - Schrijven",
+      "subdomein": "Achtergrondkennis",
+      "type": "definitie",
+      "voorkant": "Wat is declaratieve kennis en wat is procedurele kennis bij schrijven?",
+      "achterkant": "Declaratieve kennis (feitenkennis): het GEHEEL AAN KENNIS over schrijven (wat je weet).\nProcedurele kennis: WELKE VAARDIGHEDEN je inzet bij schrijven, HOE je een schrijfklus aanpakt (wat je doet).",
+      "geheugensteun": "Declaratief = weten. Procedureel = kunnen/doen."
+    },
+    {
+      "id": "SC-003",
+      "domein": "Geletterdheid - Schrijven",
+      "subdomein": "Functies",
+      "type": "definitie",
+      "voorkant": "Welke drie functies heeft schriftelijk taalgebruik?",
+      "achterkant": "1. Communiceren\n2. De conceptualiserende functie: gedachten vorm geven\n3. De expressieve functie: iets persoonlijks overbrengen",
+      "geheugensteun": "Communiceren + Denken structureren + Expressie = schrijffuncties"
+    },
+    {
+      "id": "SC-004",
+      "domein": "Geletterdheid - Schrijven",
+      "subdomein": "Functies",
+      "type": "definitie",
+      "voorkant": "Welke vier aspecten bevat een schrijfproduct in de schriftelijke communicatie?",
+      "achterkant": "1. Zakelijk aspect: de werkelijke boodschap\n2. Expressief aspect: hoe de schrijver zich tot het onderwerp verhoudt\n3. Relationeel aspect: de relatie met de ontvanger (publieksgericht)\n4. Appellerend aspect: de bedoeling met de boodschap (schrijfdoel van de zender)",
+      "geheugensteun": "ZERA: Zakelijk, Expressief, Relationeel, Appellerend"
+    },
+    {
+      "id": "SC-005",
+      "domein": "Geletterdheid - Schrijven",
+      "subdomein": "Taalkundige componenten",
+      "type": "definitie",
+      "voorkant": "Noem de zeven componenten van schriftelijke taalvaardigheid.",
+      "achterkant": "1. Fonologische component (klanken formuleren)\n2. Lexicale en semantische component (woordkeuze)\n3. Syntactische component (zinsbouw, hoofd-/bijzinnen, tijden)\n4. Morfologische component (verbuigen/vervoegen)\n5. Tekstuele component (tekstopbouw, titel, lay-out)\n6. Pragmatische component (schrijfdoel bij lezer overbrengen, structuur, duidelijkheid)\n7. Orthografische component (spelling en interpunctie controleren)",
+      "geheugensteun": "F-L-S-M-T-P-O (7 componenten)"
+    },
+    {
+      "id": "SC-006",
+      "domein": "Geletterdheid - Schrijven",
+      "subdomein": "Schrijfproces",
+      "type": "definitie",
+      "voorkant": "Beschrijf de drie deelprocessen van het schrijfproces.",
+      "achterkant": "1. Planningsfase: voorkennis activeren, oriënteren op onderwerp, publiek, tekstsoort, strategie en organisatie.\n2. Formuleerfase: gedachten in woorden omzetten, woordkeuze, zinsbouw, verbanden, ook oog voor spelling en opmaak.\n3. Revisiefase: tekst herlezen, wijzigingen aanbrengen, schrijfdoel controleren, publieksgericht afstemmen.",
+      "geheugensteun": "Plannen → Formuleren → Reviseren (P-F-R)"
+    },
+    {
+      "id": "SC-007",
+      "domein": "Geletterdheid - Schrijven",
+      "subdomein": "Schrijfproces",
+      "type": "definitie",
+      "voorkant": "Wat is recursiviteit in het schrijfproces?",
+      "achterkant": "Het feit dat de drie fasen (plannen, formuleren, reviseren) NIET lineair op elkaar volgen, maar dat ervaren schrijvers voortdurend heen en weer SPRINGEN tussen de fasen. Het is een iteratief, niet-lineair proces.",
+      "geheugensteun": "Recursief = niet lineair, heen-en-weer springen tussen fasen"
+    },
+    {
+      "id": "SC-008",
+      "domein": "Geletterdheid - Schrijven",
+      "subdomein": "Schrijfproces",
+      "type": "definitie",
+      "voorkant": "Wat is de monitor in het schrijfproces?",
+      "achterkant": "Een metacognitief controlemechanisme in het kortetermijngeheugen dat alle processen in de diverse schrijffasen regelt, stuurt en bewaakt. De monitor bewerkstelligt de recursiviteit.",
+      "geheugensteun": "Monitor = cognitieve 'regisseur' die het schrijven aanstuurt"
+    },
+    {
+      "id": "SC-009",
+      "domein": "Geletterdheid - Schrijven",
+      "subdomein": "Schrijfproces",
+      "type": "toepassing",
+      "voorkant": "Tijdens het schrijven van een opstel herleest een leerling zijn eerste alinea, merkt dat zijn beginzin niet klopt, corrigeert die, en gaat dan verder. Welke twee concepten illustreert dit?",
+      "achterkant": "1. Recursiviteit: de leerling springt terug van formuleren naar reviseren.\n2. Monitor: het metacognitieve mechanisme dat hem aanzet om te controleren en bij te sturen.",
+      "geheugensteun": "Teruggaan + bijsturen = recursiviteit + monitor"
+    },
+    {
+      "id": "SC-010",
+      "domein": "Geletterdheid - Schrijven",
+      "subdomein": "Grondregels Spelling",
+      "type": "definitie",
+      "voorkant": "Op welke drie beginselen zijn de grondregels van de Nederlandse spelling gebaseerd?",
+      "achterkant": "1. Beginsel van gelijkvormigheid: woorden die qua vorm samenhangen worden op dezelfde manier geschreven.\n2. Beginsel van de standaarduitspraak: spelling mag niet afhankelijk zijn van regionale/sociale varianten.\n3. Beginsel van de etymologie: restanten van woordgeschiedenis zijn herkenbaar (bv. ij/ei, ou/au).",
+      "geheugensteun": "Gelijkvormigheid + Standaarduitspraak + Etymologie"
+    },
+    {
+      "id": "SC-011",
+      "domein": "Geletterdheid - Schrijven",
+      "subdomein": "Spelling",
+      "type": "feit",
+      "voorkant": "In welk jaar verscheen het Groene Boekje en waartoe diende het?",
+      "achterkant": "1954. Het Groene Boekje is een lijst van individuele woorden waarvan de spelling was bepaald door een Nederlands-Vlaamse commissie (na de spellingwijziging van 1947). De laatste wijziging was in 2006 (afspraken over elke 10 jaar aanpassen).",
+      "geheugensteun": "Groen Boekje 1954, na wijziging 1947. Laatste herziening 2006."
+    },
+    {
+      "id": "SC-012",
+      "domein": "Geletterdheid - Schrijven",
+      "subdomein": "Geletterdheidsfasen - Schrijven",
+      "type": "definitie",
+      "voorkant": "Wat is 'objectivatie' in de ontluikende geletterdheid bij schrijven?",
+      "achterkant": "Het inzicht dat letters samengesteld kunnen worden tot woorden. Kinderen beseffen dat LETTERS TEKENS zijn (afbeeldingen van klanken). Dit groeiend bewustzijn van het alfabet en de functie van schrift noemt men objectivatie.",
+      "geheugensteun": "Objectivatie bij schrijven = beseffen dat letters klanken voorstellen"
+    },
+    {
+      "id": "SC-013",
+      "domein": "Geletterdheid - Schrijven",
+      "subdomein": "Geletterdheidsfasen - Schrijven",
+      "type": "definitie",
+      "voorkant": "Welke auditieve vaardigheden zijn fundamenteel voor het leren schrijven (beginnende geletterdheid)?",
+      "achterkant": "1. Auditieve discriminatie (klanken op gehoor van elkaar onderscheiden)\n2. Auditieve analyse (klanken in een woord op volgorde onthouden = uiteenrafelen)\n3. Temporele ordening (volgorde van klanken kunnen onthouden)\n4. Auditieve synthese (klanken kunnen samenvoegen tot een woord)",
+      "geheugensteun": "Auditief: Discrimineren → Analyseren → Ordenen → Synthetiseren"
+    },
+    {
+      "id": "SC-014",
+      "domein": "Geletterdheid - Schrijven",
+      "subdomein": "Geletterdheidsfasen - Schrijven",
+      "type": "definitie",
+      "voorkant": "Welke visuele vaardigheden zijn fundamenteel voor het leren schrijven (beginnende geletterdheid)?",
+      "achterkant": "1. Visuele discriminatie (verschillen tussen lettertekens herkennen)\n2. Visuele analyse (onderscheiden van lettertekens in een woord)\n3. Spatiële ordening (grafemen op volgorde onthouden)\n4. Visuele synthese (losse letters samenvoegen tot een woord)",
+      "geheugensteun": "Visueel: Discrimineren → Analyseren → Ordenen → Synthetiseren"
+    },
+    {
+      "id": "SC-015",
+      "domein": "Geletterdheid - Schrijven",
+      "subdomein": "Elementaire Schrijfhandeling",
+      "type": "definitie",
+      "voorkant": "Noem de stappen van de elementaire schrijfhandeling in de juiste volgorde.",
+      "achterkant": "1. Auditieve discriminatie (klanken op gehoor onderscheiden)\n2. Auditieve analyse (klanken in een woord op volgorde onthouden)\n3. Klank-tekenkoppeling (letters koppelen aan klanken)\n4. Schrijfrichting (van links naar rechts)\n5. Schrijven van letters, woorden en zinnen (auditief dictee)",
+      "geheugensteun": "A-discrimin → A-analyse → Klank-teken → Richting → Dictee"
+    },
+    {
+      "id": "SC-016",
+      "domein": "Geletterdheid - Schrijven",
+      "subdomein": "Elementaire Schrijfhandeling",
+      "type": "contrast",
+      "voorkant": "Wat is het verschil tussen de elementaire LEEShandeling en de elementaire SCHRIJFhandeling?",
+      "achterkant": "Ze zijn elkaars spiegelbeeld maar de schrijfhandeling is cognitief complexer:\n\nLezen: richting → visueel discrimineren → teken-klank → auditieve synthese (klanken samenvoegen)\nSchrijven: auditieve discriminatie → auditieve analyse (klanken onthouden) → klank-teken → schrijfrichting → dictee\n\nBij schrijven is de temporele ordening (volgorde onthouden) cruciaal.",
+      "geheugensteun": "Schrijven = lezen omgekeerd + temporele ordening vereist"
+    },
+    {
+      "id": "SC-017",
+      "domein": "Geletterdheid - Schrijven",
+      "subdomein": "Spellingprincipes",
+      "type": "definitie",
+      "voorkant": "Beschrijf de vier instructieprincipes voor spelling.",
+      "achterkant": "1. Luisterprincipe: je schrijft het woord zoals je het HOORT (klankzuiver)\n2. Analogieprincipe: je vergelijkt het te spellen woord met een BEKEND WOORD\n3. Regelprincipe: je past een SPELLINGSREGEL toe\n4. Inprentingsprincipe: de spelling moet je gewoon ONTHOUDEN (weetwoorden, geen logische regel)",
+      "geheugensteun": "L-A-R-I: Luister, Analogie, Regel, Inprenting"
+    },
+    {
+      "id": "SC-018",
+      "domein": "Geletterdheid - Schrijven",
+      "subdomein": "Spellingprincipes",
+      "type": "toepassing",
+      "voorkant": "Een leerling moet 'bureau' spellen. Er is geen klankrege: het is een Frans leenwoord. Welk spellingprincipe past de leraar toe?",
+      "achterkant": "Het inprentingsprincipe. Het is een 'weetwoord': de spelling is niet af te leiden uit een regel of analogie en moet via het visuele of motorische geheugen worden ingeprent.",
+      "geheugensteun": "Geen logische regel = inprentingsprincipe = weetwoord"
+    },
+    {
+      "id": "SC-019",
+      "domein": "Geletterdheid - Schrijven",
+      "subdomein": "Spellingprincipes",
+      "type": "toepassing",
+      "voorkant": "Een leerling weet niet hoe hij 'ik werk' schrijft. De leraar zegt: 'Vergelijk het met 'ik loop' – dat eindigt ook op de stam.' Welk spellingprincipe gebruikt de leraar?",
+      "achterkant": "Het analogieprincipe. De leerling leidt de spelling van het onbekende woord af door het te vergelijken met een bekend woord met hetzelfde patroon.",
+      "geheugensteun": "Vergelijken met een bekend woord = analogieprincipe"
+    },
+    {
+      "id": "SC-020",
+      "domein": "Geletterdheid - Schrijven",
+      "subdomein": "Spellingprincipes",
+      "type": "definitie",
+      "voorkant": "Beschrijf de drie stappen van de klankvoetstrategie voor moeilijke, meerlettergrepige woorden.",
+      "achterkant": "1. Woord verdelen in klankstukken (bv. spree-kun)\n2. Eerste klankstuk bepalen (spree)\n3. Laatste klank van het eerste klankstuk bepalen (ee)\n4. Bepalen tot welke groep die klank behoort (lange klank)\n5. Bepalen wie de 'baas' is en wat hij doet (schrijfwijze)",
+      "geheugensteun": "Klankvoetstrategie = 5 stappen om het eerste klankstuk te bepalen"
+    },
+    {
+      "id": "SC-021",
+      "domein": "Geletterdheid - Schrijven",
+      "subdomein": "Werkwoordspelling",
+      "type": "definitie",
+      "voorkant": "Welke grammaticale begrippen moeten leerlingen kennen VÓÓRDAT werkwoordspelling kan worden aangeleerd?",
+      "achterkant": "1. Werkwoorden als veranderlijke woorden die vervoegd kunnen worden\n2. Het hele werkwoord (infinitief)\n3. Persoonsvorm en onderwerp\n4. Voltooid deelwoord en gezegde\n5. Regelmatige en onregelmatige werkwoorden (zwakke en sterke)",
+      "geheugensteun": "WW → Heel WW → PV+onderwerp → VD+gezegde → Sterk/zwak"
+    },
+    {
+      "id": "SC-022",
+      "domein": "Geletterdheid - Schrijven",
+      "subdomein": "Schrijfstijlen per fase",
+      "type": "definitie",
+      "voorkant": "Wat is 'vertellend schrijven' en wat zijn de kenmerken ervan?",
+      "achterkant": "Vertellend schrijven = de fase na de elementaire schrijfhandeling (groep 3). Kinderen schrijven associatief: over concrete zaken in chronologische volgorde van gebeurtenissen. Veel 'en-toen-en-toenstijl'. Ze zijn nog niet bezig met publiek of doel.",
+      "geheugensteun": "Vertellend = associatief, chronologisch, 'en-toen-stijl'"
+    },
+    {
+      "id": "SC-023",
+      "domein": "Geletterdheid - Schrijven",
+      "subdomein": "Schrijfstijlen per fase",
+      "type": "definitie",
+      "voorkant": "Wat is 'denkend schrijven' en in welke groepen hoort dit?",
+      "achterkant": "Denkend schrijven (groep 4-8 / gevorderde geletterdheid): leerlingen leren dat teksten een publiek en doel hebben. Ze werken planmatig, nemen standpunten in, en letten op lay-out. Aandacht voor plannen, formuleren EN reviseren. Dit is het recursieve schrijfproces.",
+      "geheugensteun": "Denkend schrijven = planmatig, publieksgericht, plannen+formuleren+reviseren"
+    },
+    {
+      "id": "SC-024",
+      "domein": "Geletterdheid - Schrijven",
+      "subdomein": "Didactiek Schrijven",
+      "type": "definitie",
+      "voorkant": "Beschrijf de vijf fasen van de schrijfdidactiek in groep 4-8.",
+      "achterkant": "1. Oriëntatiefase (taakomgeving): oriënteren op onderwerp, doel, publiek\n2. Planningsfase (opdracht formuleren): afbakenen, kiezen teksttype\n3. Omzettingsproces (eerste tekst schrijven)\n4. Reviseerproces (reflecteren en herschrijven; peer-respons)\n5. Reviseerproces (verzorgen en presenteren: spelling, interpunctie, lay-out)",
+      "geheugensteun": "Oriënteren → Plannen → Schrijven → Reviseren → Verzorgen"
+    },
+    {
+      "id": "SC-025",
+      "domein": "Geletterdheid - Schrijven",
+      "subdomein": "Didactiek Schrijven",
+      "type": "definitie",
+      "voorkant": "Waarom is schrijven een recursief en interactief proces?",
+      "achterkant": "Omdat een leerling bij het herschrijven (fase 4) soms terug moet naar de oriëntatiefase en opnieuw moet beginnen. Alle fasen kunnen herhaald worden en staan niet los van elkaar. De monitor stuurt dit niet-lineaire proces aan.",
+      "geheugensteun": "Recursief = bij herschrijven soms terug naar begin. Alle fasen beïnvloeden elkaar."
+    },
+    {
+      "id": "SC-026",
+      "domein": "Geletterdheid - Schrijven",
+      "subdomein": "Visies op Schrijfonderwijs",
+      "type": "contrast",
+      "voorkant": "Vergelijk de traditionele visie en de interactieve visie op schrijfonderwijs.",
+      "achterkant": "Traditioneel: veel aandacht voor VORM, deelvaardigheden geïsoleerd inoefenen, accent op het schrijfproduct (er goed uitzien).\n\nInteractief: naast vorm ook aandacht voor BETEKENIS en GEBRUIK, strategische aanpak (procesgerichte instructie), aandacht voor het schrijfPROCES.",
+      "geheugensteun": "Traditioneel = product, vorm. Interactief = proces, betekenis."
+    },
+    {
+      "id": "SC-027",
+      "domein": "Geletterdheid - Schrijven",
+      "subdomein": "Evaluatie",
+      "type": "definitie",
+      "voorkant": "Wat is de portfoliowerkwijze en welke drie stappen omvat het?",
+      "achterkant": "Een evaluatie-instrument waarbij schrijfsels worden verzameld en besproken. Drie stappen:\n1. Verzamelen\n2. Selecteren\n3. Reflecteren",
+      "geheugensteun": "Portfolio = Verzamelen + Selecteren + Reflecteren"
+    },
+    {
+      "id": "SC-028",
+      "domein": "Geletterdheid - Schrijven",
+      "subdomein": "Spellingproblemen",
+      "type": "feit",
+      "voorkant": "Welke drie meest voorkomende oorzaken van spellingproblemen worden in het Protocol Leesproblemen en Dyslexie onderscheiden?",
+      "achterkant": "1. Een slechte klank-tekenkoppeling\n2. Een zwak fonemisch bewustzijn\n3. Een zwakke auditieve analyse",
+      "geheugensteun": "Spellingproblemen: Klank-teken + Fonemisch bewustzijn + Auditieve analyse"
+    },
+    {
+      "id": "SC-029",
+      "domein": "Geletterdheid - Schrijven",
+      "subdomein": "Spellingproblemen",
+      "type": "feit",
+      "voorkant": "Welke vier interventieniveaus zijn er voor lees- en spellingproblemen?",
+      "achterkant": "1. Vinger aan de pols houden (signaleren)\n2. Interventie door de leerkracht\n3. Interventie door een specialist\n4. Interventie door de specialist + aansluitend diagnostisch onderzoek",
+      "geheugensteun": "Signaleren → Leerkracht → Specialist → Specialist + Diagnostiek"
+    },
+    {
+      "id": "JL-001",
+      "domein": "Jeugdliteratuur",
+      "subdomein": "Belang en Geschiedenis",
+      "type": "definitie",
+      "voorkant": "Noem vier redenen waarom lezen (en jeugdliteratuur) belangrijk is voor kinderen.",
+      "achterkant": "1. Kennis opdoen over de wereld\n2. Vergroten van de taalontwikkeling\n3. Inleven in mensen en culturen\n4. Zelfreflectie",
+      "geheugensteun": "Kennis + Taal + Empathie + Zelfreflectie"
+    },
+    {
+      "id": "JL-002",
+      "domein": "Jeugdliteratuur",
+      "subdomein": "Geschiedenis",
+      "type": "feit",
+      "voorkant": "Wie schreef de eerste gedichtenbundels voor kinderen in Nederland en wanneer?",
+      "achterkant": "Hieronymus van Alphen, in 1778.",
+      "geheugensteun": "Van Alphen 1778 = eerste Nederlandse kindergedichten"
+    },
+    {
+      "id": "JL-003",
+      "domein": "Jeugdliteratuur",
+      "subdomein": "Geschiedenis",
+      "type": "feit",
+      "voorkant": "Wat zijn 'robinsonades' in de kinderliteratuur?",
+      "achterkant": "Navolgingen van Robinson Crusoe (1719, voor volwassenen maar bewerkt voor kinderen). Verhalen waarin de hoofdpersoon 'alleen' op de wereld is. Geïnspireerd door Jean-Jacques Rousseau's ideeën over natuur en gevoel.",
+      "geheugensteun": "Robinsonade = alleen op de wereld, naar voorbeeld van Robinson Crusoe"
+    },
+    {
+      "id": "JL-004",
+      "domein": "Jeugdliteratuur",
+      "subdomein": "Geschiedenis",
+      "type": "feit",
+      "voorkant": "Noem drie belangrijke schrijvers die na WOII de kinderliteratuur bepaalden.",
+      "achterkant": "1. Astrid Lindgren (meer dan 30 boeken, Pippi Langkous)\n2. Annie M.G. Schmidt (solidair met kind, Puk, Otje; scherpe kunstzinnige stijl)\n3. Guus Kuijer (afkeer van de volwassenwereld; Madelief, Met de poppen gooien)",
+      "geheugensteun": "Lindgren + Schmidt + Kuijer = drie WOII-pioniers"
+    },
+    {
+      "id": "JL-005",
+      "domein": "Jeugdliteratuur",
+      "subdomein": "Categorieën",
+      "type": "definitie",
+      "voorkant": "Wat is het onderscheid tussen een kinderboek, jeugdboek en adolescentenroman?",
+      "achterkant": "Kinderboek: t/m basisschoolleeftijd\nJeugdboek: kinderen die van de basisschool af zijn\nAdolescentenroman (crossover/Young Adult): jongeren 15-25 jaar",
+      "geheugensteun": "Kind (basisschool) → Jeugd (erna) → Adolescent 15-25"
+    },
+    {
+      "id": "JL-006",
+      "domein": "Jeugdliteratuur",
+      "subdomein": "Kenmerken",
+      "type": "definitie",
+      "voorkant": "Noem vijf kenmerken die jeugdliteratuur onderscheiden van volwassenenliteratuur.",
+      "achterkant": "1. Woordkeus (eenvoudiger)\n2. Zinsbouw (korter/eenvoudiger bij jongere kinderen)\n3. Vertelperspectief (auctoriaal/alwetend in kinderboeken; geen volwassen vertelinstantie waarmee kinderen zich niet kunnen identificeren)\n4. Tijd (kinderboeken chronologisch; volwassen = anticipaties en flashbacks)\n5. Thematiek/Onderwerp (concreet vs. abstract)\n6. Illustraties (wel in kinder-, niet in volwassenenboeken)",
+      "geheugensteun": "Woord, Zin, Perspectief, Tijd, Thema, Illustraties"
+    },
+    {
+      "id": "JL-007",
+      "domein": "Jeugdliteratuur",
+      "subdomein": "Kenmerken",
+      "type": "definitie",
+      "voorkant": "Wat is het auctoriaal/auctorieel perspectief?",
+      "achterkant": "Het vertelperspectief met een ALWETENDE VERTELLER (ook wel 'derdepersoonsverteller die alles weet'). Dominant in kinderboeken. Er is geen volwassene als vertelinstantie, want kinderen kunnen zich daar niet mee identificeren.",
+      "geheugensteun": "Auctoriaal = alwetend. Kinderen = geen volwassen verteller als identificatie."
+    },
+    {
+      "id": "JL-008",
+      "domein": "Jeugdliteratuur",
+      "subdomein": "Kenmerken",
+      "type": "definitie",
+      "voorkant": "Wat is het verschil tussen onderwerp en thema in een boek?",
+      "achterkant": "Onderwerp: CONCREET (bv. een kind dat zijn hond verliest).\nThema: ABSTRACT, de algemene grondgedachte in het literaire werk (bv. verlies, rouw, loyaliteit).",
+      "geheugensteun": "Onderwerp = concreet. Thema = abstract/universeel."
+    },
+    {
+      "id": "JL-009",
+      "domein": "Jeugdliteratuur",
+      "subdomein": "Prentenboeken",
+      "type": "definitie",
+      "voorkant": "Wat is 'counterpoint' (contrapunt) in prentenboeken?",
+      "achterkant": "Een bewuste tegenstelling tussen tekst en beeld: de tekst zegt iets, maar de illustratie toont iets anders (of zelfs het tegenovergestelde). Dit is een 'knipoog' die het verhaal extra lading geeft. Vraagt actief interpreterend lezen.",
+      "geheugensteun": "Counterpoint = tekst en beeld spreken elkaar (bewust) tegen"
+    },
+    {
+      "id": "JL-010",
+      "domein": "Jeugdliteratuur",
+      "subdomein": "Prentenboeken",
+      "type": "definitie",
+      "voorkant": "Wat is het verschil tussen 'complementair' en 'counterpoint' in prentenboeken?",
+      "achterkant": "Complementair: tekst en beeld VULLEN ELKAAR AAN, vertellen samen het verhaal (het ideaal).\nCounterpoint/contrapunt: tekst en beeld zijn BEWUST IN CONTRAST, geven een knipoog of extra betekenislaag.",
+      "geheugensteun": "Complementair = aanvullen. Counterpoint = bewust tegengesteld."
+    },
+    {
+      "id": "JL-011",
+      "domein": "Jeugdliteratuur",
+      "subdomein": "Poëzie",
+      "type": "definitie",
+      "voorkant": "Wat is het verschil tussen assonantie en alliteratie?",
+      "achterkant": "Assonantie = KLINKERRIJM (gelijke klinkers, bv. 'droom-boom')\nAlliteratie = MEDEKLINKERRIJM (gelijke beginmedeklinkers, bv. 'stille steden')",
+      "geheugensteun": "Assonantie = klinkers. Alliteratie = beginmedeklinkers."
+    },
+    {
+      "id": "JL-012",
+      "domein": "Jeugdliteratuur",
+      "subdomein": "Poëzie",
+      "type": "definitie",
+      "voorkant": "Wat is het verschil tussen eindrijm, binnenrijm en middenrijm?",
+      "achterkant": "Eindrijm: rijm aan het EINDE van versregels\nBinnenrijm: rijm BINNEN één versregel\nMiddenrijm: rijm TUSSEN twee versregels (in het midden)",
+      "geheugensteun": "Eind/Binnen/Midden → positie van het rijm"
+    },
+    {
+      "id": "JL-013",
+      "domein": "Jeugdliteratuur",
+      "subdomein": "Sprookjes",
+      "type": "definitie",
+      "voorkant": "Wat is het verschil tussen een volkssprookje en een cultuursprookje?",
+      "achterkant": "Volkssprookje: NIET door één persoon opgeschreven, maar DOORVERTELD van generatie op generatie (mondelinge traditie). Symbolische getallen 3,7,11,13.\n\nCultuursprookje (kunstsprookje): BEDACHT en GESCHREVEN door één persoon (bv. Hans Christian Andersen).",
+      "geheugensteun": "Volkssprookje = mondelinge traditie. Cultuursprookje = één auteur."
+    },
+    {
+      "id": "JL-014",
+      "domein": "Jeugdliteratuur",
+      "subdomein": "Sprookjes",
+      "type": "definitie",
+      "voorkant": "Wat is het verschil tussen de monogenetische en polygenetische theorie over sprookjes?",
+      "achterkant": "Monogenetisch: verschillende varianten van sprookjes zijn afkomstig uit ÉÉN bron.\nPolygenetisch: op bepaalde tijden ontstonden op DIVERSE PLAATSEN vergelijkbare verhalen met hetzelfde thema (onafhankelijk van elkaar).",
+      "geheugensteun": "Mono = 1 bron. Poly = meerdere onafhankelijke bronnen."
+    },
+    {
+      "id": "JL-015",
+      "domein": "Jeugdliteratuur",
+      "subdomein": "Sprookjes",
+      "type": "feit",
+      "voorkant": "Wanneer verschenen de sprookjesboeken van Grimm?",
+      "achterkant": "In 1812 en 1815.",
+      "geheugensteun": "Grimm: 1812 en 1815"
+    },
+    {
+      "id": "JL-016",
+      "domein": "Jeugdliteratuur",
+      "subdomein": "Klassiek en Historisch",
+      "type": "definitie",
+      "voorkant": "Wat zijn de kenmerken van een klassiek kinderboek?",
+      "achterkant": "- Prominente plaats in de kinder-/jeugdliteratuur\n- Grote oplage\n- Lange periode van populariteit\n- Tijdloos\n- Grondlegger en voorbeeldfunctie\n\nNB: Bewerking gaat ten koste van de kwaliteit.",
+      "geheugensteun": "Klassieker = groot, populair, tijdloos, richtinggevend"
+    },
+    {
+      "id": "JL-017",
+      "domein": "Jeugdliteratuur",
+      "subdomein": "Klassiek en Historisch",
+      "type": "contrast",
+      "voorkant": "Wat is het verschil tussen een klassiek kinderboek en een historisch kinderboek?",
+      "achterkant": "Klassiek kinderboek: tijdloos, grote invloed op het genre.\n\nHistorisch kinderboek: de GESCHIEDENIS speelt een belangrijke rol, maar het is GEEN informatief boek. Een historisch feit of figuur is het uitgangspunt van het verhaal. (Bekende schrijvers: Thea Beckman, Simone v.d. Vlugt, Jan Terlouw.)",
+      "geheugensteun": "Klassiek = tijdloos. Historisch = geschiedenis als vertrekpunt."
+    },
+    {
+      "id": "JL-018",
+      "domein": "Jeugdliteratuur",
+      "subdomein": "Informatieve Boeken",
+      "type": "definitie",
+      "voorkant": "Noem de beoordelingscriteria voor informatieve boeken voor KLEUTERS.",
+      "achterkant": "1. Onderwerp moet dichtbij huis zijn (nabije belevingswereld)\n2. Heldere tekeningen, illustraties of foto's\n3. Feiten moeten waar zijn",
+      "geheugensteun": "Kleuter: dichtbij + helder + waar"
+    },
+    {
+      "id": "JL-019",
+      "domein": "Jeugdliteratuur",
+      "subdomein": "Informatieve Boeken",
+      "type": "definitie",
+      "voorkant": "Noem de beoordelingscriteria voor informatieve boeken voor OUDERE kinderen.",
+      "achterkant": "1. Toegankelijkheid\n2. Begrijpelijkheid (zinslengte, woordkeuze, afwisseling)\n3. Betrouwbaarheid\n4. Objectiviteit van de visie van de schrijver",
+      "geheugensteun": "Toegankelijk + Begrijpelijk + Betrouwbaar + Objectief"
+    },
+    {
+      "id": "JL-020",
+      "domein": "Jeugdliteratuur",
+      "subdomein": "Literaire Argumenten",
+      "type": "definitie",
+      "voorkant": "Welke zes literaire argumenten worden gebruikt om literatuur te beoordelen ('literatuur of lectuur')?",
+      "achterkant": "1. Emotivistisch: raakt het me? (persoonlijk oordeel)\n2. Moreel: oordeel op ethische gronden\n3. Structureel: opbouw en logische samenhang (realistisch = waarheidsgetrouw)\n4. Vernieuwingselement: origineel\n5. Stilistisch: woordkeus, stijlfiguren, zinsopbouw\n6. Intentioneel: wat is de intentie van de schrijver?",
+      "geheugensteun": "EMSVSI: Emotief, Moreel, Structureel, Vernieuwend, Stilistisch, Intentioneel"
+    },
+    {
+      "id": "JL-021",
+      "domein": "Jeugdliteratuur",
+      "subdomein": "Literaire Competentie",
+      "type": "definitie",
+      "voorkant": "Wat houdt 'literair competent zijn' in (aan het einde van het voortgezet onderwijs)?",
+      "achterkant": "- Bereid zijn inspanning te leveren voor een boek\n- Een eigen oordeel hebben én bereid zijn naar anderen te luisteren\n- Open zijn voor een andere kijk (relativeren van eigen omstandigheden)\n- In staat zijn te communiceren over een boek\n- Samenhang of verschil zien tussen delen van een tekst",
+      "geheugensteun": "Inspanning + oordeel + openheid + communicatie + structuurinzicht"
+    },
+    {
+      "id": "JL-022",
+      "domein": "Jeugdliteratuur",
+      "subdomein": "Indelingssystemen",
+      "type": "definitie",
+      "voorkant": "Beschrijf de indeling van Bühler op basis van onderwerpen/leeftijden.",
+      "achterkant": "1. Piet de smeerpoetsfase: 2-4 jaar (dagelijkse omgeving)\n2. Sprookjesleeftijd: 4-10 jaar\n3. Robinsonleeftijd: 8-12 jaar (realistische verhalen)\n4. Heldenleeftijd: 12-15 jaar\n5. Lyrische romanleeftijd: >15 jaar",
+      "geheugensteun": "Bühler: Smeerpoets → Sprookje → Robinson → Helden → Lyrisch"
+    },
+    {
+      "id": "JL-023",
+      "domein": "Jeugdliteratuur",
+      "subdomein": "Indelingssystemen",
+      "type": "definitie",
+      "voorkant": "Beschrijf de eerste vier fasen van Jeanne Chall's indeling op basis van leesontwikkeling.",
+      "achterkant": "1. Pseudolezen: t/m 6 jaar (quasi-lezen, doen alsof)\n2. Aanvankelijk lezen: t/m 7 jaar (begin leesproces)\n3. Automatiseren van vloeiend lezen: t/m 8 jaar\n4. Lezen om nieuwe ideeën, ervaringen en gevoelens op te doen",
+      "geheugensteun": "Chall: Pseudo → Aanvankelijk → Automatiseren → Lezen om te leren"
+    },
+    {
+      "id": "JL-024",
+      "domein": "Jeugdliteratuur",
+      "subdomein": "Bibliotheekindeling",
+      "type": "feit",
+      "voorkant": "Wat betekenen de bibliotheekcodes AP, AK, AJ, A, B, C, D en J?",
+      "achterkant": "AP: prentenboeken < 3 jaar\nAK: fictie > 3 jaar\nAJ: informatief t/m 9 jaar\nA: t/m ~9 jaar\nB: 9-12 jaar\nC: 12-15 jaar\nD: 15-25 jaar (Young Adult)\nJ: Informatief",
+      "geheugensteun": "A(P/K/J) = klein. B = 9-12. C = 12-15. D = 15-25. J = info."
+    },
+    {
+      "id": "JL-025",
+      "domein": "Jeugdliteratuur",
+      "subdomein": "Literatuurprijzen",
+      "type": "feit",
+      "voorkant": "Welke drie soorten Griffelprijzen zijn er en waarop richten ze zich?",
+      "achterkant": "Gouden/Zilveren Griffel: voor kinderboeken t/m 12 jaar (taalgebruik, thema, originaliteit, compositie)\nGouden/Zilveren Penseel: voor illustraties\nGouden/Zilveren Palet: voor niet-Nederlandse illustratoren",
+      "geheugensteun": "Griffel = tekst. Penseel = illustraties. Palet = buitenlandse illustratoren."
+    },
+    {
+      "id": "JL-026",
+      "domein": "Jeugdliteratuur",
+      "subdomein": "Literatuurprijzen",
+      "type": "feit",
+      "voorkant": "Wat is de DJP (Dioraphte Jongerenliteratuur Prijs) en op welke drie criteria beoordeelt de jury?",
+      "achterkant": "DJP = beste jeugdboek voor 15-25 jarigen.\nDrie criteria:\n1. Staat de zoektocht naar de eigen identiteit centraal?\n2. Is het boek geschreven vanuit het perspectief van de jongere (identificatie)?\n3. Is het thema uit de belevingswereld van de jongere?",
+      "geheugensteun": "DJP: Identiteit + Jongeren-perspectief + Jongeren-thema"
+    },
+    {
+      "id": "JL-027",
+      "domein": "Jeugdliteratuur",
+      "subdomein": "Literatuurprijzen",
+      "type": "feit",
+      "voorkant": "Wat is de Kinderjury en wat is de Boekensleutel?",
+      "achterkant": "Kinderjury: een soort publieksprijs. Een logo op het boek geeft aan dat het mee mag doen. De senaat (uit elke provincie 1 kind) is het gezicht.\n\nBoekensleutel: prijs voor een boek met bijzondere perspectieven, iets buitengewoons.",
+      "geheugensteun": "Kinderjury = publieksprijs. Boekensleutel = bijzonder perspectief."
+    },
+    {
+      "id": "JL-028",
+      "domein": "Jeugdliteratuur",
+      "subdomein": "Leerstoflijnen per groep",
+      "type": "feit",
+      "voorkant": "Wat zijn de kenmerken van boeken die geschikt zijn voor groep 1-2 (leerstoflijnen)?",
+      "achterkant": "- Korte verteltijd\n- Eenheid van plaats, tijd en handeling (1 verhaallijn)\n- Eigen leefwereld, tegenwoordige tijd\n- Gedichten met rijm, ritme, humor en onzinwoorden\n- Interactief voorlezen voor taalontwikkeling, sociaal-emotionele ontwikkeling en thema-introductie",
+      "geheugensteun": "Gr 1-2: kort, 1 lijn, eigen wereld, rijm/ritme, interactief voorlezen"
+    },
+    {
+      "id": "JL-029",
+      "domein": "Jeugdliteratuur",
+      "subdomein": "Leerstoflijnen per groep",
+      "type": "feit",
+      "voorkant": "Wat zijn de tekstkenmerken voor boeken in groep 3-4?",
+      "achterkant": "- 1 verhaallijn\n- Auctoriaal perspectief (alwetende verteller)\n- Chronologisch verloop\n- Speelt op 1 plek\n- Hoofdpersoon is een kind\n- Eenvoudig plot\n- Poëzie heeft rijm en ritme",
+      "geheugensteun": "Gr 3-4: 1 lijn, auctoriaal, chronologisch, 1 plek, kind-hoofdpersoon"
+    },
+    {
+      "id": "JL-030",
+      "domein": "Jeugdliteratuur",
+      "subdomein": "Leerstoflijnen per groep",
+      "type": "feit",
+      "voorkant": "Welke structurele vernieuwingen komen voor in boeken voor groep 5-6?",
+      "achterkant": "Naast het auctoriaal perspectief ook:\n- Personale vertelsituatie (3e persoon enkelvoud, NIET alwetend)\n- Ik-vorm\n- Mogelijke sprongen in de tijd\n- Minder vormvaste gedichten\n- Structuur wordt iets ingewikkelder",
+      "geheugensteun": "Gr 5-6: ook personaal/ik-perspectief + tijdsprongen"
+    },
+    {
+      "id": "JL-031",
+      "domein": "Jeugdliteratuur",
+      "subdomein": "Didactiek",
+      "type": "definitie",
+      "voorkant": "Noem drie aandachtspunten voor goed VOORLEZEN door de leraar.",
+      "achterkant": "1. Voorbereiding: zelf veel lezen, passend bij leeftijdsgroep, aansluiten bij actualiteit en interesse van de groep\n2. Het publiek: goede opstelling (oogcontact), maak van voorlezen een bijzondere activiteit\n3. Jezelf: let op duidelijkheid, tempo en juiste klemtoon",
+      "geheugensteun": "Goed voorlezen: Voorbereiding + Publiek + Jezelf"
+    },
+    {
+      "id": "JL-032",
+      "domein": "Jeugdliteratuur",
+      "subdomein": "Didactiek",
+      "type": "contrast",
+      "voorkant": "Wat is het verschil tussen VOORLEZEN en VERTELLEN?",
+      "achterkant": "Voorlezen: boek aanwezig, formele tekst, minder directe relatie met publiek.\nVertellen: eigen persoonlijk gekleurde taal, improviseren, geen boek (minder afstand tussen verteller en publiek).",
+      "geheugensteun": "Vertellen = persoonlijker, improviseren, geen boek, minder afstand"
+    },
+    {
+      "id": "JL-033",
+      "domein": "Jeugdliteratuur",
+      "subdomein": "Didactiek",
+      "type": "definitie",
+      "voorkant": "Wat is interactief voorlezen en waarom is het essentieel voor taalstimulering?",
+      "achterkant": "Interactief voorlezen = het voorlezen regelmatig ONDERBREKEN door OPEN VRAGEN te stellen. Het aandeel van de kinderen is groot: de leraar praat MET (niet TEGEN) de kinderen. Essentieel: kinderen ervaren dat ze zelf betekenis aan het verhaal kunnen geven en er worden taalfuncties gestimuleerd.",
+      "geheugensteun": "Interactief voorlezen = open vragen stellen + met kinderen praten"
+    },
+    {
+      "id": "JL-034",
+      "domein": "Jeugdliteratuur",
+      "subdomein": "Leespromotie",
+      "type": "feit",
+      "voorkant": "Wat is CPNB en wat doet de Stichting Lezen?",
+      "achterkant": "CPNB = Collectieve Propaganda van het Nederlandse Boek: organisatie die het boek in Nederland promoot.\nStichting Lezen: organiseert leesbevordering (in 2013 had het zijn 25-jarig bestaan).",
+      "geheugensteun": "CPNB = boekpromotie. Stichting Lezen = leesbevordering."
+    },
+    {
+      "id": "JL-035",
+      "domein": "Jeugdliteratuur",
+      "subdomein": "Leespromotie",
+      "type": "feit",
+      "voorkant": "Wat is de Kinderboekenweek en wat zijn de Nationale Voorleesdagen?",
+      "achterkant": "Kinderboekenweek: tiendaagse rond de herfstvakantie (van woensdag tot zaterdag); promotie van het Nederlandse boek.\n\nNationale Voorleesdagen: gericht op kinderen die nog niet zelf kunnen lezen; de prentenboek-top-10 staat centraal.",
+      "geheugensteun": "Kinderboekenweek = herfst, 10 dagen. Voorleesdagen = nog-niet-lezers, prentenboeken."
+    },
+    {
+      "id": "JL-036",
+      "domein": "Jeugdliteratuur",
+      "subdomein": "Methodes",
+      "type": "feit",
+      "voorkant": "Beschrijf de taalmethoden Taaljournaal Taal en Ondersteboven van lezen.",
+      "achterkant": "Taaljournaal Taal: leerdoelen lezen en taalbeschouwing met literaire competentie. Fragmenten of gedichten om een tekstuele vaardigheid aan te leren.\n\nOndersteboven van lezen: elk thema heeft een boek als uitgangspunt.",
+      "geheugensteun": "Taaljournaal = fragmenten voor vaardigheden. Ondersteboven = boek als thema-anker."
+    },
+    {
+      "id": "JL-037",
+      "domein": "Jeugdliteratuur",
+      "subdomein": "Methodes",
+      "type": "feit",
+      "voorkant": "Wat zijn Boekenpret en Ik en Ko/Piramide?",
+      "achterkant": "Boekenpret: leesbevorderingsprogramma voor 0-6 jaar.\nIk en Ko + Piramide: programma's voor vroegschoolse en voorschoolse leeftijd.",
+      "geheugensteun": "Boekenpret = 0-6 jaar. Ik en Ko/Piramide = voorschools/vroegschools."
+    },
+    {
+      "id": "OV-001",
+      "domein": "Overkoepelend - Leermethoden",
+      "subdomein": "Active Recall",
+      "type": "definitie",
+      "voorkant": "Wat is Active Recall en waarom is het effectiever dan passief herlezen?",
+      "achterkant": "Active Recall = het brein ACTIEF STIMULEREN om informatie uit het langetermijngeheugen te halen ZONDER externe aanwijzingen. Bij herlezen herkent het brein de stof maar kan het die niet zelfstandig reproduceren ('illusie van competentie'). Active Recall dwingt cognitieve wrijving af die synaptische verbindingen versterkt.",
+      "geheugensteun": "Active Recall = ophalen zonder spiekbriefje = echte kennis"
+    },
+    {
+      "id": "OV-002",
+      "domein": "Overkoepelend - Leermethoden",
+      "subdomein": "Spaced Repetition",
+      "type": "definitie",
+      "voorkant": "Wat is Spaced Repetition (gespreide herhaling) en waarom werkt het?",
+      "achterkant": "Spaced Repetition = een methode waarbij de TUSSENPOZEN TUSSEN HERHALINGSMOMENTEN systematisch worden vergroot. Werkt omdat Ebbinghaus' vergeetcurve laat zien dat kennis exponentieel degradeert zonder herhaling. Door op het juiste moment te herhalen, wordt de retentie maximaal met minimale studietijd.",
+      "geheugensteun": "Spaced = steeds langere pauzes. Vergeetcurve bestrijden."
+    },
+    {
+      "id": "OV-003",
+      "domein": "Overkoepelend - Leermethoden",
+      "subdomein": "Leitner-systeem",
+      "type": "definitie",
+      "voorkant": "Beschrijf het Leitner-systeem met de 1-3-7 intervalstructuur.",
+      "achterkant": "Stapel 1 (niet beheerst): DAGELIJKS herhalen\nStapel 2 (begin te beheersen): elke 3-4 DAGEN\nStapel 3+ (geautomatiseerd): wekelijks of met nog wijdere intervallen\n\nCorrect beantwoord → kaart schuift omhoog. Fout → kaart gaat terug naar Stapel 1.",
+      "geheugensteun": "Leitner: Fout=Stapel 1 (dagelijks). Half=2 (3-4 dgn). Goed=3+ (wekelijks)."
+    },
+    {
+      "id": "OV-004",
+      "domein": "Overkoepelend - Leermethoden",
+      "subdomein": "Interleaving",
+      "type": "definitie",
+      "voorkant": "Wat is Interleaving (afwisselend leren) en waarom is het effectiever dan blokleren?",
+      "achterkant": "Interleaving = kaarten van VERSCHILLENDE DOMEINEN door elkaar studeren in één sessie. Bij blokleren stampt men één domein achter elkaar (minder effectief). Bij interleaving wordt het brein gedwongen kennis DIEPER TE INDEXEREN en te FLEXIBILISEREN, wat leidt tot snellere responsiviteit bij het examen.",
+      "geheugensteun": "Interleaving = domeinen mixen = dieper leren"
+    },
+    {
+      "id": "OV-005",
+      "domein": "Overkoepelend - Leermethoden",
+      "subdomein": "Minimum Effective Dose",
+      "type": "definitie",
+      "voorkant": "Wat is het principe van de Minimum Effective Dose bij flashcards?",
+      "achterkant": "Elke flashcard mag slechts ÉÉN concept of vraag behandelen. Dit voorkomt cognitieve overbelasting. Zodra een kaart een opsomming van drie zinnen of meer bevat, slaat het brein delen over. Grote concepten moeten gefragmenteerd worden in meerdere specifieke detailkaarten.",
+      "geheugensteun": "1 kaart = 1 concept. Geen lijstjes op 1 kaart."
+    },
+    {
+      "id": "OV-006",
+      "domein": "Overkoepelend - Leermethoden",
+      "subdomein": "Dual Coding",
+      "type": "definitie",
+      "voorkant": "Wat is Dual Coding en hoe pas je het toe bij flashcards?",
+      "achterkant": "Dual Coding = simultaan verwerken van VERBALE EN VISUELE informatie versnelt en verankert het leerproces (twee parallelle cognitieve kanalen). Toepassing: symbolen, schematische tekeningen of kleurcoderingen integreren op flashcards. Vooral nuttig voor chronologische processen (stroomschema's).",
+      "geheugensteun": "Dual Coding = woordenkaart + tekening = 2 kanalen = beter onthouden"
+    },
+    {
+      "id": "OV-007",
+      "domein": "Overkoepelend - Leermethoden",
+      "subdomein": "Illusie van Competentie",
+      "type": "definitie",
+      "voorkant": "Wat is de 'illusie van competentie' bij leren?",
+      "achterkant": "Het fenomeen waarbij een student de stof HERKENT op de pagina maar NIET IN STAAT IS die zelfstandig te reproduceren onder tijdsdruk (tijdens een examen). Ontstaat door passief herlezen of markeren i.p.v. actief ophalen. Active Recall is het tegengif.",
+      "geheugensteun": "Herkennen ≠ kunnen reproduceren = illusie van competentie"
+    },
+    {
+      "id": "VE-001",
+      "domein": "Verdieping",
+      "subdomein": "Taalverwerving (herhaling)",
+      "type": "definitie",
+      "voorkant": "Wat is overgeneralisatie bij taalverwerving en bij welke theorie hoort het als bewijs?",
+      "achterkant": "Overgeneralisatie = een kind past een GRAMMATICALE REGEL toe op een situatie waar die niet geldt (bv. 'hij loopte' in plaats van 'hij liep'). Dit bewijst dat het kind ACTIEF REGELS CONSTRUEERT, wat als argument geldt voor het NATIVISME (Chomsky): kinderen zijn niet puur imitators (behaviorisme) maar actieve taalverwerkters.",
+      "geheugensteun": "'Loopte' = overgeneralisatie = bewijs voor aangeboren taalvermogen"
+    },
+    {
+      "id": "VE-002",
+      "domein": "Verdieping",
+      "subdomein": "Taalverwerving (herhaling)",
+      "type": "contrast",
+      "voorkant": "Wat is het verschil tussen de interferentietheorie en de universalistische theorie bij NT2?",
+      "achterkant": "Interferentietheorie: NT2-fouten ontstaan doordat de leerling onbewust REGELS UIT DE MOEDERTAAL toepast op het Nederlands (bv. weglaten lidwoorden).\n\nUniversalistische theorie: NT2-verwerving volgt DEZELFDE UNIVERSELE PATRONEN als eerstetaalverwerving, onafhankelijk van de moedertaal.",
+      "geheugensteun": "Interferentie = fouten door moedertaal. Universalistisch = zelfde pad als L1."
+    },
+    {
+      "id": "VE-003",
+      "domein": "Verdieping",
+      "subdomein": "Woordenschat (herhaling)",
+      "type": "definitie",
+      "voorkant": "Beschrijf de vier stappen van de Viertakt van Verhallen.",
+      "achterkant": "1. Voorbewerken: context creëren, voorkennis activeren, rijke leeromgeving\n2. Semantiseren: betekenis geven via de 'drie uitjes': uitbeelden (visueel/fysiek) + uitleggen (definitie) + uitbreiden (woordweb, koppelen aan bekende woorden)\n3. Consolideren: woorden herhalen in nieuwe contexten (van passief naar actief)\n4. Controleren: toetsen",
+      "geheugensteun": "Voor → Semantiseer (3 uitjes) → Consolideer → Controleer"
+    },
+    {
+      "id": "VE-004",
+      "domein": "Verdieping",
+      "subdomein": "Woordenschat (herhaling)",
+      "type": "definitie",
+      "voorkant": "Wat zijn de 'drie uitjes' in de semantiseringsfase van de Viertakt van Verhallen?",
+      "achterkant": "1. Uitbeelden: visueel of fysiek (tonen, gebaren, afbeelding)\n2. Uitleggen: in woorden (definitie geven)\n3. Uitbreiden: koppelen van het nieuwe woord aan bekende woorden in een WOORDWEB (vergroot het semantisch netwerk)",
+      "geheugensteun": "3 uitjes: Uitbeelden + Uitleggen + Uitbreiden (woordweb)"
+    },
+    {
+      "id": "VE-005",
+      "domein": "Verdieping",
+      "subdomein": "Taalbeschouwing (herhaling)",
+      "type": "definitie",
+      "voorkant": "Welke vier stromingen omvat taalbeschouwing?",
+      "achterkant": "1. Formele taalbeschouwing: reflecteren op STRUCTUUR (grammatica, zinsontleding, woordsoorten)\n2. Semantische taalbeschouwing: reflecteren op BETEKENISRELATIES (synoniemen, tegenstellingen)\n3. Pragmatische taalbeschouwing: reflecteren op GEBRUIK (situaties, stijlen, registers)\n4. Strategische taalbeschouwing: bewust OPLOSSINGSSTRATEGIEËN toepassen bij talige problemen",
+      "geheugensteun": "Formeel (structuur) + Semantisch (betekenis) + Pragmatisch (gebruik) + Strategisch"
+    },
+    {
+      "id": "VE-006",
+      "domein": "Verdieping",
+      "subdomein": "Taalbeschouwing (herhaling)",
+      "type": "contrast",
+      "voorkant": "Wat is het verschil tussen de deductieve en inductieve aanpak in taalbeschouwing?",
+      "achterkant": "Deductief (traditioneel): Leraar presenteert de REGEL → leerlingen oefenen de regel in.\nInductief (modern/interactief): Leraar presenteert 'TAALFRAPPANTEN' (opvallende taalverschijnselen) → leerlingen ONTDEKKEN ZELF de onderliggende grammaticaregel.",
+      "geheugensteun": "Deductief = regel eerst. Inductief = ontdekken via voorbeelden."
+    },
+    {
+      "id": "VE-007",
+      "domein": "Verdieping",
+      "subdomein": "Interactief Taalonderwijs (herhaling)",
+      "type": "definitie",
+      "voorkant": "Wat zijn 'ankers' en 'routines' binnen constructieve leersituaties in het interactief taalonderwijs?",
+      "achterkant": "Ankers: rijke, probleemgeoriënteerde contexten die als gemeenschappelijke kennisbron dienen (bv. een museum-uitstapje als startpunt voor een thema).\n\nRoutines: herkenbare, vaste structuren die communicatie uitlokken en leerlingen houvast geven.",
+      "geheugensteun": "Anker = rijke startcontext. Routine = herkenbare structuur."
+    },
+    {
+      "id": "VE-008",
+      "domein": "Verdieping",
+      "subdomein": "Schrijven - Verdieping",
+      "type": "definitie",
+      "voorkant": "Wat zijn 'denkschrijven' en 'schrijven van verklarende teksten' als effectieve schrijfvaardigheden voor kennisconstructie?",
+      "achterkant": "Denkschrijven: binnen een bepaalde tijd ALLES opschrijven wat je te binnen schiet (free writing).\nVerklarende teksten schrijven: in eigen woorden een VERKLARING geven voor een verschijnsel.\n\nBeide roepen betekenisvolle associaties op die leiden tot nieuwe kennis.",
+      "geheugensteun": "Denkschrijven = alles opschrijven. Verklarend = uitleggen in eigen woorden."
+    },
+    {
+      "id": "VE-009",
+      "domein": "Verdieping",
+      "subdomein": "Lezen - Scholen per groep",
+      "type": "toepassing",
+      "voorkant": "In welke groep leert een kind de elementaire leeshandeling en wat is het primaire doel in die groep?",
+      "achterkant": "Groep 3. Het primaire doel is het AANLEREN EN AUTOMATISEREN van de elementaire leeshandeling: leesrichting → visuele discriminatie → teken-klankkoppeling → auditieve synthese. Leren decoderen is in groep 3 een DOEL OP ZICH.",
+      "geheugensteun": "Groep 3 = elementaire leeshandeling aanleren en automatiseren"
+    },
+    {
+      "id": "VE-010",
+      "domein": "Verdieping",
+      "subdomein": "Curriculum",
+      "type": "definitie",
+      "voorkant": "Beschrijf het Curriculaire Spinnenweb van Van den Akker (2006) en zijn centrale metafoor.",
+      "achterkant": "Het spinnenweb beschrijft alle elementen van een curriculum: Visie (waartoe), Leerdoelen (waarheen), Leerinhoud (wat), Leeractiviteiten (hoe), Docentenrollen (rol leraar), Bronnen/materialen (waarmee), Groeperingsvormen (met wie), Leeromgeving (waar), Tijd (wanneer), Toetsing (hoe getoetst).\n\nMetafoor: als je aan één draadje trekt, beweegt het HELE web mee — alle elementen hangen samen.",
+      "geheugensteun": "Spinnenweb = alle curriculumelementen hangen samen"
+    },
+    {
+      "id": "VE-011",
+      "domein": "Verdieping",
+      "subdomein": "Spelling - Verdieping",
+      "type": "toepassing",
+      "voorkant": "Welk spellingprincipe past de leerling toe als hij weet dat 'fietsen' met een 's' eindigt omdat 'fietsen' klinkert net als 'lopen' → 'hij loopt'?",
+      "achterkant": "Het analogieprincipe. De leerling vergelijkt het te spellen woord met een bekend woord dat hetzelfde patroon heeft en leidt de spelling hieruit af.",
+      "geheugensteun": "Vergelijken + afleiden = analogieprincipe"
+    },
+    {
+      "id": "VE-012",
+      "domein": "Verdieping",
+      "subdomein": "Mondelinge Taalvaardigheid - Verdieping",
+      "type": "toepassing",
+      "voorkant": "Welke taalfunctie oefent een leerling wanneer hij rapporteert wat er in het weekend is gebeurd?",
+      "achterkant": "Rapporteren: het mededelen van feiten of gebeurtenissen. Dit is de eenvoudigste taalfunctie, die al bij jonge kinderen zichtbaar is.",
+      "geheugensteun": "Feiten mededelen = rapporteren (simpelste taalfunctie)"
+    },
+    {
+      "id": "VE-013",
+      "domein": "Verdieping",
+      "subdomein": "Jeugdliteratuur - Verdieping",
+      "type": "toepassing",
+      "voorkant": "Een prentenboek toont een lachend kind op de afbeelding terwijl de tekst zegt dat het kind bang is. Hoe noem je deze techniek en wat is het effect?",
+      "achterkant": "Dit is counterpoint/contrapunt. Het effect is een extra betekenislaag: de lezer (en luisteraar) moeten de tegenstelling zelf interpreteren. Dit stimuleert actief interpreterend lezen en vraagt om interactief voorlezen om het te bespreken.",
+      "geheugensteun": "Lachen + bang = counterpoint = actief interpreteren vereist"
+    },
+    {
+      "id": "VE-014",
+      "domein": "Verdieping",
+      "subdomein": "Leesonderwijs - Methoden",
+      "type": "definitie",
+      "voorkant": "Wat is 'Nieuwsbegrip' als leesmethode?",
+      "achterkant": "Nieuwsbegrip is gericht op BEGRIJPEND LEZEN aan de hand van ACTUELE TEKSTEN. Bij verwerkingsopdrachten worden stappenplannen gebruikt om met leesstrategieën te werken. De leraar let continu op het onderscheid leesdoel (wat de leerling wil leren) en lesdoel (wat de leraar beoogt).",
+      "geheugensteun": "Nieuwsbegrip = actuele teksten + leesstrategieën + leesdoel vs lesdoel"
+    },
+    {
+      "id": "VE-015",
+      "domein": "Verdieping",
+      "subdomein": "Schrijfonderwijs - Peer-respons",
+      "type": "definitie",
+      "voorkant": "Wat is peer-respons bij schrijfonderwijs?",
+      "achterkant": "Peer-respons = leerlingen beoordelen elkaars schrijfwerk onderling. Tijdens de revisiefase (fase 4) geven medeleerlingen aanwijzingen, waarna de schrijver de tekst verbetert. Is een vorm van observerend schrijven (leerlingen observeren elkaars aanpak).",
+      "geheugensteun": "Peer-respons = medeleerlingen beoordelen elkaars werk in revisiefase"
+    },
+    {
+      "id": "VE-016",
+      "domein": "Verdieping",
+      "subdomein": "Leesbegrip",
+      "type": "definitie",
+      "voorkant": "Wat zijn inferenties bij leesbegrip?",
+      "achterkant": "Inferenties = informatie ERBIJ BETREKKEN die NIET LETTERLIJK in de tekst staat. De lezer moet putten uit eigen kennis en ervaring om 'gaten' in de tekst te vullen. Dit is een hogere-ordevaardigheid bij begrijpen en interpreteren.",
+      "geheugensteun": "Inferentie = conclusie trekken uit wat NIET staat, maar wel bedoeld wordt"
+    },
+    {
+      "id": "VE-017",
+      "domein": "Verdieping",
+      "subdomein": "Mondelinge Taalvaardigheid",
+      "type": "definitie",
+      "voorkant": "Wat is modellen (als feedback-techniek bij spreekonderwijs)?",
+      "achterkant": "Modellen = correct taalgebruik VOORDOEN als voorbeeld, ZONDER de leerling expliciet te corrigeren. Bijvoorbeeld: de leerling zegt 'hij heeft geslapen goed', de leraar antwoordt: 'O, hij heeft GOED geslapen?' — en verwerkt de correctie impliciet in zijn reactie.",
+      "geheugensteun": "Modellen = impliciet corrigeren door correct voorbeeld te geven"
+    },
+    {
+      "id": "VE-018",
+      "domein": "Verdieping",
+      "subdomein": "Schrijven",
+      "type": "definitie",
+      "voorkant": "Wat is het fonemisch bewustzijn en waarom is het cruciaal voor schrijven?",
+      "achterkant": "Fonemisch bewustzijn = het besef dat WOORDEN OPGEBOUWD ZIJN UIT AFZONDERLIJKE KLANKEN (fonemen) die je kunt onderscheiden en manipuleren. Cruciaal voor schrijven omdat klank-tekenkoppeling alleen mogelijk is als het kind de klanken eerst kan isoleren. Een zwak fonemisch bewustzijn is een oorzaak van spellingproblemen.",
+      "geheugensteun": "Fonemisch bewustzijn = klanken in woorden horen en kunnen manipuleren"
+    },
+    {
+      "id": "VE-019",
+      "domein": "Verdieping",
+      "subdomein": "Lezen en schrijven",
+      "type": "contrast",
+      "voorkant": "Wat zijn de twee algemene verschillen tussen schrijftaal en spreektaal?",
+      "achterkant": "Schrijftaal vs. Spreektaal:\n1. Bij schrijven is de 'gesprekspartner' AFWEZIG — je kunt niet direct reageren, de schrijver denkt zorgvuldiger na.\n2. Schrijftaal is FORMÉLER: langere, complexere zinnen, correctere grammatica, geen directe context.",
+      "geheugensteun": "Schrijftaal = partner afwezig + formeler + complexer"
+    },
+    {
+      "id": "VE-020",
+      "domein": "Verdieping",
+      "subdomein": "Taalverwerving",
+      "type": "definitie",
+      "voorkant": "Wat is symboolbewustzijn en in welke fase van de taalverwerving ontwikkelt het?",
+      "achterkant": "Symboolbewustzijn = het besef dat een WOORD (klank of teken) VERWIJST naar een object/begrip in de werkelijkheid (bv. het woord 'hond' staat voor het echte dier). Ontwikkelt zich in de vroeglinguale fase (eerste woorden). Dit is de basis van alle taalverwerving.",
+      "geheugensteun": "Symboolbewustzijn = woord verwijst naar werkelijkheid (vroeglinguale fase)"
+    }
+  ]
+}
