@@ -13,7 +13,7 @@ import { SaveCardUseCase } from '../../core/use-cases/save-card.use-case';
 import { ExcludeCardUseCase } from '../../core/use-cases/exclude-card.use-case';
 import { Flashcard } from '../../domain/models/flashcard.model';
 
-type SwipeAction = 'next' | 'flip' | 'save' | 'exclude' | null;
+type SwipeAction = 'next' | 'save' | 'exclude' | null;
 
 @Component({
   selector: 'app-study',
@@ -38,6 +38,8 @@ export class StudyComponent implements OnInit {
 
   private touchStartX = 0;
   private touchStartY = 0;
+  private lastSwipeTime = 0;
+  private readonly TAP_THRESHOLD = 12;
   private readonly SWIPE_THRESHOLD = 50;
 
   constructor(
@@ -83,7 +85,6 @@ export class StudyComponent implements OnInit {
     const dy = e.touches[0].clientY - this.touchStartY;
     this.dragOffsetX.set(dx);
     this.dragOffsetY.set(dy);
-    e.preventDefault();
   }
 
   onTouchEnd(e: TouchEvent): void {
@@ -126,39 +127,58 @@ export class StudyComponent implements OnInit {
 
   // ── Swipe logic ──────────────────────────────────────────────────────────
 
+  onCardClick(): void {
+    // Suppress synthetic click that fires after a touch swipe
+    if (Date.now() - this.lastSwipeTime < 500) return;
+    this.flipCard();
+  }
+
   private handleSwipe(dx: number, dy: number): void {
     const absDx = Math.abs(dx);
     const absDy = Math.abs(dy);
+    const total = Math.max(absDx, absDy);
 
-    if (absDx < this.SWIPE_THRESHOLD && absDy < this.SWIPE_THRESHOLD) return;
+    if (total < this.TAP_THRESHOLD) {
+      // Tap — let the (click) event handle it
+      return;
+    }
+
+    if (total < this.SWIPE_THRESHOLD) return; // ambiguous drag, ignore
+
+    this.lastSwipeTime = Date.now();
 
     if (absDx >= absDy) {
       // Horizontal
       if (dx > 0) {
-        this.triggerAction('flip');
-        this.flipCard();
-      } else {
         this.triggerAction('next');
         this.nextCard();
-      }
-    } else {
-      // Vertical
-      if (dy < 0) {
-        this.triggerAction('save');
-        this.saveForLater();
       } else {
         this.triggerAction('exclude');
         this.excludeCurrentCard();
+      }
+    } else {
+      // Vertical — only up = save; down = nothing
+      if (dy < 0) {
+        this.triggerAction('save');
+        this.saveForLater();
       }
     }
   }
 
   private triggerAction(action: SwipeAction): void {
+    this.vibrate(18);
     this.feedback.set(action);
     setTimeout(() => this.feedback.set(null), 600);
   }
 
+  private vibrate(ms = 18): void {
+    if (typeof navigator !== 'undefined' && 'vibrate' in navigator) {
+      navigator.vibrate(ms);
+    }
+  }
+
   flipCard(): void {
+    this.vibrate(10);
     this.isFlipped.update((v) => !v);
   }
 
@@ -217,6 +237,6 @@ export class StudyComponent implements OnInit {
     const absDx = Math.abs(x);
     const absDy = Math.abs(y);
     if (absDx >= absDy) return x > 0 ? 'drag-right' : 'drag-left';
-    return y < 0 ? 'drag-up' : 'drag-down';
+    return y < 0 ? 'drag-up' : '';
   }
 }
