@@ -35,5 +35,10 @@ export const routes: Routes = [
     loadComponent: () =>
       import('./features/handleiding/handleiding.component').then((m) => m.HandleidingComponent),
   },
+  {
+    path: 'kaartenbak',
+    loadComponent: () =>
+      import('./features/kaartenbak/kaartenbak.component').then((m) => m.KaartenbakComponent),
+  },
   { path: '**', redirectTo: '' },
 ];

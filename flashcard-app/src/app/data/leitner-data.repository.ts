@@ -38,6 +38,12 @@ export class LeitnerDataRepository extends LeitnerRepository {
     this.persist(map);
   }
 
+  remove(id: string): void {
+    const map = this.data();
+    delete map[id];
+    this.persist(map);
+  }
+
   getDueCards(): LeitnerCard[] {
     const today = this.today();
     return this.getAll().filter((c) => c.nextReviewDate <= today);

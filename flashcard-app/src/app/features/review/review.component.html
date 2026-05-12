@@ -9,7 +9,10 @@
         {{ currentIndex() + 1 }} / {{ cards.length }}
       </span>
     </div>
-    <div class="header-spacer"></div>
+    <button class="undo-btn" *ngIf="undoStack.length > 0" (click)="undoLastGrade()" aria-label="Ongedaan maken">
+      ↩ Undo{{ undoStack.length > 1 ? ' (' + undoStack.length + ')' : '' }}
+    </button>
+    <div class="header-spacer" *ngIf="undoStack.length === 0"></div>
   </header>
 
   <!-- Progress bar -->
@@ -51,14 +54,22 @@
       </div>
     </div>
 
-    <div class="incorrect-list" *ngIf="sessionStats.incorrectCards.length > 0">
-      <p class="incorrect-title">Morgen opnieuw:</p>
-      <ul>
-        <li *ngFor="let item of sessionStats.incorrectCards">
-          <span class="incorrect-q">{{ item.card.voorkant.length > 70 ? (item.card.voorkant | slice:0:70) + '…' : item.card.voorkant }}</span>
-          <span class="incorrect-date">📅 {{ item.nextReviewDate }}</span>
-        </li>
-      </ul>
+    <!-- Graded cards grouped by next review date -->
+    <div class="graded-groups" *ngIf="sessionStats.allGraded.length > 0">
+      <div class="graded-group" *ngFor="let group of gradedByDate">
+        <div class="group-header">
+          <span class="group-label">📅 {{ group.label }}</span>
+          <span class="group-count">{{ group.items.length }} kaart{{ group.items.length !== 1 ? 'en' : '' }}</span>
+        </div>
+        <ul class="graded-list">
+          <li *ngFor="let item of group.items" class="graded-item" [class.graded-item--correct]="item.correct" [class.graded-item--incorrect]="!item.correct">
+            <span class="graded-badge">{{ item.correct ? '✓' : '✗' }}</span>
+            <span class="graded-q">{{ item.card.voorkant.length > 55 ? (item.card.voorkant | slice:0:55) + '…' : item.card.voorkant }}</span>
+            <button class="item-undo-btn" *ngIf="canUndoCard(item.card.id)" (click)="undoSpecificCard(item.card.id)" title="Beoordeling terugdraaien">↩</button>
+            <button class="item-master-btn" (click)="masterCard(item.card.id)" title="Uit mijn set verwijderen">🗑</button>
+          </li>
+        </ul>
+      </div>
     </div>
 
     <button class="primary-btn" (click)="goBack()">Terug naar hoofdstukken</button>
@@ -68,11 +79,9 @@
   <div *ngIf="!loading && !done && current" class="card-area">
 
     <!-- Swipe hints -->
-    <div class="swipe-hints" *ngIf="!isFlipped()">
-      <p class="flip-prompt">Tik of swipe om de kaart om te draaien</p>
-    </div>
-    <div class="swipe-hints grade-hints" *ngIf="isFlipped()">
-      <div class="hint-row">
+    <div class="swipe-hints">
+      <p class="flip-prompt" [hidden]="isFlipped()">Tik op de kaart om hem om te draaien</p>
+      <div class="hint-row" [hidden]="!isFlipped()">
         <div class="hint hint-incorrect" [class.active]="dragClass === 'drag-incorrect'">
           <span>← Fout</span>
         </div>
@@ -139,13 +148,13 @@
 
   <!-- Bottom bar -->
   <nav class="bottom-bar" *ngIf="!loading && !done && current">
-    <ng-container *ngIf="!isFlipped()">
+    <div class="bar-group" [hidden]="isFlipped()">
       <button class="bar-btn btn-flip" (click)="flipCard()">
         <span class="bar-icon">🔄</span>
         <span class="bar-label">Draaien</span>
       </button>
-    </ng-container>
-    <ng-container *ngIf="isFlipped()">
+    </div>
+    <div class="bar-group" [hidden]="!isFlipped()">
       <button class="bar-btn btn-incorrect" (click)="triggerAction('incorrect'); gradeCard(false)">
         <span class="bar-icon">✗</span>
         <span class="bar-label">Fout</span>
@@ -158,7 +167,7 @@
         <span class="bar-icon">✓</span>
         <span class="bar-label">Goed</span>
       </button>
-    </ng-container>
+    </div>
   </nav>
 
 </div>

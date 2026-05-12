@@ -65,4 +65,8 @@ export class ChapterSelectComponent implements OnInit {
   goToHandleiding(): void {
     this.router.navigate(['/handleiding']);
   }
+
+  goToKaartenbak(): void {
+    this.router.navigate(['/kaartenbak']);
+  }
 }

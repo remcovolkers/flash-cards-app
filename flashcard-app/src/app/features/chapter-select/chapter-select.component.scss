@@ -160,6 +160,14 @@
     box-shadow: none;
   }
 
+  .chapter-body {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.45rem;
+  }
+
   .chapter-info {
     display: flex;
     flex-direction: column;
@@ -178,10 +186,30 @@
     color: var(--color-text-muted);
   }
 
+  .chapter-progress {
+    padding-right: 0.75rem;
+  }
+
+  .progress-bar {
+    height: 5px;
+    background: var(--color-border);
+    border-radius: 3px;
+    overflow: hidden;
+  }
+
+  .progress-fill {
+    height: 100%;
+    background: var(--color-success, #22c55e);
+    border-radius: 3px;
+    transition: width 0.4s ease;
+    min-width: 0;
+  }
+
   .arrow {
     font-size: 1.5rem;
     color: var(--color-text-muted);
     line-height: 1;
+    flex-shrink: 0;
   }
 }
 

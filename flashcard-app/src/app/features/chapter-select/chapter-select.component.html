@@ -28,9 +28,16 @@
         class="chapter-item"
         (click)="studyChapter(chapter.name)"
       >
-        <div class="chapter-info">
-          <span class="chapter-name">{{ chapter.name }}</span>
-          <span class="chapter-count">{{ chapter.cardCount }} kaarten</span>
+        <div class="chapter-body">
+          <div class="chapter-info">
+            <span class="chapter-name">{{ chapter.name }}</span>
+            <span class="chapter-count">{{ chapter.cardCount }} van {{ chapter.totalCardCount }} te gaan</span>
+          </div>
+          <div class="chapter-progress">
+            <div class="progress-bar">
+              <div class="progress-fill" [style.width.%]="((chapter.totalCardCount - chapter.cardCount) / chapter.totalCardCount) * 100"></div>
+            </div>
+          </div>
         </div>
         <span class="arrow">›</span>
       </li>
@@ -48,9 +55,16 @@
           class="chapter-item chapter-item--bonus"
           (click)="studyChapter(chapter.name)"
         >
-          <div class="chapter-info">
-            <span class="chapter-name">{{ chapter.name }}</span>
-            <span class="chapter-count">{{ chapter.cardCount }} kaarten</span>
+          <div class="chapter-body">
+            <div class="chapter-info">
+              <span class="chapter-name">{{ chapter.name }}</span>
+              <span class="chapter-count">{{ chapter.cardCount }} van {{ chapter.totalCardCount }} te gaan</span>
+            </div>
+            <div class="chapter-progress">
+              <div class="progress-bar">
+                <div class="progress-fill" [style.width.%]="((chapter.totalCardCount - chapter.cardCount) / chapter.totalCardCount) * 100"></div>
+              </div>
+            </div>
           </div>
           <span class="arrow">›</span>
         </li>
@@ -76,5 +90,9 @@
   <button class="bar-btn excluded-btn" (click)="goToExcluded()">
     <span class="bar-icon">❌</span>
     <span class="bar-label">Overgeslagen</span>
+  </button>
+  <button class="bar-btn kaartenbak-btn" (click)="goToKaartenbak()">
+    <span class="bar-icon">🗂️</span>
+    <span class="bar-label">Kaartenbak</span>
   </button>
 </nav>

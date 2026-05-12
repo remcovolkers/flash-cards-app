@@ -72,6 +72,7 @@ export class FlashcardDataRepository extends FlashcardRepository {
     const chapters: Chapter[] = Array.from(map.entries()).map(([name, { cardCount, hoofdstuk }]) => ({
       name,
       cardCount,
+      totalCardCount: cardCount,
       hoofdstuk,
       isBonus: hoofdstuk === 0,
     }));

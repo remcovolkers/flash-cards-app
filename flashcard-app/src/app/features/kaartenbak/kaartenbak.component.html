@@ -1,0 +1,90 @@
+<div class="list-page">
+  <header class="list-header">
+    <button class="back-btn" (click)="goBack()">‹</button>
+    <h1>🗂️ Kaartenbak</h1>
+  </header>
+
+  <div *ngIf="loading" class="center-content">
+    <div class="spinner"></div>
+    <p>Laden...</p>
+  </div>
+
+  <ng-container *ngIf="!loading">
+    <div *ngIf="allCards.length === 0" class="empty-state">
+      <div class="empty-icon">🗂️</div>
+      <p>Je hebt nog geen kaarten beoordeeld.</p>
+      <p class="muted">Begin met studeren om kaarten als goed of fout te markeren.</p>
+      <button class="primary-btn" (click)="goBack()">Ga studeren</button>
+    </div>
+
+    <ng-container *ngIf="allCards.length > 0">
+      <!-- Filter tabs -->
+      <div class="filter-bar">
+        <button
+          class="filter-btn"
+          [class.active]="filter === 'all'"
+          (click)="setFilter('all')"
+        >
+          Alle <span class="count">{{ allCards.length }}</span>
+        </button>
+        <button
+          class="filter-btn filter-btn--correct"
+          [class.active]="filter === 'correct'"
+          (click)="setFilter('correct')"
+        >
+          ✓ Goed <span class="count">{{ correctCount }}</span>
+        </button>
+        <button
+          class="filter-btn filter-btn--incorrect"
+          [class.active]="filter === 'incorrect'"
+          (click)="setFilter('incorrect')"
+        >
+          ✗ Fout <span class="count">{{ incorrectCount }}</span>
+        </button>
+      </div>
+
+      <ul class="card-list">
+        <li
+          *ngFor="let item of filteredCards"
+          class="card-item"
+          [class.card-item--correct]="item.lastGradeCorrect"
+          [class.card-item--incorrect]="!item.lastGradeCorrect"
+          (click)="toggleCard(item.flashcard.id)"
+        >
+          <div class="card-header">
+            <span class="grade-badge" [class.badge--correct]="item.lastGradeCorrect" [class.badge--incorrect]="!item.lastGradeCorrect">
+              {{ item.lastGradeCorrect ? '✓' : '✗' }}
+            </span>
+            <div class="card-main">
+              <div class="card-question">{{ item.flashcard.voorkant }}</div>
+              <div class="card-meta">{{ item.flashcard.domein }} · {{ item.leitner.lastReviewed }}</div>
+            </div>
+            <div class="card-actions">
+              <div class="stack-pill" [class.stack-pill--correct]="item.lastGradeCorrect" [class.stack-pill--incorrect]="!item.lastGradeCorrect">
+                <span class="stack-label">stapel</span>
+                <span class="stack-num">{{ item.leitner.stack }}</span>
+              </div>
+              <button
+                class="reset-btn"
+                (click)="resetCard(item.flashcard.id); $event.stopPropagation()"
+                aria-label="Terugzetten"
+                title="Beoordeling terugzetten"
+              >↺</button>
+            </div>
+          </div>
+
+          <div class="card-answer" *ngIf="expandedId === item.flashcard.id">
+            <div class="answer-text">{{ item.flashcard.achterkant }}</div>
+            <div class="memory-tip" *ngIf="item.flashcard.geheugensteun">
+              <span class="tip-label">💡</span>
+              {{ item.flashcard.geheugensteun }}
+            </div>
+            <div class="leitner-info">
+              <span>Volgende herhaling: {{ item.leitner.nextReviewDate }}</span>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </ng-container>
+  </ng-container>
+</div>

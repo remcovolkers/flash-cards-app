@@ -10,6 +10,9 @@ import { Router } from '@angular/router';
 import { GetDueCardsUseCase } from '../../core/use-cases/get-due-cards.use-case';
 import { GradeCardUseCase } from '../../core/use-cases/grade-card.use-case';
 import { SaveCardUseCase } from '../../core/use-cases/save-card.use-case';
+import { ExcludeCardUseCase } from '../../core/use-cases/exclude-card.use-case';
+import { LeitnerRepository } from '../../domain/ports/leitner.repository';
+import { LeitnerCard } from '../../domain/models/leitner-card.model';
 import { Flashcard } from '../../domain/models/flashcard.model';
 
 type SwipeAction = 'correct' | 'incorrect' | 'save' | null;
@@ -18,6 +21,14 @@ interface SessionStats {
   correct: number;
   incorrect: number;
   incorrectCards: { card: Flashcard; nextReviewDate: string }[];
+  allGraded: { card: Flashcard; correct: boolean; nextReviewDate: string }[];
+}
+
+interface UndoState {
+  cardIndex: number;
+  card: Flashcard;
+  wasCorrect: boolean;
+  previousLeitner: LeitnerCard | null;
 }
 
 @Component({
@@ -33,7 +44,8 @@ export class ReviewComponent implements OnInit {
   isFlipped = signal(false);
   loading = true;
   done = false;
-  sessionStats: SessionStats = { correct: 0, incorrect: 0, incorrectCards: [] };
+  sessionStats: SessionStats = { correct: 0, incorrect: 0, incorrectCards: [], allGraded: [] };
+  undoStack: UndoState[] = [];
 
   feedback = signal<SwipeAction>(null);
   dragOffsetX = signal(0);
@@ -50,6 +62,8 @@ export class ReviewComponent implements OnInit {
     private getDueCards: GetDueCardsUseCase,
     private gradeCardUseCase: GradeCardUseCase,
     private saveCardUseCase: SaveCardUseCase,
+    private excludeCardUseCase: ExcludeCardUseCase,
+    private leitnerRepo: LeitnerRepository,
     private elRef: ElementRef<HTMLElement>,
   ) {}
 
@@ -82,17 +96,13 @@ export class ReviewComponent implements OnInit {
   }
 
   onTouchMove(e: TouchEvent): void {
+    if (!this.isFlipped()) return;
     const dx = e.touches[0].clientX - this.touchStartX;
     const dy = e.touches[0].clientY - this.touchStartY;
-    if (this.isFlipped()) {
-      if (Math.abs(dx) > Math.abs(dy)) {
-        this.dragOffsetX.set(dx);
-        this.dragOffsetY.set(0);
-      }
-      return;
+    if (Math.abs(dx) > Math.abs(dy)) {
+      this.dragOffsetX.set(dx);
+      this.dragOffsetY.set(0);
     }
-    this.dragOffsetX.set(dx);
-    this.dragOffsetY.set(dy);
   }
 
   onTouchEnd(e: TouchEvent): void {
@@ -117,18 +127,13 @@ export class ReviewComponent implements OnInit {
 
   @HostListener('document:mousemove', ['$event'])
   onMouseMove(e: MouseEvent): void {
-    if (!this.mouseDown) return;
+    if (!this.mouseDown || !this.isFlipped()) return;
     const dx = e.clientX - this.mouseStartX;
     const dy = e.clientY - this.mouseStartY;
-    if (this.isFlipped()) {
-      if (Math.abs(dx) > Math.abs(dy)) {
-        this.dragOffsetX.set(dx);
-        this.dragOffsetY.set(0);
-      }
-      return;
+    if (Math.abs(dx) > Math.abs(dy)) {
+      this.dragOffsetX.set(dx);
+      this.dragOffsetY.set(0);
     }
-    this.dragOffsetX.set(dx);
-    this.dragOffsetY.set(dy);
   }
 
   @HostListener('document:mouseup', ['$event'])
@@ -166,12 +171,8 @@ export class ReviewComponent implements OnInit {
           this.gradeCard(false);
         }
       }
-      return;
     }
-    if (total >= this.SWIPE_THRESHOLD) {
-      this.lastSwipeTime = Date.now();
-      this.flipCard();
-    }
+    // Not flipped: swipe does nothing — tap/click to flip only
   }
 
   protected triggerAction(action: SwipeAction): void {
@@ -192,14 +193,93 @@ export class ReviewComponent implements OnInit {
   gradeCard(correct: boolean): void {
     if (!this.current) return;
     const card = this.current;
+    const previousLeitner = this.leitnerRepo.get(card.id);
     const result = this.gradeCardUseCase.execute(card.id, correct);
+    this.undoStack.push({ cardIndex: this.currentIndex(), card, wasCorrect: correct, previousLeitner });
     if (correct) {
       this.sessionStats.correct++;
     } else {
       this.sessionStats.incorrect++;
       this.sessionStats.incorrectCards.push({ card, nextReviewDate: result.nextReviewDate });
     }
+    this.sessionStats.allGraded.push({ card, correct, nextReviewDate: result.nextReviewDate });
     this.advance();
+  }
+
+  undoLastGrade(): void {
+    const entry = this.undoStack.pop();
+    if (!entry) return;
+    const { cardIndex, card, wasCorrect, previousLeitner } = entry;
+    if (previousLeitner) {
+      this.leitnerRepo.save(previousLeitner);
+    }
+    if (wasCorrect) {
+      this.sessionStats.correct = Math.max(0, this.sessionStats.correct - 1);
+    } else {
+      this.sessionStats.incorrect = Math.max(0, this.sessionStats.incorrect - 1);
+      this.sessionStats.incorrectCards = this.sessionStats.incorrectCards.filter((i) => i.card.id !== card.id);
+    }
+    this.sessionStats.allGraded = this.sessionStats.allGraded.filter((i) => i.card.id !== card.id);
+    this.currentIndex.set(cardIndex);
+    this.isFlipped.set(true);
+    this.done = false;
+    this.resetCardScroll();
+  }
+
+  canUndoCard(cardId: string): boolean {
+    return this.undoStack.some((u) => u.card.id === cardId);
+  }
+
+  undoSpecificCard(cardId: string): void {
+    const idx = this.undoStack.findIndex((u) => u.card.id === cardId);
+    if (idx === -1) return;
+    const [entry] = this.undoStack.splice(idx, 1);
+    if (entry.previousLeitner) this.leitnerRepo.save(entry.previousLeitner);
+    if (entry.wasCorrect) {
+      this.sessionStats.correct = Math.max(0, this.sessionStats.correct - 1);
+    } else {
+      this.sessionStats.incorrect = Math.max(0, this.sessionStats.incorrect - 1);
+      this.sessionStats.incorrectCards = this.sessionStats.incorrectCards.filter((i) => i.card.id !== cardId);
+    }
+    this.sessionStats.allGraded = this.sessionStats.allGraded.filter((i) => i.card.id !== cardId);
+    this.currentIndex.set(entry.cardIndex);
+    this.isFlipped.set(true);
+    this.done = false;
+    this.resetCardScroll();
+  }
+
+  masterCard(cardId: string): void {
+    const graded = this.sessionStats.allGraded.find((i) => i.card.id === cardId);
+    this.excludeCardUseCase.execute(cardId);
+    this.sessionStats.allGraded = this.sessionStats.allGraded.filter((i) => i.card.id !== cardId);
+    this.sessionStats.incorrectCards = this.sessionStats.incorrectCards.filter((i) => i.card.id !== cardId);
+    this.undoStack = this.undoStack.filter((u) => u.card.id !== cardId);
+    if (graded) {
+      if (graded.correct) this.sessionStats.correct = Math.max(0, this.sessionStats.correct - 1);
+      else this.sessionStats.incorrect = Math.max(0, this.sessionStats.incorrect - 1);
+    }
+  }
+
+  get gradedByDate(): { label: string; date: string; items: { card: Flashcard; correct: boolean; nextReviewDate: string }[] }[] {
+    const groups = new Map<string, { card: Flashcard; correct: boolean; nextReviewDate: string }[]>();
+    for (const item of this.sessionStats.allGraded) {
+      if (!groups.has(item.nextReviewDate)) groups.set(item.nextReviewDate, []);
+      groups.get(item.nextReviewDate)!.push(item);
+    }
+    return Array.from(groups.entries())
+      .sort(([a], [b]) => a.localeCompare(b))
+      .map(([date, items]) => ({ label: this.dateLabel(date), date, items }));
+  }
+
+  private dateLabel(dateStr: string): string {
+    const today = new Date();
+    today.setHours(0, 0, 0, 0);
+    const target = new Date(dateStr + 'T00:00:00');
+    const diffDays = Math.round((target.getTime() - today.getTime()) / (1000 * 60 * 60 * 24));
+    if (diffDays <= 1) return 'Morgen';
+    if (diffDays === 7) return 'Over 1 week';
+    if (diffDays === 14) return 'Over 2 weken';
+    return `Over ${diffDays} dagen`;
   }
 
   private advance(): void {
