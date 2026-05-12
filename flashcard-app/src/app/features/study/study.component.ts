@@ -11,10 +11,17 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { GetCardsForStudyUseCase } from '../../core/use-cases/get-cards-for-study.use-case';
 import { SaveCardUseCase } from '../../core/use-cases/save-card.use-case';
 import { ExcludeCardUseCase } from '../../core/use-cases/exclude-card.use-case';
+import { GradeCardUseCase } from '../../core/use-cases/grade-card.use-case';
 import { StorageRepository } from '../../domain/ports/storage.repository';
 import { Flashcard } from '../../domain/models/flashcard.model';
 
-type SwipeAction = 'next' | 'save' | 'exclude' | null;
+type SwipeAction = 'correct' | 'incorrect' | 'save' | 'exclude' | 'flip' | null;
+
+interface SessionStats {
+  correct: number;
+  incorrect: number;
+  incorrectCards: { card: Flashcard; nextReviewDate: string }[];
+}
 
 @Component({
   selector: 'app-study',
@@ -29,11 +36,13 @@ export class StudyComponent implements OnInit {
   cards: Flashcard[] = [];
   currentIndex = signal(0);
   isFlipped = signal(false);
+  hasFlipped = false;
   loading = true;
   done = false;
   chapterName = '';
   showResumeDialog = false;
   resumeIndex = 0;
+  sessionStats: SessionStats = { correct: 0, incorrect: 0, incorrectCards: [] };
 
   feedback = signal<SwipeAction>(null);
   dragOffsetX = signal(0);
@@ -51,7 +60,9 @@ export class StudyComponent implements OnInit {
     private getCardsUseCase: GetCardsForStudyUseCase,
     private saveCard: SaveCardUseCase,
     private excludeCard: ExcludeCardUseCase,
-    private storage: StorageRepository
+    private gradeCardUseCase: GradeCardUseCase,
+    private storage: StorageRepository,
+    private elRef: ElementRef<HTMLElement>
   ) {}
 
   async ngOnInit(): Promise<void> {
@@ -103,9 +114,16 @@ export class StudyComponent implements OnInit {
   }
 
   onTouchMove(e: TouchEvent): void {
-    if (this.isFlipped()) return; // allow native scroll on flipped card
     const dx = e.touches[0].clientX - this.touchStartX;
     const dy = e.touches[0].clientY - this.touchStartY;
+    if (this.isFlipped()) {
+      // Allow vertical scroll on back; only track horizontal for grading
+      if (Math.abs(dx) > Math.abs(dy)) {
+        this.dragOffsetX.set(dx);
+        this.dragOffsetY.set(0);
+      }
+      return;
+    }
     this.dragOffsetX.set(dx);
     this.dragOffsetY.set(dy);
   }
@@ -115,7 +133,6 @@ export class StudyComponent implements OnInit {
     const dy = e.changedTouches[0].clientY - this.touchStartY;
     this.dragOffsetX.set(0);
     this.dragOffsetY.set(0);
-    if (this.isFlipped()) return; // no swipe when flipped
     this.handleSwipe(dx, dy);
   }
 
@@ -134,9 +151,17 @@ export class StudyComponent implements OnInit {
   @HostListener('document:mousemove', ['$event'])
   onMouseMove(e: MouseEvent): void {
     if (!this.mouseDown) return;
-    if (this.isFlipped()) return; // allow scroll on flipped card
-    this.dragOffsetX.set(e.clientX - this.mouseStartX);
-    this.dragOffsetY.set(e.clientY - this.mouseStartY);
+    const dx = e.clientX - this.mouseStartX;
+    const dy = e.clientY - this.mouseStartY;
+    if (this.isFlipped()) {
+      if (Math.abs(dx) > Math.abs(dy)) {
+        this.dragOffsetX.set(dx);
+        this.dragOffsetY.set(0);
+      }
+      return;
+    }
+    this.dragOffsetX.set(dx);
+    this.dragOffsetY.set(dy);
   }
 
   @HostListener('document:mouseup', ['$event'])
@@ -147,7 +172,6 @@ export class StudyComponent implements OnInit {
     const dy = e.clientY - this.mouseStartY;
     this.dragOffsetX.set(0);
     this.dragOffsetY.set(0);
-    if (this.isFlipped()) return; // no swipe when flipped
     this.handleSwipe(dx, dy);
   }
 
@@ -164,34 +188,31 @@ export class StudyComponent implements OnInit {
     const absDy = Math.abs(dy);
     const total = Math.max(absDx, absDy);
 
-    if (total < this.TAP_THRESHOLD) {
-      // Tap — let the (click) event handle it
+    if (total < this.TAP_THRESHOLD) return; // tap → let click handle
+
+    if (this.isFlipped()) {
+      // Flipped: horizontal swipe = grade
+      if (absDx >= absDy && absDx >= this.SWIPE_THRESHOLD) {
+        this.lastSwipeTime = Date.now();
+        if (dx > 0) {
+          this.triggerAction('correct');
+          this.gradeCard(true);
+        } else {
+          this.triggerAction('incorrect');
+          this.gradeCard(false);
+        }
+      }
       return;
     }
 
-    if (total < this.SWIPE_THRESHOLD) return; // ambiguous drag, ignore
-
-    this.lastSwipeTime = Date.now();
-
-    if (absDx >= absDy) {
-      // Horizontal
-      if (dx > 0) {
-        this.triggerAction('next');
-        this.nextCard();
-      } else {
-        this.triggerAction('exclude');
-        this.excludeCurrentCard();
-      }
-    } else {
-      // Vertical — only up = save; down = nothing
-      if (dy < 0) {
-        this.triggerAction('save');
-        this.saveForLater();
-      }
+    // Not flipped: any swipe → flip card
+    if (total >= this.SWIPE_THRESHOLD) {
+      this.lastSwipeTime = Date.now();
+      this.flipCard();
     }
   }
 
-  private triggerAction(action: SwipeAction): void {
+   protected triggerAction(action: SwipeAction): void {
     this.vibrate(18);
     this.feedback.set(action);
     setTimeout(() => this.feedback.set(null), 600);
@@ -206,9 +227,28 @@ export class StudyComponent implements OnInit {
   flipCard(): void {
     this.vibrate(10);
     this.isFlipped.update((v) => !v);
+    if (this.isFlipped()) {
+      this.hasFlipped = true;
+    }
   }
 
-  nextCard(): void {
+  // ── Grading ───────────────────────────────────────────────────────────────
+
+  gradeCard(correct: boolean): void {
+    if (!this.current) return;
+    const card = this.current;
+    const result = this.gradeCardUseCase.execute(card.id, correct);
+    if (correct) {
+      this.sessionStats.correct++;
+    } else {
+      this.sessionStats.incorrect++;
+      this.sessionStats.incorrectCards.push({ card, nextReviewDate: result.nextReviewDate });
+    }
+    this.advanceCard();
+  }
+
+  private advanceCard(): void {
+    this.hasFlipped = false;
     this.isFlipped.set(false);
     if (this.currentIndex() < this.cards.length - 1) {
       this.currentIndex.update((i) => i + 1);
@@ -217,21 +257,46 @@ export class StudyComponent implements OnInit {
       this.storage.clearProgress(this.chapterName);
       this.done = true;
     }
+    this.resetCardScroll();
+  }
+
+  nextCard(): void {
+    this.hasFlipped = false;
+    this.isFlipped.set(false);
+    if (this.currentIndex() < this.cards.length - 1) {
+      this.currentIndex.update((i) => i + 1);
+      this.storage.saveProgress(this.chapterName, this.currentIndex());
+    } else {
+      this.storage.clearProgress(this.chapterName);
+      this.done = true;
+    }
+    this.resetCardScroll();
   }
 
   prevCard(): void {
     if (this.currentIndex() > 0) {
+      this.hasFlipped = false;
       this.isFlipped.set(false);
       this.currentIndex.update((i) => i - 1);
       this.storage.saveProgress(this.chapterName, this.currentIndex());
     }
+    this.resetCardScroll();
+  }
+
+  private resetCardScroll(): void {
+    // Run after Angular has rendered the new card
+    setTimeout(() => {
+      const faces = this.elRef.nativeElement.querySelectorAll<HTMLElement>('.card-face');
+      faces.forEach((el) => (el.scrollTop = 0));
+    }, 0);
   }
 
   saveForLater(): void {
     if (this.current) {
       this.saveCard.execute(this.current);
+      this.triggerAction('save');
     }
-    this.nextCard();
+    this.advanceCard();
   }
 
   excludeCurrentCard(): void {
@@ -245,6 +310,7 @@ export class StudyComponent implements OnInit {
         }
         this.currentIndex.set(this.cards.length - 1);
       }
+      this.hasFlipped = false;
       this.isFlipped.set(false);
     }
   }
@@ -253,10 +319,16 @@ export class StudyComponent implements OnInit {
     this.router.navigate(['/']);
   }
 
+  goToReview(): void {
+    this.router.navigate(['/review']);
+  }
+
   restart(): void {
     this.storage.clearProgress(this.chapterName);
     this.currentIndex.set(0);
     this.isFlipped.set(false);
+    this.hasFlipped = false;
+    this.sessionStats = { correct: 0, incorrect: 0, incorrectCards: [] };
     this.done = false;
   }
 
@@ -271,9 +343,13 @@ export class StudyComponent implements OnInit {
     const x = this.dragOffsetX();
     const y = this.dragOffsetY();
     if (Math.abs(x) < 20 && Math.abs(y) < 20) return '';
-    const absDx = Math.abs(x);
-    const absDy = Math.abs(y);
-    if (absDx >= absDy) return x > 0 ? 'drag-right' : 'drag-left';
-    return y < 0 ? 'drag-up' : '';
+
+    if (this.isFlipped()) {
+      if (Math.abs(x) >= 20) return x > 0 ? 'drag-correct' : 'drag-incorrect';
+      return '';
+    }
+
+    // Not flipped: no directional color hints
+    return '';
   }
 }

@@ -4,7 +4,7 @@
   <header class="study-header">
     <button class="back-btn" (click)="goBack()" aria-label="Terug">‹</button>
     <div class="header-center">
-      <span class="chapter-title">{{ chapterName }}</span>
+      <span class="chapter-title">📅 Dagelijkse herhaling</span>
       <span class="card-counter" *ngIf="!loading && !done">
         {{ currentIndex() + 1 }} / {{ cards.length }}
       </span>
@@ -20,13 +20,21 @@
   <!-- Loading -->
   <div *ngIf="loading" class="center-content">
     <div class="spinner"></div>
-    <p>Kaarten laden...</p>
+    <p>Herhaalkaarten laden...</p>
   </div>
 
-  <!-- Done / Session summary -->
-  <div *ngIf="!loading && done" class="done-screen">
+  <!-- No cards due -->
+  <div *ngIf="!loading && done && cards.length === 0" class="done-screen">
+    <div class="done-icon">✅</div>
+    <h2>Alles bijgewerkt!</h2>
+    <p>Er zijn vandaag geen kaarten die herhaald moeten worden.<br>Kom morgen terug of studeer een nieuw hoofdstuk.</p>
+    <button class="primary-btn" (click)="goBack()">Naar hoofdstukken</button>
+  </div>
+
+  <!-- Session summary -->
+  <div *ngIf="!loading && done && cards.length > 0" class="done-screen">
     <div class="done-icon">🎉</div>
-    <h2>Sessie klaar!</h2>
+    <h2>Herhaling klaar!</h2>
 
     <div class="session-stats">
       <div class="stat stat--correct">
@@ -44,7 +52,7 @@
     </div>
 
     <div class="incorrect-list" *ngIf="sessionStats.incorrectCards.length > 0">
-      <p class="incorrect-title">Nog te oefenen (herhaling ingepland):</p>
+      <p class="incorrect-title">Morgen opnieuw:</p>
       <ul>
         <li *ngFor="let item of sessionStats.incorrectCards">
           <span class="incorrect-q">{{ item.card.voorkant.length > 70 ? (item.card.voorkant | slice:0:70) + '…' : item.card.voorkant }}</span>
@@ -53,32 +61,12 @@
       </ul>
     </div>
 
-    <button class="primary-btn" (click)="restart()">Opnieuw</button>
-    <button class="secondary-btn" (click)="goToReview()">Naar dagelijkse herhaling</button>
-    <button class="secondary-btn" (click)="goBack()">Terug naar hoofdstukken</button>
-  </div>
-
-  <!-- Resume dialog -->
-  <div class="resume-backdrop" *ngIf="showResumeDialog">
-    <div class="resume-dialog">
-      <div class="resume-icon">📍</div>
-      <h2>Verder waar je gebleven was?</h2>
-      <p>Je was bij kaart {{ resumeIndex + 1 }} van {{ cards.length }}.</p>
-      <button class="resume-btn resume-btn--continue" (click)="resumeFromSaved()">
-        Doorgaan vanaf kaart {{ resumeIndex + 1 }}
-      </button>
-      <button class="resume-btn resume-btn--restart" (click)="startFromBeginning()">
-        Opnieuw beginnen
-      </button>
-    </div>
+    <button class="primary-btn" (click)="goBack()">Terug naar hoofdstukken</button>
   </div>
 
   <!-- Flashcard area -->
-  <div
-    *ngIf="!loading && !done && current"
-    class="card-area"
-    [class.card-area--blurred]="showResumeDialog"
-  >
+  <div *ngIf="!loading && !done && current" class="card-area">
+
     <!-- Swipe hints -->
     <div class="swipe-hints" *ngIf="!isFlipped()">
       <p class="flip-prompt">Tik of swipe om de kaart om te draaien</p>
@@ -151,22 +139,12 @@
 
   <!-- Bottom bar -->
   <nav class="bottom-bar" *ngIf="!loading && !done && current">
-    <!-- Before flip: navigate + skip + flip -->
     <ng-container *ngIf="!isFlipped()">
-      <button class="bar-btn btn-prev" (click)="prevCard()" [disabled]="currentIndex() === 0">
-        <span class="bar-icon bar-icon--prev">&#x27A4;</span>
-        <span class="bar-label">Vorige</span>
-      </button>
-      <button class="bar-btn btn-exclude" (click)="excludeCurrentCard()">
-        <span class="bar-icon">❌</span>
-        <span class="bar-label">Overslaan</span>
-      </button>
       <button class="bar-btn btn-flip" (click)="flipCard()">
         <span class="bar-icon">🔄</span>
         <span class="bar-label">Draaien</span>
       </button>
     </ng-container>
-    <!-- After flip: grade + save -->
     <ng-container *ngIf="isFlipped()">
       <button class="bar-btn btn-incorrect" (click)="triggerAction('incorrect'); gradeCard(false)">
         <span class="bar-icon">✗</span>

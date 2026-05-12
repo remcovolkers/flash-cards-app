@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { Router } from '@angular/router';
 import { GetChaptersUseCase } from '../../core/use-cases/get-chapters.use-case';
 import { GetSavedCardsUseCase } from '../../core/use-cases/get-saved-cards.use-case';
+import { LeitnerRepository } from '../../domain/ports/leitner.repository';
 import { Chapter } from '../../domain/models/chapter.model';
 
 @Component({
@@ -15,11 +16,13 @@ import { Chapter } from '../../domain/models/chapter.model';
 export class ChapterSelectComponent implements OnInit {
   chapters: Chapter[] = [];
   savedCount = 0;
+  dueCount = 0;
   loading = true;
 
   constructor(
     private getChapters: GetChaptersUseCase,
     private getSavedCards: GetSavedCardsUseCase,
+    private leitner: LeitnerRepository,
     private router: Router
   ) {}
 
@@ -27,6 +30,7 @@ export class ChapterSelectComponent implements OnInit {
     try {
       this.chapters = await this.getChapters.execute();
       this.savedCount = this.getSavedCards.execute().length;
+      this.dueCount = this.leitner.getDueCount();
     } catch (err) {
       console.error('Fout bij laden van hoofdstukken:', err);
     } finally {
@@ -52,5 +56,13 @@ export class ChapterSelectComponent implements OnInit {
 
   goToExcluded(): void {
     this.router.navigate(['/excluded']);
+  }
+
+  goToReview(): void {
+    this.router.navigate(['/review']);
+  }
+
+  goToHandleiding(): void {
+    this.router.navigate(['/handleiding']);
   }
 }

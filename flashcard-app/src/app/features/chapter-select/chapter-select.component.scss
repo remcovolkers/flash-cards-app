@@ -1,9 +1,11 @@
 .page {
-  min-height: 100dvh;
-  padding: 1.5rem 1rem 2rem;
+  height: 100dvh;
+  overflow-y: auto;
+  padding: 1.5rem 1rem calc(env(safe-area-inset-bottom, 0px) + 5rem);
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+  box-sizing: border-box;
 }
 
 .app-header {
@@ -19,60 +21,96 @@
   .subtitle {
     font-size: 0.95rem;
     color: var(--color-text-muted);
-    margin: 0;
+    margin: 0 0 0.75rem;
+  }
+
+  .help-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    background: none;
+    border: 1px solid var(--color-border);
+    border-radius: 20px;
+    padding: 0.35rem 0.85rem;
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: var(--color-text-muted);
+    cursor: pointer;
+    transition: background 0.15s, color 0.15s;
+
+    &:active {
+      background: var(--color-border);
+      color: var(--color-text);
+    }
   }
 }
 
-.quick-actions {
-  display: flex;
-  gap: 0.75rem;
+// ── Fixed bottom bar ─────────────────────────────────────────────────────
 
-  .action-btn {
+.bottom-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: stretch;
+  background: var(--color-card-bg);
+  border-top: 1px solid var(--color-border);
+  padding-bottom: env(safe-area-inset-bottom, 0);
+  z-index: 50;
+  box-shadow: 0 -2px 12px rgba(0, 0, 0, 0.08);
+
+  .bar-btn {
     flex: 1;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 0.5rem;
-    padding: 0.9rem;
+    gap: 0.25rem;
+    padding: 0.85rem 0.5rem;
     border: none;
-    border-radius: 14px;
-    font-size: 0.95rem;
-    font-weight: 600;
+    background: none;
     cursor: pointer;
     position: relative;
-    transition: transform 0.15s, opacity 0.15s;
+    -webkit-tap-highlight-color: transparent;
+    transition: background 0.1s;
 
-    &:active { transform: scale(0.96); opacity: 0.85; }
+    &:active { background: var(--color-border); }
 
-    .icon { font-size: 1.2rem; }
+    .bar-icon { font-size: 1.5rem; line-height: 1; }
+
+    .bar-label {
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: var(--color-text-muted);
+    }
 
     .badge {
       position: absolute;
-      top: 6px;
-      right: 8px;
+      top: 8px;
+      right: calc(50% - 20px);
       background: var(--color-danger);
       color: #fff;
-      font-size: 0.7rem;
+      font-size: 0.65rem;
       font-weight: 700;
-      min-width: 18px;
-      height: 18px;
-      border-radius: 9px;
+      min-width: 16px;
+      height: 16px;
+      border-radius: 8px;
       display: flex;
       align-items: center;
       justify-content: center;
-      padding: 0 4px;
+      padding: 0 3px;
     }
   }
 
-  .saved-btn {
-    background: var(--color-saved-bg);
-    color: var(--color-saved-text);
+  .review-btn {
+    .bar-label { color: var(--color-primary); }
+    .badge--due  { background: var(--color-danger); }
+    .badge--none { background: var(--color-success); }
   }
 
-  .excluded-btn {
-    background: var(--color-excluded-bg);
-    color: var(--color-excluded-text);
-  }
+  .saved-btn   .bar-label { color: var(--color-saved-text); }
+  .excluded-btn .bar-label { color: var(--color-text-muted); }
 }
 
 .loading {

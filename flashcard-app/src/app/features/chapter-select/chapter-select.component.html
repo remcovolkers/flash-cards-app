@@ -2,28 +2,17 @@
   <header class="app-header">
     <h1>📚 Portaal Flashcards</h1>
     <p class="subtitle">Kies een hoofdstuk om te starten</p>
+    <button class="help-btn" (click)="goToHandleiding()" aria-label="App handleiding">📖 Handleiding</button>
   </header>
 
-  <div class="swipe-legend">
-    <div class="legend-title">Swipe-bediening tijdens studeren</div>
+  <div class="swipe-legend" *ngIf="!loading">
+    <div class="legend-title">Bediening tijdens studeren</div>
     <div class="legend-grid">
-      <div class="legend-item"><span class="dir">→</span> Volgende kaart</div>
-      <div class="legend-item"><span class="dir">←</span> Overslaan</div>
-      <div class="legend-item"><span class="dir">↑</span> Opslaan voor later</div>
-      <div class="legend-item"><span class="dir">Tik</span> Kaart omdraaien</div>
+      <div class="legend-item"><span class="dir">Tik/swipe</span> Kaart omdraaien</div>
+      <div class="legend-item"><span class="dir">→ Goed</span> Kaart beheerst</div>
+      <div class="legend-item"><span class="dir">← Fout</span> Kaart herhalen</div>
+      <div class="legend-item"><span class="dir">🔖</span> Opslaan voor later</div>
     </div>
-  </div>
-
-  <div class="quick-actions">
-    <button class="action-btn saved-btn" (click)="goToSaved()">
-      <span class="icon">&#x1F4BE;</span>
-      <span class="label">Opgeslagen</span>
-      <span class="badge" *ngIf="savedCount > 0">{{ savedCount }}</span>
-    </button>
-    <button class="action-btn excluded-btn" (click)="goToExcluded()">
-      <span class="icon">❌</span>
-      <span class="label">Overgeslagen</span>
-    </button>
   </div>
 
   <div *ngIf="loading" class="loading">
@@ -70,3 +59,22 @@
   </ng-container>
 
 </div>
+
+<!-- Fixed bottom bar -->
+<nav class="bottom-bar">
+  <button class="bar-btn review-btn" (click)="goToReview()">
+    <span class="bar-icon">📅</span>
+    <span class="bar-label">Herhaling</span>
+    <span class="badge badge--due" *ngIf="dueCount > 0">{{ dueCount }}</span>
+    <span class="badge badge--none" *ngIf="dueCount === 0">✓</span>
+  </button>
+  <button class="bar-btn saved-btn" (click)="goToSaved()">
+    <span class="bar-icon">&#x1F4BE;</span>
+    <span class="bar-label">Opgeslagen</span>
+    <span class="badge" *ngIf="savedCount > 0">{{ savedCount }}</span>
+  </button>
+  <button class="bar-btn excluded-btn" (click)="goToExcluded()">
+    <span class="bar-icon">❌</span>
+    <span class="bar-label">Overgeslagen</span>
+  </button>
+</nav>

@@ -25,5 +25,15 @@ export const routes: Routes = [
         (m) => m.ExcludedComponent
       ),
   },
+  {
+    path: 'review',
+    loadComponent: () =>
+      import('./features/review/review.component').then((m) => m.ReviewComponent),
+  },
+  {
+    path: 'handleiding',
+    loadComponent: () =>
+      import('./features/handleiding/handleiding.component').then((m) => m.HandleidingComponent),
+  },
   { path: '**', redirectTo: '' },
 ];

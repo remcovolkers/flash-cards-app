@@ -1,3 +1,6 @@
+// Review component shares the same visual language as the study component.
+// All classes are duplicated here because Angular component styles are scoped.
+
 .study-page {
   display: flex;
   flex-direction: column;
@@ -6,8 +9,6 @@
   background: var(--color-bg);
   user-select: none;
 }
-
-// ── Header ───────────────────────────────────────────────────────────────
 
 .study-header {
   display: flex;
@@ -53,13 +54,8 @@
     color: var(--color-text-muted);
   }
 
-  .header-spacer {
-    width: 2.5rem;
-    flex-shrink: 0;
-  }
+  .header-spacer { width: 2.5rem; flex-shrink: 0; }
 }
-
-// ── Progress ─────────────────────────────────────────────────────────────
 
 .progress-bar {
   height: 3px;
@@ -72,8 +68,6 @@
     transition: width 0.3s ease;
   }
 }
-
-// ── Loading ───────────────────────────────────────────────────────────────
 
 .center-content {
   flex: 1;
@@ -94,11 +88,7 @@
   }
 }
 
-@keyframes spin {
-  to { transform: rotate(360deg); }
-}
-
-// ── Done / Session summary ────────────────────────────────────────────────
+@keyframes spin { to { transform: rotate(360deg); } }
 
 .done-screen {
   flex: 1;
@@ -113,6 +103,7 @@
 
   .done-icon { font-size: 3rem; }
   h2 { font-size: 1.5rem; font-weight: 700; margin: 0; color: var(--color-text); }
+  p  { color: var(--color-text-muted); margin: 0; line-height: 1.5; }
 
   .primary-btn {
     width: 100%;
@@ -127,16 +118,6 @@
     cursor: pointer;
     transition: opacity 0.15s;
     &:active { opacity: 0.8; }
-  }
-
-  .secondary-btn {
-    background: none;
-    border: none;
-    color: var(--color-primary);
-    font-size: 0.95rem;
-    font-weight: 500;
-    cursor: pointer;
-    text-decoration: underline;
   }
 }
 
@@ -156,8 +137,8 @@
     align-items: center;
     gap: 0.25rem;
 
-    &--correct  { background: rgba(16, 185, 129, 0.12); }
-    &--total    { background: rgba(99, 102, 241, 0.1); }
+    &--correct   { background: rgba(16, 185, 129, 0.12); }
+    &--total     { background: rgba(99, 102, 241, 0.1); }
     &--incorrect { background: rgba(239, 68, 68, 0.1); }
   }
 
@@ -225,82 +206,6 @@
   }
 }
 
-// ── Resume dialog ─────────────────────────────────────────────────────────
-
-.resume-backdrop {
-  position: fixed;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.35);
-  backdrop-filter: blur(2px);
-  -webkit-backdrop-filter: blur(2px);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 100;
-  padding: 1.5rem;
-}
-
-.resume-dialog {
-  background: var(--color-card-bg);
-  border-radius: 20px;
-  padding: 2rem 1.5rem 1.5rem;
-  width: 100%;
-  max-width: 340px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.75rem;
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
-  text-align: center;
-
-  .resume-icon {
-    font-size: 2.5rem;
-  }
-
-  h2 {
-    font-size: 1.15rem;
-    font-weight: 700;
-    color: var(--color-text);
-    margin: 0;
-  }
-
-  p {
-    font-size: 0.9rem;
-    color: var(--color-text-muted);
-    margin: 0;
-  }
-}
-
-.resume-btn {
-  width: 100%;
-  padding: 0.85rem;
-  border: none;
-  border-radius: 14px;
-  font-size: 0.95rem;
-  font-weight: 600;
-  cursor: pointer;
-  margin-top: 0.25rem;
-  transition: opacity 0.15s;
-
-  &:active { opacity: 0.8; }
-
-  &--continue {
-    background: var(--color-primary);
-    color: #fff;
-  }
-
-  &--restart {
-    background: none;
-    color: var(--color-text-muted);
-    font-weight: 500;
-    text-decoration: underline;
-    padding-top: 0.25rem;
-    margin-top: 0;
-  }
-}
-
-// ── Card area ─────────────────────────────────────────────────────────────
-
 .card-area {
   flex: 1;
   min-height: 0;
@@ -311,16 +216,7 @@
   padding: 0.5rem 1rem 0.75rem;
   gap: 0.5rem;
   overflow: hidden;
-  transition: transform 0.25s ease, filter 0.25s ease;
-
-  &--blurred {
-    transform: scale(0.95);
-    filter: blur(1px);
-    pointer-events: none;
-  }
 }
-
-// ── Swipe hints ───────────────────────────────────────────────────────────
 
 .swipe-hints {
   flex-shrink: 0;
@@ -346,25 +242,13 @@
     padding: 0.3rem 0.6rem;
     font-size: 0.78rem;
     font-weight: 700;
-    color: var(--color-text-muted);
-    transition: all 0.15s;
     opacity: 0.6;
+    transition: all 0.15s;
   }
 
-  .hint.active {
-    opacity: 1;
-    transform: scale(1.08);
-  }
-
-  .hint-correct {
-    color: var(--color-success);
-    background: rgba(16, 185, 129, 0.15);
-  }
-
-  .hint-incorrect {
-    color: var(--color-danger);
-    background: rgba(239, 68, 68, 0.12);
-  }
+  .hint.active { opacity: 1; transform: scale(1.08); }
+  .hint-correct   { color: var(--color-success); background: rgba(16, 185, 129, 0.15); }
+  .hint-incorrect { color: var(--color-danger);  background: rgba(239, 68, 68, 0.12); }
 
   .hint-row {
     display: flex;
@@ -373,8 +257,6 @@
     padding: 0 0.5rem;
   }
 }
-
-// ── Card wrapper (3-D flip container) ────────────────────────────────────
 
 .card-wrapper {
   flex: 1;
@@ -388,9 +270,7 @@
   z-index: 2;
   touch-action: none;
 
-  &.flipped {
-    touch-action: pan-y; // re-enable vertical scroll on flipped card
-  }
+  &.flipped { touch-action: pan-y; }
 
   &.drag-correct  .card { border: 2px solid var(--color-success); box-shadow: 0 8px 24px rgba(16, 185, 129, 0.25); }
   &.drag-incorrect .card { border: 2px solid var(--color-danger);  box-shadow: 0 8px 24px rgba(239, 68, 68, 0.25); }
@@ -408,9 +288,7 @@
   cursor: pointer;
   -webkit-tap-highlight-color: transparent;
 
-  .card-wrapper.flipped & {
-    transform: rotateY(180deg);
-  }
+  .card-wrapper.flipped & { transform: rotateY(180deg); }
 }
 
 .card-face {
@@ -515,8 +393,6 @@
   }
 }
 
-// ── Feedback overlay ──────────────────────────────────────────────────────
-
 .feedback-overlay {
   position: absolute;
   inset: 0;
@@ -548,8 +424,6 @@
   &.save      { background: var(--color-primary); }
 }
 
-// ── Bottom bar ────────────────────────────────────────────────────────────
-
 .bottom-bar {
   display: flex;
   align-items: stretch;
@@ -573,39 +447,14 @@
     outline: none;
     transition: background 0.1s;
 
-    &:active {
-      background: var(--color-border);
-    }
+    &:active { background: var(--color-border); }
 
-    .bar-icon {
-      font-size: 1.6rem;
-      line-height: 1;
-    }
-
-    .bar-label {
-      font-size: 0.78rem;
-      font-weight: 600;
-      color: var(--color-primary);
-      letter-spacing: 0.02em;
-    }
+    .bar-icon  { font-size: 1.6rem; line-height: 1; }
+    .bar-label { font-size: 0.78rem; font-weight: 600; color: var(--color-primary); letter-spacing: 0.02em; }
   }
 
-  .btn-exclude .bar-label { color: var(--color-danger); }
   .btn-incorrect .bar-label { color: var(--color-danger); }
   .btn-incorrect .bar-icon  { color: var(--color-danger); font-size: 1.8rem; font-weight: 800; }
-  .btn-correct .bar-label { color: var(--color-success); }
-  .btn-correct .bar-icon  { color: var(--color-success); font-size: 1.8rem; font-weight: 800; }
-  .btn-save    .bar-label { color: var(--color-primary); }
-
-  .btn-prev {
-    &:disabled {
-      opacity: 0.3;
-      pointer-events: none;
-    }
-
-    .bar-icon--prev {
-      display: inline-block;
-      transform: rotate(180deg);
-    }
-  }
+  .btn-correct .bar-label   { color: var(--color-success); }
+  .btn-correct .bar-icon    { color: var(--color-success); font-size: 1.8rem; font-weight: 800; }
 }

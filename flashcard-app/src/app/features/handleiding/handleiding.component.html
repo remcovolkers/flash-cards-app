@@ -1,0 +1,184 @@
+<div class="page">
+
+  <header class="page-header">
+    <button class="back-btn" (click)="goBack()" aria-label="Terug">‹</button>
+    <h1>📖 App Handleiding</h1>
+  </header>
+
+  <div class="content">
+
+    <section class="intro">
+      <p>
+        Deze app helpt je om flashcards te leren met de <strong>Leitner-methode</strong> — een bewezen techniek op basis van gespreide herhaling. Hoe vaker je een kaart goed beantwoordt, hoe minder vaak je hem hoeft te herhalen.
+      </p>
+    </section>
+
+    <!-- Stap 1 -->
+    <section class="section">
+      <div class="section-header">
+        <span class="step-badge">1</span>
+        <h2>Kies een hoofdstuk</h2>
+      </div>
+      <p>Selecteer op het homescreen een hoofdstuk om mee te beginnen. Elk hoofdstuk bevat een set flashcards over een bepaald thema.</p>
+      <div class="tip">
+        <span class="tip-icon">💡</span>
+        <span>Begin met een hoofdstuk dat je al een beetje kent — zo bouw je sneller vertrouwen op.</span>
+      </div>
+    </section>
+
+    <!-- Stap 2 -->
+    <section class="section">
+      <div class="section-header">
+        <span class="step-badge">2</span>
+        <h2>Kaart omdraaien</h2>
+      </div>
+      <p>Je ziet de voorkant van een kaart (de vraag). Probeer het antwoord <strong>zelf te formuleren</strong> voordat je omdraait. Dat is de kern van active recall.</p>
+      <div class="action-list">
+        <div class="action-item">
+          <span class="action-icon">👆</span>
+          <span><strong>Tik</strong> op de kaart om hem om te draaien</span>
+        </div>
+        <div class="action-item">
+          <span class="action-icon">↔️</span>
+          <span><strong>Swipe</strong> in elke richting om te draaien</span>
+        </div>
+        <div class="action-item">
+          <span class="action-icon">🔄</span>
+          <span>Of druk op de <strong>Draaien</strong>-knop onderaan</span>
+        </div>
+      </div>
+      <div class="warning">
+        <span class="warning-icon">⚠️</span>
+        <span>Draai de kaart pas om als je het antwoord écht hebt geprobeerd — niet direct. Dat is de enige manier om te leren.</span>
+      </div>
+    </section>
+
+    <!-- Stap 3 -->
+    <section class="section">
+      <div class="section-header">
+        <span class="step-badge">3</span>
+        <h2>Beoordeel eerlijk</h2>
+      </div>
+      <p>Nadat je de achterkant hebt gezien, beoordeel je of je het goed had. Wees <strong>streng voor jezelf</strong> — half goed is fout.</p>
+      <div class="grade-row">
+        <div class="grade-card grade-card--correct">
+          <span class="grade-icon">✓</span>
+          <strong>Goed</strong>
+          <span>Swipe → of druk op Goed</span>
+        </div>
+        <div class="grade-card grade-card--incorrect">
+          <span class="grade-icon">✗</span>
+          <strong>Fout</strong>
+          <span>Swipe ← of druk op Fout</span>
+        </div>
+      </div>
+      <div class="tip">
+        <span class="tip-icon">🔖</span>
+        <span>Wil je een kaart bewaren voor later? Druk op <strong>Opslaan</strong> — de kaart wordt opgeslagen en je gaat door naar de volgende.</span>
+      </div>
+    </section>
+
+    <!-- Leitner -->
+    <section class="section">
+      <div class="section-header">
+        <span class="step-badge icon-badge">📦</span>
+        <h2>Het Leitner-systeem</h2>
+      </div>
+      <p>Elke kaart zit in een van de vier stapels. Hoe hoger de stapel, hoe langer het duurt voordat de kaart terugkomt.</p>
+      <div class="leitner-grid">
+        <div class="leitner-row">
+          <span class="stack-badge">Stapel 1</span>
+          <span class="stack-interval">Herhaling na <strong>1 dag</strong></span>
+          <span class="stack-desc">Nieuwe en fout-beantwoorde kaarten</span>
+        </div>
+        <div class="leitner-row">
+          <span class="stack-badge stack-badge--2">Stapel 2</span>
+          <span class="stack-interval">Herhaling na <strong>2 dagen</strong></span>
+          <span class="stack-desc">1× goed beantwoord</span>
+        </div>
+        <div class="leitner-row">
+          <span class="stack-badge stack-badge--3">Stapel 3</span>
+          <span class="stack-interval">Herhaling na <strong>7 dagen</strong></span>
+          <span class="stack-desc">2× goed beantwoord</span>
+        </div>
+        <div class="leitner-row">
+          <span class="stack-badge stack-badge--4">Stapel 4</span>
+          <span class="stack-interval">Herhaling na <strong>14 dagen</strong></span>
+          <span class="stack-desc">3× goed beantwoord</span>
+        </div>
+      </div>
+      <div class="rule-box">
+        <span>Fout beantwoord → altijd terug naar <strong>Stapel 1</strong>, ongeacht waar de kaart zat.</span>
+      </div>
+    </section>
+
+    <!-- Dagelijkse herhaling -->
+    <section class="section">
+      <div class="section-header">
+        <span class="step-badge icon-badge">📅</span>
+        <h2>Dagelijkse herhaling</h2>
+      </div>
+      <p>De <strong>Herhaling</strong>-knop onderaan het homescreen toont hoeveel kaarten vandaag terugkomen. Hier vind je alle kaarten uit alle hoofdstukken — door elkaar gemengd (interleaving).</p>
+      <div class="action-list">
+        <div class="action-item">
+          <span class="action-icon">✅</span>
+          <span>Groene vinkje = alles bij, kom morgen terug</span>
+        </div>
+        <div class="action-item">
+          <span class="action-icon">🔴</span>
+          <span>Rode badge = aantal kaarten dat vandaag herhaald moet worden</span>
+        </div>
+      </div>
+      <div class="tip">
+        <span class="tip-icon">💡</span>
+        <span>Doe de dagelijkse herhaling elke dag kort — 10 minuten per dag is effectiever dan 1 uur per week.</span>
+      </div>
+    </section>
+
+    <!-- Sessie samenvatting -->
+    <section class="section">
+      <div class="section-header">
+        <span class="step-badge icon-badge">🎉</span>
+        <h2>Sessie-samenvatting</h2>
+      </div>
+      <p>Na de laatste kaart van een sessie zie je een overzicht van je score: hoeveel goed, hoeveel fout, en wanneer de moeilijke kaarten terugkomen.</p>
+    </section>
+
+    <!-- Overige functies -->
+    <section class="section">
+      <div class="section-header">
+        <span class="step-badge icon-badge">⚙️</span>
+        <h2>Overige functies</h2>
+      </div>
+      <div class="action-list">
+        <div class="action-item">
+          <span class="action-icon">💾</span>
+          <span><strong>Opgeslagen</strong> — bekijk en beheer kaarten die je hebt opgeslagen voor later</span>
+        </div>
+        <div class="action-item">
+          <span class="action-icon">❌</span>
+          <span><strong>Overgeslagen</strong> — kaarten die je hebt overgeslagen; je kunt ze hier herstellen</span>
+        </div>
+        <div class="action-item">
+          <span class="action-icon">‹</span>
+          <span><strong>Vorige</strong> — ga één kaart terug als je de beoordeling wilt aanpassen</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gouden regels -->
+    <section class="section section--rules">
+      <h2>🏅 De zeven gouden regels</h2>
+      <ol class="rules-list">
+        <li>Formuleer altijd eerst het antwoord <strong>zelf</strong> voordat je omdraait</li>
+        <li>Wees <strong>streng</strong>: half goed = fout, terug naar stapel 1</li>
+        <li><strong>Spreid</strong> je sessies: elke dag een beetje is beter dan één grote sessie</li>
+        <li><strong>Mix</strong> de kaarten: gebruik de dagelijkse herhaling voor interleaving</li>
+        <li><strong>Verbind</strong> nieuwe kennis aan wat je al weet</li>
+        <li>Zorg voor voldoende <strong>slaap</strong> — geheugen consolideert 's nachts</li>
+        <li>Begin <strong>vroeg</strong> — gespreide herhaling werkt niet als je alles op één avond doet</li>
+      </ol>
+    </section>
+
+  </div>
+</div>
