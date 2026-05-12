@@ -34,6 +34,14 @@ export class ChapterSelectComponent implements OnInit {
     }
   }
 
+  get regularChapters(): Chapter[] {
+    return this.chapters.filter((c) => !c.isBonus);
+  }
+
+  get bonusChapters(): Chapter[] {
+    return this.chapters.filter((c) => c.isBonus);
+  }
+
   studyChapter(chapterName: string): void {
     this.router.navigate(['/study', encodeURIComponent(chapterName)]);
   }

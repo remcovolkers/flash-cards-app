@@ -111,7 +111,7 @@
   <!-- Bottom bar -->
   <nav class="bottom-bar" *ngIf="!loading && !done && current">
     <button class="bar-btn btn-exclude" (click)="excludeCurrentCard()">
-      <span class="bar-icon">🚫</span>
+      <span class="bar-icon">❌</span>
       <span class="bar-label">Overslaan</span>
     </button>
     <button class="bar-btn btn-flip" (click)="flipCard()">
@@ -119,11 +119,11 @@
       <span class="bar-label">Draaien</span>
     </button>
     <button class="bar-btn btn-save" (click)="saveForLater()">
-      <span class="bar-icon">🔖</span>
+      <span class="bar-icon">💾</span>
       <span class="bar-label">Opslaan</span>
     </button>
     <button class="bar-btn btn-next" (click)="nextCard()">
-      <span class="bar-icon">➡</span>
+      <span class="bar-icon">➤</span>
       <span class="bar-label">Volgende</span>
     </button>
   </nav>

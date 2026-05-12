@@ -147,8 +147,49 @@
   }
 }
 
+// ── Bonus section ────────────────────────────────────────────────────────
+
+.bonus-section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.bonus-header {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  padding: 0 0.25rem;
+
+  .bonus-label {
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--color-accent, #f59e0b);
+  }
+
+  .bonus-desc {
+    font-size: 0.78rem;
+    color: var(--color-text-muted);
+  }
+}
+
+.chapter-item--bonus {
+  border-left: 3px solid var(--color-accent, #f59e0b);
+
+  .chapter-name {
+    color: var(--color-text);
+  }
+
+  .arrow {
+    color: var(--color-accent, #f59e0b);
+  }
+}
+
+// ─────────────────────────────────────────────────────────────────────────
+
 .swipe-legend {
-  margin-top: auto;
   background: var(--color-legend-bg);
   border-radius: 14px;
   padding: 1rem;

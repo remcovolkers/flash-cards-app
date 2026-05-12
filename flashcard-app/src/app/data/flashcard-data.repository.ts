@@ -5,9 +5,15 @@ import { FlashcardRepository } from '../domain/ports/flashcard.repository';
 import { Flashcard } from '../domain/models/flashcard.model';
 import { Chapter } from '../domain/models/chapter.model';
 
+interface ChapterSection {
+  naam: string;
+  aantal: number;
+  kaarten: Flashcard[];
+}
+
 interface FlashcardFile {
   metadata: unknown;
-  flashcards: Flashcard[];
+  flashcards: Record<string, ChapterSection>;
 }
 
 @Injectable({ providedIn: 'root' })
@@ -15,9 +21,8 @@ export class FlashcardDataRepository extends FlashcardRepository {
   private cards: Flashcard[] | null = null;
 
   private readonly sources = [
-    '/portaal_flashcards_deel1.json',
-    '/portaal_flashcards_deel2.json',
-    '/portaal_flashcards_deel3.json',
+    '/portaal_flashcards_compleet.json',
+    '/bonus_flashcards_leren.json',
   ];
 
   constructor(private http: HttpClient) {
@@ -33,7 +38,9 @@ export class FlashcardDataRepository extends FlashcardRepository {
       )
     );
 
-    this.cards = results.flatMap((file) => file.flashcards ?? []);
+    this.cards = results.flatMap((file) =>
+      Object.values(file.flashcards).flatMap((section) => section.kaarten ?? [])
+    );
     return this.cards;
   }
 
@@ -48,10 +55,34 @@ export class FlashcardDataRepository extends FlashcardRepository {
 
   async getChapters(): Promise<Chapter[]> {
     const all = await this.load();
-    const map = new Map<string, number>();
+
+    // Collect per-domein: card count + lowest hoofdstuk number seen
+    const map = new Map<string, { cardCount: number; hoofdstuk: number }>();
     for (const card of all) {
-      map.set(card.domein, (map.get(card.domein) ?? 0) + 1);
+      const existing = map.get(card.domein);
+      const hNum = card.hoofdstuk ?? 999;
+      if (existing) {
+        existing.cardCount++;
+        if (hNum < existing.hoofdstuk) existing.hoofdstuk = hNum;
+      } else {
+        map.set(card.domein, { cardCount: 1, hoofdstuk: hNum });
+      }
     }
-    return Array.from(map.entries()).map(([name, cardCount]) => ({ name, cardCount }));
+
+    const chapters: Chapter[] = Array.from(map.entries()).map(([name, { cardCount, hoofdstuk }]) => ({
+      name,
+      cardCount,
+      hoofdstuk,
+      isBonus: hoofdstuk === 0,
+    }));
+
+    // Sort: bonus (hoofdstuk 0) last, rest ascending by number
+    chapters.sort((a, b) => {
+      if (a.isBonus && !b.isBonus) return 1;
+      if (!a.isBonus && b.isBonus) return -1;
+      return (a.hoofdstuk ?? 999) - (b.hoofdstuk ?? 999);
+    });
+
+    return chapters;
   }
 }

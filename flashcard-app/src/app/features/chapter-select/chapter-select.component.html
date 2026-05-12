@@ -4,14 +4,24 @@
     <p class="subtitle">Kies een hoofdstuk om te starten</p>
   </header>
 
+  <div class="swipe-legend">
+    <div class="legend-title">Swipe-bediening tijdens studeren</div>
+    <div class="legend-grid">
+      <div class="legend-item"><span class="dir">→</span> Volgende kaart</div>
+      <div class="legend-item"><span class="dir">←</span> Overslaan</div>
+      <div class="legend-item"><span class="dir">↑</span> Opslaan voor later</div>
+      <div class="legend-item"><span class="dir">Tik</span> Kaart omdraaien</div>
+    </div>
+  </div>
+
   <div class="quick-actions">
     <button class="action-btn saved-btn" (click)="goToSaved()">
-      <span class="icon">🔖</span>
+      <span class="icon">&#x1F4BE;</span>
       <span class="label">Opgeslagen</span>
       <span class="badge" *ngIf="savedCount > 0">{{ savedCount }}</span>
     </button>
     <button class="action-btn excluded-btn" (click)="goToExcluded()">
-      <span class="icon">🚫</span>
+      <span class="icon">❌</span>
       <span class="label">Overgeslagen</span>
     </button>
   </div>
@@ -21,27 +31,42 @@
     <p>Laden...</p>
   </div>
 
-  <ul *ngIf="!loading" class="chapter-list">
-    <li
-      *ngFor="let chapter of chapters"
-      class="chapter-item"
-      (click)="studyChapter(chapter.name)"
-    >
-      <div class="chapter-info">
-        <span class="chapter-name">{{ chapter.name }}</span>
-        <span class="chapter-count">{{ chapter.cardCount }} kaarten</span>
-      </div>
-      <span class="arrow">›</span>
-    </li>
-  </ul>
+  <ng-container *ngIf="!loading">
+    <!-- Curriculum chapters -->
+    <ul class="chapter-list">
+      <li
+        *ngFor="let chapter of regularChapters"
+        class="chapter-item"
+        (click)="studyChapter(chapter.name)"
+      >
+        <div class="chapter-info">
+          <span class="chapter-name">{{ chapter.name }}</span>
+          <span class="chapter-count">{{ chapter.cardCount }} kaarten</span>
+        </div>
+        <span class="arrow">›</span>
+      </li>
+    </ul>
 
-  <div class="swipe-legend">
-    <div class="legend-title">Swipe-bediening tijdens studeren</div>
-    <div class="legend-grid">
-      <div class="legend-item"><span class="dir">→</span> Toon achterkant</div>
-      <div class="legend-item"><span class="dir">←</span> Volgende kaart</div>
-      <div class="legend-item"><span class="dir">↑</span> Opslaan voor later</div>
-      <div class="legend-item"><span class="dir">↓</span> Overslaan</div>
-    </div>
-  </div>
+    <!-- Bonus chapter(s) -->
+    <section class="bonus-section" *ngIf="bonusChapters.length > 0">
+      <div class="bonus-header">
+        <span class="bonus-label">🎓 Bonushoofdstuk</span>
+        <span class="bonus-desc">Over effectief leren</span>
+      </div>
+      <ul class="chapter-list bonus-list">
+        <li
+          *ngFor="let chapter of bonusChapters"
+          class="chapter-item chapter-item--bonus"
+          (click)="studyChapter(chapter.name)"
+        >
+          <div class="chapter-info">
+            <span class="chapter-name">{{ chapter.name }}</span>
+            <span class="chapter-count">{{ chapter.cardCount }} kaarten</span>
+          </div>
+          <span class="arrow">›</span>
+        </li>
+      </ul>
+    </section>
+  </ng-container>
+
 </div>

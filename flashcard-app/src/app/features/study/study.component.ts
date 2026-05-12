@@ -81,6 +81,7 @@ export class StudyComponent implements OnInit {
   }
 
   onTouchMove(e: TouchEvent): void {
+    if (this.isFlipped()) return; // allow native scroll on flipped card
     const dx = e.touches[0].clientX - this.touchStartX;
     const dy = e.touches[0].clientY - this.touchStartY;
     this.dragOffsetX.set(dx);
@@ -92,6 +93,7 @@ export class StudyComponent implements OnInit {
     const dy = e.changedTouches[0].clientY - this.touchStartY;
     this.dragOffsetX.set(0);
     this.dragOffsetY.set(0);
+    if (this.isFlipped()) return; // no swipe when flipped
     this.handleSwipe(dx, dy);
   }
 
@@ -110,6 +112,7 @@ export class StudyComponent implements OnInit {
   @HostListener('document:mousemove', ['$event'])
   onMouseMove(e: MouseEvent): void {
     if (!this.mouseDown) return;
+    if (this.isFlipped()) return; // allow scroll on flipped card
     this.dragOffsetX.set(e.clientX - this.mouseStartX);
     this.dragOffsetY.set(e.clientY - this.mouseStartY);
   }
@@ -122,6 +125,7 @@ export class StudyComponent implements OnInit {
     const dy = e.clientY - this.mouseStartY;
     this.dragOffsetX.set(0);
     this.dragOffsetY.set(0);
+    if (this.isFlipped()) return; // no swipe when flipped
     this.handleSwipe(dx, dy);
   }
 

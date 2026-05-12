@@ -151,6 +151,7 @@
   padding: 1rem;
   gap: 1.25rem;
   overflow: hidden;
+  position: relative;
 }
 
 // ── Swipe hints ───────────────────────────────────────────────────────────
@@ -161,9 +162,11 @@
   align-items: center;
   gap: 0.5rem;
   position: absolute;
-  inset: 0;
+  top: 0.5rem;
+  left: 0;
+  right: 0;
   pointer-events: none;
-  z-index: 1;
+  z-index: 3;
 
   .hint {
     background: rgba(0, 0, 0, 0.08);
@@ -183,7 +186,6 @@
 
   .hint-save {
     align-self: center;
-    margin-top: 0.5rem;
     color: var(--color-saved-text);
     background: var(--color-saved-bg);
   }
@@ -217,6 +219,10 @@
   z-index: 2;
   touch-action: none;
 
+  &.flipped {
+    touch-action: pan-y; // re-enable vertical scroll on flipped card
+  }
+
   &.drag-right .card { border: 2px solid var(--color-primary); box-shadow: 0 8px 24px rgba(99, 102, 241, 0.25); }
   &.drag-left  .card { border: 2px solid var(--color-danger);  box-shadow: 0 8px 24px rgba(239, 68, 68, 0.25); }
   &.drag-up    .card { border: 2px solid var(--color-success); box-shadow: 0 8px 24px rgba(16, 185, 129, 0.25); }
@@ -225,7 +231,7 @@
 .card {
   position: relative;
   width: 100%;
-  min-height: 340px;
+  min-height: clamp(380px, 55vh, 520px);
   transform-style: preserve-3d;
   transition: transform 0.45s cubic-bezier(0.4, 0, 0.2, 1);
   border-radius: 20px;
@@ -250,6 +256,7 @@
   background: var(--color-card-bg);
   box-shadow: var(--shadow-card);
   overflow-y: auto;
+  overscroll-behavior: contain;
 }
 
 .card-back {
@@ -389,8 +396,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 0.2rem;
-    padding: 0.65rem 0.25rem;
+    gap: 0.3rem;
+    padding: 0.85rem 0.25rem;
     border: none;
     background: none;
     cursor: pointer;
@@ -403,19 +410,19 @@
     }
 
     .bar-icon {
-      font-size: 1.35rem;
+      font-size: 1.6rem;
       line-height: 1;
     }
 
     .bar-label {
-      font-size: 0.62rem;
+      font-size: 0.78rem;
       font-weight: 600;
-      color: var(--color-text-muted);
+      color: var(--color-primary);
       letter-spacing: 0.02em;
     }
   }
 
-  .btn-exclude .bar-label { color: var(--color-danger); }
-  .btn-save    .bar-label { color: var(--color-saved-text); }
+  .btn-exclude .bar-label { color: var(--color-primary); }
+  .btn-save    .bar-label { color: var(--color-primary); }
   .btn-next    .bar-label { color: var(--color-primary); }
 }
