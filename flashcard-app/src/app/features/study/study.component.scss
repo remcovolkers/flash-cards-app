@@ -140,6 +140,80 @@
   }
 }
 
+// ── Resume dialog ─────────────────────────────────────────────────────────
+
+.resume-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  padding: 1.5rem;
+}
+
+.resume-dialog {
+  background: var(--color-card-bg);
+  border-radius: 20px;
+  padding: 2rem 1.5rem 1.5rem;
+  width: 100%;
+  max-width: 340px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
+  text-align: center;
+
+  .resume-icon {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--color-text);
+    margin: 0;
+  }
+
+  p {
+    font-size: 0.9rem;
+    color: var(--color-text-muted);
+    margin: 0;
+  }
+}
+
+.resume-btn {
+  width: 100%;
+  padding: 0.85rem;
+  border: none;
+  border-radius: 14px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 0.25rem;
+  transition: opacity 0.15s;
+
+  &:active { opacity: 0.8; }
+
+  &--continue {
+    background: var(--color-primary);
+    color: #fff;
+  }
+
+  &--restart {
+    background: none;
+    color: var(--color-text-muted);
+    font-weight: 500;
+    text-decoration: underline;
+    padding-top: 0.25rem;
+    margin-top: 0;
+  }
+}
+
 // ── Card area ─────────────────────────────────────────────────────────────
 
 .card-area {
@@ -152,6 +226,13 @@
   gap: 1.25rem;
   overflow: hidden;
   position: relative;
+  transition: transform 0.25s ease, filter 0.25s ease;
+
+  &--blurred {
+    transform: scale(0.95);
+    filter: blur(1px);
+    pointer-events: none;
+  }
 }
 
 // ── Swipe hints ───────────────────────────────────────────────────────────

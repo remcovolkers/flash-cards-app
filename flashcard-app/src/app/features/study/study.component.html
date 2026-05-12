@@ -32,10 +32,26 @@
     <button class="secondary-btn" (click)="goBack()">Terug naar hoofdstukken</button>
   </div>
 
+  <!-- Resume dialog -->
+  <div class="resume-backdrop" *ngIf="showResumeDialog">
+    <div class="resume-dialog">
+      <div class="resume-icon">📍</div>
+      <h2>Verder waar je gebleven was?</h2>
+      <p>Je was bij kaart {{ resumeIndex + 1 }} van {{ cards.length }}.</p>
+      <button class="resume-btn resume-btn--continue" (click)="resumeFromSaved()">
+        Doorgaan vanaf kaart {{ resumeIndex + 1 }}
+      </button>
+      <button class="resume-btn resume-btn--restart" (click)="startFromBeginning()">
+        Opnieuw beginnen
+      </button>
+    </div>
+  </div>
+
   <!-- Flashcard area -->
   <div
     *ngIf="!loading && !done && current"
     class="card-area"
+    [class.card-area--blurred]="showResumeDialog"
   >
     <!-- Swipe hints -->
     <div class="swipe-hints">

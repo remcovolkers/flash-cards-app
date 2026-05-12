@@ -11,6 +11,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { GetCardsForStudyUseCase } from '../../core/use-cases/get-cards-for-study.use-case';
 import { SaveCardUseCase } from '../../core/use-cases/save-card.use-case';
 import { ExcludeCardUseCase } from '../../core/use-cases/exclude-card.use-case';
+import { StorageRepository } from '../../domain/ports/storage.repository';
 import { Flashcard } from '../../domain/models/flashcard.model';
 
 type SwipeAction = 'next' | 'save' | 'exclude' | null;
@@ -31,6 +32,8 @@ export class StudyComponent implements OnInit {
   loading = true;
   done = false;
   chapterName = '';
+  showResumeDialog = false;
+  resumeIndex = 0;
 
   feedback = signal<SwipeAction>(null);
   dragOffsetX = signal(0);
@@ -47,7 +50,8 @@ export class StudyComponent implements OnInit {
     private router: Router,
     private getCardsUseCase: GetCardsForStudyUseCase,
     private saveCard: SaveCardUseCase,
-    private excludeCard: ExcludeCardUseCase
+    private excludeCard: ExcludeCardUseCase,
+    private storage: StorageRepository
   ) {}
 
   async ngOnInit(): Promise<void> {
@@ -55,13 +59,31 @@ export class StudyComponent implements OnInit {
     this.chapterName = decodeURIComponent(encoded);
     try {
       this.cards = await this.getCardsUseCase.execute(this.chapterName);
-      if (this.cards.length === 0) this.done = true;
+      if (this.cards.length === 0) {
+        this.done = true;
+      } else {
+        const saved = this.storage.getProgress(this.chapterName);
+        if (saved !== null && saved > 0 && saved < this.cards.length) {
+          this.resumeIndex = saved;
+          this.showResumeDialog = true;
+        }
+      }
     } catch (err) {
       console.error('Fout bij laden van kaarten:', err);
       this.done = true;
     } finally {
       this.loading = false;
     }
+  }
+
+  resumeFromSaved(): void {
+    this.currentIndex.set(this.resumeIndex);
+    this.showResumeDialog = false;
+  }
+
+  startFromBeginning(): void {
+    this.storage.clearProgress(this.chapterName);
+    this.showResumeDialog = false;
   }
 
   get current(): Flashcard | null {
@@ -190,7 +212,9 @@ export class StudyComponent implements OnInit {
     this.isFlipped.set(false);
     if (this.currentIndex() < this.cards.length - 1) {
       this.currentIndex.update((i) => i + 1);
+      this.storage.saveProgress(this.chapterName, this.currentIndex());
     } else {
+      this.storage.clearProgress(this.chapterName);
       this.done = true;
     }
   }
@@ -199,6 +223,7 @@ export class StudyComponent implements OnInit {
     if (this.currentIndex() > 0) {
       this.isFlipped.set(false);
       this.currentIndex.update((i) => i - 1);
+      this.storage.saveProgress(this.chapterName, this.currentIndex());
     }
   }
 
@@ -229,6 +254,7 @@ export class StudyComponent implements OnInit {
   }
 
   restart(): void {
+    this.storage.clearProgress(this.chapterName);
     this.currentIndex.set(0);
     this.isFlipped.set(false);
     this.done = false;
