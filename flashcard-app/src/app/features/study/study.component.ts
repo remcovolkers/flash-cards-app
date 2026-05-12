@@ -195,6 +195,13 @@ export class StudyComponent implements OnInit {
     }
   }
 
+  prevCard(): void {
+    if (this.currentIndex() > 0) {
+      this.isFlipped.set(false);
+      this.currentIndex.update((i) => i - 1);
+    }
+  }
+
   saveForLater(): void {
     if (this.current) {
       this.saveCard.execute(this.current);

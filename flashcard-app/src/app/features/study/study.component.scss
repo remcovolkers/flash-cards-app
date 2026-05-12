@@ -425,4 +425,16 @@
   .btn-exclude .bar-label { color: var(--color-primary); }
   .btn-save    .bar-label { color: var(--color-primary); }
   .btn-next    .bar-label { color: var(--color-primary); }
+
+  .btn-prev {
+    &:disabled {
+      opacity: 0.3;
+      pointer-events: none;
+    }
+
+    .bar-icon--prev {
+      display: inline-block;
+      transform: rotate(180deg);
+    }
+  }
 }

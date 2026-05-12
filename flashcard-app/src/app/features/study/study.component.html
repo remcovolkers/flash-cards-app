@@ -110,6 +110,10 @@
 
   <!-- Bottom bar -->
   <nav class="bottom-bar" *ngIf="!loading && !done && current">
+    <button class="bar-btn btn-prev" (click)="prevCard()" [disabled]="currentIndex() === 0">
+      <span class="bar-icon bar-icon--prev">&#x27A4;</span>
+      <span class="bar-label">Vorige</span>
+    </button>
     <button class="bar-btn btn-exclude" (click)="excludeCurrentCard()">
       <span class="bar-icon">❌</span>
       <span class="bar-label">Overslaan</span>
@@ -123,7 +127,7 @@
       <span class="bar-label">Opslaan</span>
     </button>
     <button class="bar-btn btn-next" (click)="nextCard()">
-      <span class="bar-icon">➤</span>
+      <span class="bar-icon">&#x27A4;</span>
       <span class="bar-label">Volgende</span>
     </button>
   </nav>
