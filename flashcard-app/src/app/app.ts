@@ -21,6 +21,14 @@ import { filter } from 'rxjs';
         <button class="support-banner__dismiss" (click)="dismissSupportBanner()" aria-label="Sluiten">✕</button>
       </div>
     </div>
+    <div class="desktop-block">
+      <div class="desktop-block__content">
+        <span class="desktop-block__icon">📱</span>
+        <h1>Alleen beschikbaar op mobiel</h1>
+        <p>Deze app is gebouwd als PWA voor je telefoon. Open deze pagina op je mobiele apparaat om verder te gaan.</p>
+        <p>Daar kun je de app ook installeren via je browser.</p>
+      </div>
+    </div>
     <router-outlet />
   `,
   styles: [`
@@ -114,6 +122,58 @@ import { filter } from 'rxjs';
 
     .support-banner__dismiss:hover {
       background: rgba(124, 45, 18, 0.1);
+    }
+
+    @media (min-width: 769px) {
+      .support-banner {
+        display: none;
+      }
+    }
+
+    .desktop-block {
+      display: none;
+    }
+
+    @media (min-width: 769px) {
+      .desktop-block {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100dvh;
+        padding: 2rem;
+        background: #f8fafc;
+      }
+
+      .desktop-block__content {
+        max-width: 420px;
+        text-align: center;
+      }
+
+      .desktop-block__icon {
+        font-size: 3rem;
+        display: block;
+        margin-bottom: 1rem;
+      }
+
+      .desktop-block__content h1 {
+        margin: 0 0 0.75rem;
+        font-size: 1.5rem;
+        color: #1e293b;
+      }
+
+      .desktop-block__content p {
+        margin: 0;
+        color: #64748b;
+        line-height: 1.5;
+      }
+
+      .desktop-block__content p + p {
+        margin-top: 0.5rem;
+      }
+
+      router-outlet + * {
+        display: none;
+      }
     }
   `],
 })
