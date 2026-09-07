@@ -126,7 +126,7 @@ export class App implements OnInit {
   constructor(private swUpdate: SwUpdate) {}
 
   ngOnInit(): void {
-    this.showSupportBanner.set(localStorage.getItem(this.supportBannerDismissedKey) !== 'true');
+    this.showSupportBanner.set(sessionStorage.getItem(this.supportBannerDismissedKey) !== 'true');
 
     if (!this.swUpdate.isEnabled) return;
 
@@ -141,6 +141,6 @@ export class App implements OnInit {
 
   dismissSupportBanner(): void {
     this.showSupportBanner.set(false);
-    localStorage.setItem(this.supportBannerDismissedKey, 'true');
+    sessionStorage.setItem(this.supportBannerDismissedKey, 'true');
   }
 }
